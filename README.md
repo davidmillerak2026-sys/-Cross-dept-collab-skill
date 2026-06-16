@@ -1,5 +1,7 @@
 # Cross-department Collaboration Skill
 
+[中文说明](README.zh-CN.md)
+
 `industrial-workorder-collaboration` is a manufacturing operations Skill that turns production-floor notes, alarms, handover records and meeting notes into cross-department work orders, action cards and closure-ready collaboration packages.
 
 The project focuses on a realistic enterprise flow: production owns the event package, enterprise IM/email handles notification, and formal systems such as MES, CMMS, QMS, EHS, SAP/ERP, OA and PMC/APS carry records, approvals, feedback and closure evidence.
@@ -37,7 +39,8 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 ├── README.md
 ├── docs/
 │   ├── architecture.md
-│   └── operating_playbook.md
+│   ├── operating_playbook.md
+│   └── scenario_index.md
 ├── examples/
 │   ├── 01_voice_to_work_order.md
 │   ├── 02_quality_issue_to_collaboration.md
@@ -77,3 +80,6 @@ python scripts/redact_input.py --text "张三 13812345678 设备 token=abc123"
 
 The Skill prepares structured drafts, action cards and decision packets. It does not directly update MES, CMMS, QMS, EHS, SAP/ERP, OA or PMC systems. Any release, permit, production recovery, customer promise, SOP publication or privileged system write must be confirmed by an authorized person or upstream system.
 
+## Key Scenario Pack
+
+See [docs/scenario_index.md](docs/scenario_index.md) for the production-led scenario map, and [examples/05_enterprise_department_flow_10_scenarios.md](examples/05_enterprise_department_flow_10_scenarios.md) for full walkthroughs.

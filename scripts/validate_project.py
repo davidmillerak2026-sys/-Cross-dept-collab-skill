@@ -9,9 +9,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
     "README.md",
+    "README.zh-CN.md",
     "SKILL.md",
     "docs/architecture.md",
     "docs/operating_playbook.md",
+    "docs/scenario_index.md",
     "examples/01_voice_to_work_order.md",
     "examples/02_quality_issue_to_collaboration.md",
     "examples/03_shift_handover_weekly_report.md",
