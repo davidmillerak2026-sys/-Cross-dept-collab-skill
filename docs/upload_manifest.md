@@ -29,7 +29,9 @@ This manifest lists the public project files prepared for the GitHub repository.
 
 - `scripts/redact_input.py`
 - `scripts/export_stability_stress_pack.py`
+- `scripts/export_pilot_feedback_pack.py`
 - `scripts/score_stability_stress.py`
+- `scripts/score_pilot_feedback.py`
 - `scripts/validate_project.py`
 
 ## Tests
@@ -40,6 +42,9 @@ This manifest lists the public project files prepared for the GitHub repository.
 - `tests/stability_stress_prompt_pack.md`
 - `tests/run_record_stability_stress_template.csv`
 - `tests/stability_stress_outputs/README.md`
+- `tests/pilot_feedback_roles.json`
+- `tests/pilot_feedback_interview_pack.md`
+- `tests/pilot_feedback_records_template.csv`
 
 ## Templates
 

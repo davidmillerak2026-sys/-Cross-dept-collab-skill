@@ -16,6 +16,7 @@
 - 对质量放行、安全许可、客户承诺、正式 SOP 发布和系统写入保留人工授权边界。
 - 在系统不可用、附件不可读、记录冲突或字段缺失时，输出降级但可执行的结果。
 - 内置 ST01-ST12 异常输入压力用例，覆盖短输入、噪声、重复、冲突、危险请求、提示注入、隐私凭证、缺字段、系统失败、伪造完成、多事件混合和渠道误用。
+- 内置 6 类角色试用反馈访谈包和应用价值评分脚本，用于收集真实脱敏反馈，不伪造收益。
 - 事件关闭后，才生成知识库/SOP 候选条目，不参与最初紧急流转。
 
 ## 企业系统分层
@@ -71,6 +72,8 @@
 企业协同输出合同见：`templates/enterprise_flow_output_contract.md`；S01-S10 场景复核检查点见：`tests/enterprise_flow_golden_outputs.md`。
 
 异常输入压力用例见：`tests/stability_stress_cases.json`；可复制压力提示词见：`tests/stability_stress_prompt_pack.md`。
+
+试用反馈访谈包见：`tests/pilot_feedback_interview_pack.md`；反馈记录模板见：`tests/pilot_feedback_records_template.csv`。
 
 ## 本地校验
 

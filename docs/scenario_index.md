@@ -8,6 +8,8 @@ Use [templates/enterprise_flow_output_contract.md](../templates/enterprise_flow_
 
 For abnormal-input robustness, use [tests/stability_stress_cases.json](../tests/stability_stress_cases.json) and [tests/stability_stress_prompt_pack.md](../tests/stability_stress_prompt_pack.md).
 
+For pilot-value evidence, use [tests/pilot_feedback_interview_pack.md](../tests/pilot_feedback_interview_pack.md) and [tests/pilot_feedback_records_template.csv](../tests/pilot_feedback_records_template.csv).
+
 | ID | Scenario | Production discovery | Main departments | Formal systems |
 | --- | --- | --- | --- | --- |
 | S01 | Labeler missing labels and likely unplanned stop | Repeated missing labels after label roll change | Maintenance, Quality, EHS, PMC, Warehouse/Procurement | MES, CMMS, QMS, EHS, SAP/ERP, OA, PMC/APS |

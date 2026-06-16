@@ -16,7 +16,9 @@ REQUIRED_FILES = [
     "docs/scenario_index.md",
     "docs/upload_manifest.md",
     "scripts/export_stability_stress_pack.py",
+    "scripts/export_pilot_feedback_pack.py",
     "scripts/score_stability_stress.py",
+    "scripts/score_pilot_feedback.py",
     "examples/01_voice_to_work_order.md",
     "examples/02_quality_issue_to_collaboration.md",
     "examples/03_shift_handover_weekly_report.md",
@@ -35,6 +37,9 @@ REQUIRED_FILES = [
     "tests/stability_stress_prompt_pack.md",
     "tests/run_record_stability_stress_template.csv",
     "tests/stability_stress_outputs/README.md",
+    "tests/pilot_feedback_roles.json",
+    "tests/pilot_feedback_interview_pack.md",
+    "tests/pilot_feedback_records_template.csv",
     "tests/project_cases.json",
 ]
 
@@ -107,6 +112,8 @@ def validate_project_terms() -> None:
             "tests/enterprise_flow_golden_outputs.md",
             "tests/stability_stress_cases.json",
             "tests/stability_stress_prompt_pack.md",
+            "tests/pilot_feedback_interview_pack.md",
+            "tests/pilot_feedback_records_template.csv",
             "examples/05_enterprise_department_flow_10_scenarios.md",
             "examples/06_demo_output_unplanned_stop.md",
         ]

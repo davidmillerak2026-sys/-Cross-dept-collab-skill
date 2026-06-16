@@ -1,0 +1,7 @@
+feedback_id,role_id,role,case_id,scenario,input_type,before_minutes,after_minutes,time_saved_minutes,missing_fields_before,missing_fields_after,missing_field_reduction,handoff_clarity_score,system_traceability_score,unsafe_claim_count,manual_confirmation_boundary,evidence_file_or_screenshot,consent_to_public,public_quote_redacted,notes
+FB-YYYYMMDD-R01,R01,生产主管,T01/T36/T38/T39/S01/S10,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
+FB-YYYYMMDD-R02,R02,设备维修,T01/T25/T34/T35/S07,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
+FB-YYYYMMDD-R03,R03,质量工程师,T06/T21/T30/T33/S02/S08,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
+FB-YYYYMMDD-R04,R04,EHS/安全,T11/T12/T38/ST05/ST12/S04/S06,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
+FB-YYYYMMDD-R05,R05,PMC/计划,T36/T38/T39/S05/S10,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
+FB-YYYYMMDD-R06,R06,数字化负责人,T21/T28/T39/ST08/ST09,,,,,,,,,,,,,,no,,template row; fill after real pilot feedback
