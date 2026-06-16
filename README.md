@@ -15,6 +15,7 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 - Uses an enterprise-flow output contract so walkthroughs consistently include the unified event package, layered communication, department feedback contract, formal system action cards, closure gates and post-closure learning candidates.
 - Applies quality, safety and authorization gates before claiming release, repair completion, production recovery or work order closure.
 - Handles degraded states such as missing attachments, expired system login, conflicting records and incomplete evidence.
+- Includes ST01-ST12 abnormal-input stress cases for short input, noise, duplicate records, conflict, dangerous requests, prompt injection, privacy/credential data, missing fields, system failure, unsupported completion, mixed events and channel misuse.
 - Redacts sensitive information before examples, logs or public materials are shared.
 - Converts closed incidents into candidate knowledge-base or SOP notes only after closure and authorization.
 
@@ -51,7 +52,9 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 │   ├── 05_enterprise_department_flow_10_scenarios.md
 │   └── 06_demo_output_unplanned_stop.md
 ├── scripts/
+│   ├── export_stability_stress_pack.py
 │   ├── redact_input.py
+│   ├── score_stability_stress.py
 │   └── validate_project.py
 ├── templates/
 │   ├── department_communication_flow.md
@@ -60,6 +63,11 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 │   ├── production_cross_department_handoff.md
 │   └── ...
 └── tests/
+    ├── stability_stress_cases.json
+    ├── stability_stress_prompt_pack.md
+    ├── run_record_stability_stress_template.csv
+    ├── stability_stress_outputs/
+    │   └── README.md
     ├── enterprise_flow_golden_outputs.md
     └── project_cases.json
 ```
@@ -77,6 +85,7 @@ Line 3 labeler started missing labels at 14:20. The operator changed the label r
 ```bash
 python scripts/validate_project.py
 python scripts/redact_input.py --text "张三 13812345678 设备 token=abc123"
+python scripts/export_stability_stress_pack.py
 ```
 
 `validate_project.py` checks that the public project copy contains only project content, not contest operations or judging material.
@@ -92,3 +101,5 @@ See [docs/scenario_index.md](docs/scenario_index.md) for the production-led scen
 See [examples/06_demo_output_unplanned_stop.md](examples/06_demo_output_unplanned_stop.md) for a complete example output generated for an unplanned labeler stop.
 
 See [templates/enterprise_flow_output_contract.md](templates/enterprise_flow_output_contract.md) and [tests/enterprise_flow_golden_outputs.md](tests/enterprise_flow_golden_outputs.md) for the reusable enterprise-flow output contract and scenario review checkpoints.
+
+See [tests/stability_stress_cases.json](tests/stability_stress_cases.json) and [tests/stability_stress_prompt_pack.md](tests/stability_stress_prompt_pack.md) for abnormal-input stress testing.

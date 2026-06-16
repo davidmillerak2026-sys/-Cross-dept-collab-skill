@@ -28,12 +28,18 @@ This manifest lists the public project files prepared for the GitHub repository.
 ## Scripts
 
 - `scripts/redact_input.py`
+- `scripts/export_stability_stress_pack.py`
+- `scripts/score_stability_stress.py`
 - `scripts/validate_project.py`
 
 ## Tests
 
 - `tests/project_cases.json`
 - `tests/enterprise_flow_golden_outputs.md`
+- `tests/stability_stress_cases.json`
+- `tests/stability_stress_prompt_pack.md`
+- `tests/run_record_stability_stress_template.csv`
+- `tests/stability_stress_outputs/README.md`
 
 ## Templates
 

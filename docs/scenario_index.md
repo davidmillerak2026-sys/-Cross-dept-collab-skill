@@ -6,6 +6,8 @@ Full walkthroughs are in [examples/05_enterprise_department_flow_10_scenarios.md
 
 Use [templates/enterprise_flow_output_contract.md](../templates/enterprise_flow_output_contract.md) as the required output shape for scenario drills, and [tests/enterprise_flow_golden_outputs.md](../tests/enterprise_flow_golden_outputs.md) as the human review checklist.
 
+For abnormal-input robustness, use [tests/stability_stress_cases.json](../tests/stability_stress_cases.json) and [tests/stability_stress_prompt_pack.md](../tests/stability_stress_prompt_pack.md).
+
 | ID | Scenario | Production discovery | Main departments | Formal systems |
 | --- | --- | --- | --- | --- |
 | S01 | Labeler missing labels and likely unplanned stop | Repeated missing labels after label roll change | Maintenance, Quality, EHS, PMC, Warehouse/Procurement | MES, CMMS, QMS, EHS, SAP/ERP, OA, PMC/APS |
