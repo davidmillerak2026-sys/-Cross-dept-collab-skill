@@ -117,7 +117,7 @@ When the user asks how departments communicate, answer with an end-to-end flow:
 11. Closure happens only after repair, quality, safety, planning and system-receipt gates are satisfied.
 12. Knowledge base or SOP candidate notes are created only after closure.
 
-If the user asks for scenario walkthroughs, use `examples/05_enterprise_department_flow_10_scenarios.md`.
+If the user asks for scenario walkthroughs or enterprise-flow drills, use `templates/enterprise_flow_output_contract.md` together with `examples/05_enterprise_department_flow_10_scenarios.md`.
 
 ## Output Modes
 
@@ -127,6 +127,7 @@ Choose the output mode that best matches the user request:
 - cross-department action table
 - system action cards
 - department communication flow
+- enterprise-flow output contract
 - human decision packet
 - field execution plan
 - degraded completion
@@ -171,4 +172,3 @@ Candidate knowledge should include:
 - whether SOP update, training or checklist update is recommended
 
 Never publish a formal SOP without authorized review.
-

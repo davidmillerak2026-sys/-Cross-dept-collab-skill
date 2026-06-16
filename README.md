@@ -12,6 +12,7 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 - Separates confirmed facts, reasonable inference and missing information.
 - Produces role-based tasks for Production, Maintenance, Quality, Engineering, EHS, PMC, Warehouse and Procurement.
 - Creates action cards for MES, CMMS, QMS, EHS, SAP/ERP, OA and PMC/APS instead of pretending external systems have already been updated.
+- Uses an enterprise-flow output contract so walkthroughs consistently include the unified event package, layered communication, department feedback contract, formal system action cards, closure gates and post-closure learning candidates.
 - Applies quality, safety and authorization gates before claiming release, repair completion, production recovery or work order closure.
 - Handles degraded states such as missing attachments, expired system login, conflicting records and incomplete evidence.
 - Redacts sensitive information before examples, logs or public materials are shared.
@@ -54,10 +55,12 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 │   └── validate_project.py
 ├── templates/
 │   ├── department_communication_flow.md
+│   ├── enterprise_flow_output_contract.md
 │   ├── integration_contracts.json
 │   ├── production_cross_department_handoff.md
 │   └── ...
 └── tests/
+    ├── enterprise_flow_golden_outputs.md
     └── project_cases.json
 ```
 
@@ -87,3 +90,5 @@ The Skill prepares structured drafts, action cards and decision packets. It does
 See [docs/scenario_index.md](docs/scenario_index.md) for the production-led scenario map, and [examples/05_enterprise_department_flow_10_scenarios.md](examples/05_enterprise_department_flow_10_scenarios.md) for full walkthroughs.
 
 See [examples/06_demo_output_unplanned_stop.md](examples/06_demo_output_unplanned_stop.md) for a complete example output generated for an unplanned labeler stop.
+
+See [templates/enterprise_flow_output_contract.md](templates/enterprise_flow_output_contract.md) and [tests/enterprise_flow_golden_outputs.md](tests/enterprise_flow_golden_outputs.md) for the reusable enterprise-flow output contract and scenario review checkpoints.

@@ -33,6 +33,7 @@ This manifest lists the public project files prepared for the GitHub repository.
 ## Tests
 
 - `tests/project_cases.json`
+- `tests/enterprise_flow_golden_outputs.md`
 
 ## Templates
 
@@ -42,6 +43,7 @@ This manifest lists the public project files prepared for the GitHub repository.
 - `templates/closed_loop_learning.md`
 - `templates/degraded_completion.md`
 - `templates/department_communication_flow.md`
+- `templates/enterprise_flow_output_contract.md`
 - `templates/diagnosis_matrix.schema.json`
 - `templates/evidence_trace.schema.json`
 - `templates/field_execution_plan.md`
@@ -72,4 +74,3 @@ Expected output:
 ```text
 PASS: public project package is clean and complete
 ```
-

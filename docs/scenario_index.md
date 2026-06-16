@@ -4,6 +4,8 @@ This project includes 10 production-led enterprise flow scenarios. Each scenario
 
 Full walkthroughs are in [examples/05_enterprise_department_flow_10_scenarios.md](../examples/05_enterprise_department_flow_10_scenarios.md).
 
+Use [templates/enterprise_flow_output_contract.md](../templates/enterprise_flow_output_contract.md) as the required output shape for scenario drills, and [tests/enterprise_flow_golden_outputs.md](../tests/enterprise_flow_golden_outputs.md) as the human review checklist.
+
 | ID | Scenario | Production discovery | Main departments | Formal systems |
 | --- | --- | --- | --- | --- |
 | S01 | Labeler missing labels and likely unplanned stop | Repeated missing labels after label roll change | Maintenance, Quality, EHS, PMC, Warehouse/Procurement | MES, CMMS, QMS, EHS, SAP/ERP, OA, PMC/APS |
@@ -27,4 +29,3 @@ Full walkthroughs are in [examples/05_enterprise_department_flow_10_scenarios.md
 - PMC/APS confirms schedule, capacity, overtime, insertion or delivery decision.
 - OA records approval, incident report, meeting notes or escalation when needed.
 - Knowledge base/SOP candidates are created only after event closure and authorization review.
-
