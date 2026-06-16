@@ -14,11 +14,13 @@ REQUIRED_FILES = [
     "docs/architecture.md",
     "docs/operating_playbook.md",
     "docs/scenario_index.md",
+    "docs/upload_manifest.md",
     "examples/01_voice_to_work_order.md",
     "examples/02_quality_issue_to_collaboration.md",
     "examples/03_shift_handover_weekly_report.md",
     "examples/04_complex_agent_workflow.md",
     "examples/05_enterprise_department_flow_10_scenarios.md",
+    "examples/06_demo_output_unplanned_stop.md",
     "templates/department_communication_flow.md",
     "templates/integration_contracts.json",
     "templates/production_cross_department_handoff.md",
@@ -87,7 +89,7 @@ def validate_public_terms() -> None:
 
 
 def validate_project_terms() -> None:
-    combined = "\n".join(read_text(ROOT / rel) for rel in ["README.md", "SKILL.md", "examples/05_enterprise_department_flow_10_scenarios.md"])
+    combined = "\n".join(read_text(ROOT / rel) for rel in ["README.md", "README.zh-CN.md", "SKILL.md", "examples/05_enterprise_department_flow_10_scenarios.md", "examples/06_demo_output_unplanned_stop.md"])
     for term in REQUIRED_PROJECT_TERMS:
         if term not in combined:
             fail(f"missing core project term: {term}")

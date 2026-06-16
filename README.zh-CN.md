@@ -40,13 +40,15 @@
 ├── docs/
 │   ├── architecture.md
 │   ├── operating_playbook.md
-│   └── scenario_index.md
+│   ├── scenario_index.md
+│   └── upload_manifest.md
 ├── examples/
 │   ├── 01_voice_to_work_order.md
 │   ├── 02_quality_issue_to_collaboration.md
 │   ├── 03_shift_handover_weekly_report.md
 │   ├── 04_complex_agent_workflow.md
-│   └── 05_enterprise_department_flow_10_scenarios.md
+│   ├── 05_enterprise_department_flow_10_scenarios.md
+│   └── 06_demo_output_unplanned_stop.md
 ├── scripts/
 │   ├── redact_input.py
 │   └── validate_project.py
@@ -62,6 +64,8 @@
 三号包装线贴标机 14:20 开始频繁漏贴，操作员更换标签卷后仍然没有改善。当前已经停线 18 分钟，质量发现 32 箱需要复检。维修怀疑传感器偏位，但还没有验证。生产希望 15:30 前恢复。
 ```
 
+完整示例输出见：`examples/06_demo_output_unplanned_stop.md`。
+
 ## 本地校验
 
 ```bash
@@ -72,4 +76,3 @@ python scripts/redact_input.py --text "张三 13812345678 test@example.com token
 ## 关键边界
 
 这个 Skill 只生成结构化草案、动作卡和决策包，不直接替企业系统完成写入。质量放行、安全许可、生产恢复、客户承诺、SOP 正式发布和带权限的系统动作，必须由授权人员或上层系统确认。
-

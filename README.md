@@ -40,13 +40,15 @@ The project focuses on a realistic enterprise flow: production owns the event pa
 ├── docs/
 │   ├── architecture.md
 │   ├── operating_playbook.md
-│   └── scenario_index.md
+│   ├── scenario_index.md
+│   └── upload_manifest.md
 ├── examples/
 │   ├── 01_voice_to_work_order.md
 │   ├── 02_quality_issue_to_collaboration.md
 │   ├── 03_shift_handover_weekly_report.md
 │   ├── 04_complex_agent_workflow.md
-│   └── 05_enterprise_department_flow_10_scenarios.md
+│   ├── 05_enterprise_department_flow_10_scenarios.md
+│   └── 06_demo_output_unplanned_stop.md
 ├── scripts/
 │   ├── redact_input.py
 │   └── validate_project.py
@@ -83,3 +85,5 @@ The Skill prepares structured drafts, action cards and decision packets. It does
 ## Key Scenario Pack
 
 See [docs/scenario_index.md](docs/scenario_index.md) for the production-led scenario map, and [examples/05_enterprise_department_flow_10_scenarios.md](examples/05_enterprise_department_flow_10_scenarios.md) for full walkthroughs.
+
+See [examples/06_demo_output_unplanned_stop.md](examples/06_demo_output_unplanned_stop.md) for a complete example output generated for an unplanned labeler stop.
