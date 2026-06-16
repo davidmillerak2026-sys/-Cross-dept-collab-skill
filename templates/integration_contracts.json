@@ -1,0 +1,141 @@
+{
+  "name": "industrial_office_collaboration_integration_contracts",
+  "version": "2026-06-15",
+  "purpose": "Define safe handoff payloads for office-collaboration systems without claiming that external actions were already executed.",
+  "systems": [
+    {
+      "target_system": "CMMS",
+      "business_use": "Create or update a maintenance work order.",
+      "action_types": ["create", "update", "evidence_attach", "notify"],
+      "required_fields": [
+        "work_order_title",
+        "asset_or_line",
+        "location",
+        "event_time",
+        "problem_description",
+        "priority",
+        "confirmed_facts",
+        "next_actions",
+        "acceptance_criteria"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["已派工", "已关闭", "已完成维修"]
+    },
+    {
+      "target_system": "QMS",
+      "business_use": "Create a quality isolation, recheck, or corrective-action record.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach", "notify"],
+      "required_fields": [
+        "batch_or_sku",
+        "defect_description",
+        "affected_quantity",
+        "isolation_status",
+        "quality_risk",
+        "recheck_plan",
+        "disposition_owner",
+        "authorization_required"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["已放行", "已判定合格", "客户已接受"]
+    },
+    {
+      "target_system": "EHS",
+      "business_use": "Create a safety finding, corrective action, or emergency coordination message.",
+      "action_types": ["create", "notify", "evidence_attach", "update"],
+      "required_fields": [
+        "hazard_type",
+        "location",
+        "current_control",
+        "risk_level",
+        "qualified_owner",
+        "verification_method",
+        "followup_due_time"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["已许可危险作业", "可绕过联锁", "可带电检修"]
+    },
+    {
+      "target_system": "MES",
+      "business_use": "Summarize production impact, changeover blockers, and recovery status.",
+      "action_types": ["update", "notify", "evidence_attach"],
+      "required_fields": [
+        "line_or_station",
+        "sku",
+        "planned_or_actual_time",
+        "production_impact",
+        "blocking_reason",
+        "responsible_department",
+        "next_checkpoint"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["已恢复生产", "参数已批准", "首件已通过"]
+    },
+    {
+      "target_system": "SAP_ERP",
+      "business_use": "Check or summarize material, spare-part, purchase, order, delivery, and cost impact.",
+      "action_types": ["query", "update", "notify", "approve_request", "evidence_attach"],
+      "required_fields": [
+        "order_or_mrp_reference",
+        "material_or_spare_part",
+        "inventory_status",
+        "purchase_or_transfer_status",
+        "delivery_commitment",
+        "cost_or_variance_impact",
+        "planning_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["库存已锁定", "采购已批准", "客户交期已承诺", "成本已确认"]
+    },
+    {
+      "target_system": "OA_OR_COLLAB_CHAT",
+      "business_use": "Send a copy-ready message to OA, Enterprise WeChat, Feishu, DingTalk, or email.",
+      "action_types": ["notify", "approve_request"],
+      "required_fields": [
+        "audience",
+        "message_summary",
+        "responsible_parties",
+        "due_time",
+        "risks",
+        "missing_information"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["对方已确认", "审批已通过", "系统已同步"]
+    },
+    {
+      "target_system": "KNOWLEDGE_BASE",
+      "business_use": "Convert closed cases into reusable SOP notes, lessons learned, or checklists.",
+      "action_types": ["knowledge_update"],
+      "required_fields": [
+        "case_summary",
+        "verified_root_cause",
+        "approved_countermeasure",
+        "applicable_scope",
+        "source_record",
+        "review_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["根因已验证", "SOP已发布", "全员已培训"]
+    }
+  ],
+  "action_card_template": {
+    "target_system": "",
+    "action_type": "",
+    "payload_summary": "",
+    "evidence_ids": [],
+    "required_fields": [],
+    "missing_fields": [],
+    "authorization_required": true,
+    "readiness_status": "",
+    "idempotency_key": "",
+    "preconditions": [],
+    "post_submit_verification": [],
+    "expected_receipt": {
+      "external_record_id": "",
+      "system_status": "",
+      "submitted_at": "",
+      "submitted_by_or_actor": ""
+    },
+    "failure_fallback": "",
+    "rollback_or_followup": ""
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialSkillRunTrace",
+  "type": "object",
+  "required": [
+    "run_id",
+    "workflow_steps",
+    "guardrail_results",
+    "output_quality_gate"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "scenario_route": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "workflow_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "step",
+          "status",
+          "summary"
+        ],
+        "properties": {
+          "step": {
+            "type": "string",
+            "enum": [
+              "input_screening",
+              "scenario_routing",
+              "evidence_layering",
+              "candidate_diagnosis",
+              "risk_gate",
+              "action_readiness_gate",
+              "human_decision_gate",
+              "output_quality_gate"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "passed",
+              "needs_confirmation",
+              "requires_authorization",
+              "blocked"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "guardrail_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "guardrail",
+          "result"
+        ],
+        "properties": {
+          "guardrail": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          },
+          "blocked_claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "output_quality_gate": {
+      "type": "object",
+      "properties": {
+        "has_confirmed_facts": {
+          "type": "boolean"
+        },
+        "has_pending_fields": {
+          "type": "boolean"
+        },
+        "has_owner_and_acceptance": {
+          "type": "boolean"
+        },
+        "avoids_unauthorized_claims": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

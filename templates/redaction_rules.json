@@ -1,0 +1,42 @@
+{
+  "name": "industrial_record_redaction_rules",
+  "version": "2026-06-15",
+  "purpose": "Mask sensitive information before turning real industrial records into office-collaboration outputs.",
+  "rules": [
+    {
+      "label": "mobile_phone_cn",
+      "pattern_hint": "Chinese mainland mobile phone numbers",
+      "replacement": "[手机号已脱敏]"
+    },
+    {
+      "label": "email",
+      "pattern_hint": "Email addresses",
+      "replacement": "[邮箱已脱敏]"
+    },
+    {
+      "label": "national_id_cn",
+      "pattern_hint": "18-character Chinese resident ID numbers",
+      "replacement": "[身份证号已脱敏]"
+    },
+    {
+      "label": "customer_or_employee_name",
+      "pattern_hint": "Customer names, employee names, and named contacts when not needed for work-order execution",
+      "replacement": "[姓名/客户名已脱敏]"
+    },
+    {
+      "label": "account_or_credential",
+      "pattern_hint": "System accounts, API credentials, passwords, access tokens, cookies, and private keys",
+      "replacement": "[凭证已脱敏]"
+    },
+    {
+      "label": "precise_address",
+      "pattern_hint": "Dormitory, home, or non-public detailed addresses",
+      "replacement": "[详细地址已脱敏]"
+    }
+  ],
+  "retention_principles": [
+    "Keep device IDs, line names, batch IDs, SKU codes, counts, timestamps, and role names when they are necessary for work-order closure.",
+    "Mask personal identifiers unless the user explicitly confirms they are business-required and safe to share.",
+    "Never expose credentials in examples, logs, screenshots, or public materials."
+  ]
+}

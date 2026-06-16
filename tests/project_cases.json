@@ -1,0 +1,42 @@
+{
+  "suite": "cross-department-collaboration-project-cases",
+  "cases": [
+    {
+      "id": "P01",
+      "scenario": "maintenance",
+      "input": "Line 3 labeler misses labels and may require unplanned downtime. Quality found cartons needing recheck. Maintenance has not verified the sensor issue.",
+      "must_include": ["MES", "CMMS", "QMS", "Production", "missing information", "trial run"]
+    },
+    {
+      "id": "P02",
+      "scenario": "quality",
+      "input": "First article after changeover is oversized. Production paused batch production and waits for Quality and Engineering.",
+      "must_include": ["QMS", "Engineering", "first article", "release", "authorization"]
+    },
+    {
+      "id": "P03",
+      "scenario": "safety",
+      "input": "Unknown liquid is found near the production line. The source is unclear.",
+      "must_include": ["EHS", "isolation", "permit", "do not claim safe", "CMMS"]
+    },
+    {
+      "id": "P04",
+      "scenario": "planning",
+      "input": "Critical packaging material is late. Production is staffed and equipment is ready, but material is not available.",
+      "must_include": ["SAP/ERP", "PMC/APS", "MES", "QMS", "delivery impact"]
+    },
+    {
+      "id": "P05",
+      "scenario": "department_flow",
+      "input": "Explain how Production, Maintenance, Quality, EHS, PMC and Warehouse communicate when an unplanned stop is likely.",
+      "must_include": ["enterprise IM", "MES", "CMMS", "QMS", "EHS", "SAP/ERP", "OA", "PMC/APS", "closure gate"]
+    },
+    {
+      "id": "P06",
+      "scenario": "closure_learning",
+      "input": "The event is closed. Create a candidate knowledge-base note from verified symptoms, cause, action and boundary.",
+      "must_include": ["candidate knowledge", "applicability boundary", "authorized review", "not formal SOP"]
+    }
+  ]
+}
+

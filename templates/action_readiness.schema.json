@@ -1,0 +1,33 @@
+{
+  "name": "industrial_action_readiness_gate",
+  "version": "2026-06-15",
+  "purpose": "Separate draft generation from executable enterprise actions.",
+  "allowed_status": [
+    "ready_to_submit",
+    "needs_confirmation",
+    "requires_authorization",
+    "blocked_missing_fields"
+  ],
+  "schema": {
+    "target_action": "",
+    "target_system": "",
+    "evidence_ids": [],
+    "readiness_status": "",
+    "ready_reason": "",
+    "blocking_fields": [],
+    "confirmation_needed": [],
+    "authorization_role": [],
+    "idempotency_key": "",
+    "preconditions": [],
+    "expected_receipt_fields": [],
+    "human_decision_options": ["approve", "request_changes", "reject", "defer"],
+    "safe_next_step": "",
+    "must_not_claim": []
+  },
+  "status_rules": {
+    "ready_to_submit": "Use only when required fields are complete and the action does not require regulated approval.",
+    "needs_confirmation": "Use when the action is safe but needs user confirmation of target, recipients, due time, attachment, or version.",
+    "requires_authorization": "Use for quality release, safety permit, customer commitment, official SOP publishing, or privileged system actions.",
+    "blocked_missing_fields": "Use when missing fields would make the action unsafe or misleading."
+  }
+}
