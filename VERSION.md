@@ -1,5 +1,21 @@
 # Version History
 
+## 2026.06.17-champion-13
+
+Status: local SKU quality-delivery coordination simulation added; platform and AstronClaw evidence still pending.
+
+Key changes:
+
+- Added `examples/data/sku_quality_coordination_sample.csv` with deterministic SKU-level production, quality, inventory, shipment, PMC and engineering fields.
+- Added `examples/08_sku_quality_coordination_run.md` to show the worked result: confirmed SKU impact, QMS feedback, PMC delivery options, warehouse shipment hold, engineering onsite validation, impact scoreboard and management escalation choices.
+- Added SKU impact handling rules to `SKILL.md` so requests about SKU effect, quality impact, shipment feasibility and onsite engineering support produce a full cross-department flow.
+- Wired the SKU demo into README, submission manifest, validate gate and smoke coverage.
+
+Verification:
+
+- `scripts/smoke_test_package.py`
+- `scripts/validate_package.py`
+
 ## 2026.06.17-champion-12
 
 Status: local evidence-sprint status layer added; platform and AstronClaw evidence still pending.

@@ -77,7 +77,10 @@ industrial-workorder-collaboration/
 │   ├── 04_complex_agent_workflow.md
 │   ├── 05_signal_degraded_self_review.md
 │   ├── 06_expert_screenshot_outputs.md
-│   └── 07_enterprise_department_flow_10_scenarios.md
+│   ├── 07_enterprise_department_flow_10_scenarios.md
+│   ├── 08_sku_quality_coordination_run.md
+│   └── data/
+│       └── sku_quality_coordination_sample.csv
 ├── references/
 │   ├── contest_fit.md
 │   ├── evaluation_evidence.md
@@ -213,6 +216,7 @@ industrial-workorder-collaboration/
 - 试用访谈证据包：`tests/pilot_feedback_roles.json`、`tests/pilot_feedback_interview_pack.md` 和 `tests/pilot_feedback_records_template.csv` 覆盖生产主管、设备维修、质量、EHS、PMC 和数字化负责人 6 类角色。
 - 版本记录：`VERSION.md` 记录冠军版迭代历史，`submission_manifest.json` 固化提交清单、用例数量、required 截图 ID 和证据边界。
 - 十场景演练：`examples/07_enterprise_department_flow_10_scenarios.md` 覆盖非计划停机、首件异常、油温报警、安全隐患、待料、泄漏、重复故障、客诉返工、临时工艺变更和日清会闭环。
+- SKU 质量交付演练：`examples/08_sku_quality_coordination_run.md` 和 `examples/data/sku_quality_coordination_sample.csv` 展示从生产异常到 QMS 质量反馈、PMC 交付重排、仓库发货锁定、工程现场验证和管理升级决策的完整链路。
 - 十场景实测包：`tests/astronclaw_enterprise_flow_prompt_pack.md` 和 `tests/run_record_enterprise_flow_template.csv` 可逐条记录 S01-S10 真实企业部门协同输出。
 - 十场景黄金检查点：`tests/enterprise_flow_golden_outputs.md` 用于人工复核 S01-S10 实测输出是否命中关键业务语义且没有越权完成措辞。
 - 专家门禁：`scripts/expert_rubric_gate.py` 按官方 100 分评分项检查本地证据和 AstronClaw 待证明项；`--require-astronclaw` 会校验记录里的截图/输出文件真实存在。

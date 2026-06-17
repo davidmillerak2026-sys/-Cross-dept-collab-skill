@@ -143,6 +143,8 @@ REQUIRED_FILES = [
     "examples/00_judge_quick_run.md",
     "examples/06_expert_screenshot_outputs.md",
     "examples/07_enterprise_department_flow_10_scenarios.md",
+    "examples/08_sku_quality_coordination_run.md",
+    "examples/data/sku_quality_coordination_sample.csv",
     "tests/golden_outputs.md",
     "tests/enterprise_flow_golden_outputs.md",
     "scripts/score_run.py",

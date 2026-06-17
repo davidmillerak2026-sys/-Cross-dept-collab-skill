@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill_name": "industrial-workorder-collaboration",
-  "version": "2026.06.17-champion-12",
+  "version": "2026.06.17-champion-13",
   "contest": "OCAS-skill",
   "entrypoint": "SKILL.md",
   "readme": "README.md",
@@ -70,6 +70,8 @@
     "tests/evidence_readiness_report.md",
     "examples/06_expert_screenshot_outputs.md",
     "examples/07_enterprise_department_flow_10_scenarios.md",
+    "examples/08_sku_quality_coordination_run.md",
+    "examples/data/sku_quality_coordination_sample.csv",
     "templates/enterprise_flow_output_contract.md",
     "templates/impact_scoreboard.md",
     "templates/impact_scoreboard.schema.json",

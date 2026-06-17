@@ -802,6 +802,45 @@ def test_impact_escalation_contract() -> None:
             fail(f"expert screenshot example missing impact evidence: {term}")
 
 
+def test_sku_quality_coordination_demo() -> None:
+    csv_path = ROOT / "examples" / "data" / "sku_quality_coordination_sample.csv"
+    demo_path = ROOT / "examples" / "08_sku_quality_coordination_run.md"
+    with csv_path.open(newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh))
+    demo_text = demo_path.read_text(encoding="utf-8")
+
+    if len(rows) != 10:
+        fail("SKU quality coordination sample should contain 10 data rows")
+    for field in ["event_id", "timestamp", "source_system", "department", "sku", "order_id", "batch_id", "metric", "value", "status"]:
+        if field not in rows[0]:
+            fail(f"SKU quality coordination sample missing column: {field}")
+
+    required_terms = [
+        "SKU-A17-EDGE-PACK",
+        "SO-20260617-018",
+        "B20260617-A17-03",
+        "停线少产",
+        "`105 pcs`",
+        "`160 pcs`",
+        "`68 pcs`",
+        "质量",
+        "PMC",
+        "仓库",
+        "工程",
+        "QMS",
+        "MES",
+        "SAP/ERP/WMS",
+        "PLM",
+        "影响评分板",
+        "管理升级决策包",
+        "质量放行、仓库解锁、客户承诺和生产恢复以正式系统回执和授权人为准",
+        "未决策前不得写“已放行、已发货、已恢复生产、已关闭”",
+    ]
+    for term in required_terms:
+        if term not in demo_text:
+            fail(f"SKU quality coordination demo missing: {term}")
+
+
 def test_integration_contract_semantics() -> None:
     skill_text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
     contracts = json.loads((ROOT / "templates" / "integration_contracts.json").read_text(encoding="utf-8"))
@@ -1116,6 +1155,7 @@ def main() -> int:
         ("pilot_feedback_score_logic", test_pilot_feedback_score_logic),
         ("department_flow_contract", test_department_flow_contract),
         ("impact_escalation_contract", test_impact_escalation_contract),
+        ("sku_quality_coordination_demo", test_sku_quality_coordination_demo),
         ("integration_contract_semantics", test_integration_contract_semantics),
         ("stability_stress_contract", test_stability_stress_contract),
         ("business_value_contract", test_business_value_contract),

@@ -50,6 +50,8 @@
 
 `templates/impact_scoreboard.md` 和 `templates/management_escalation_packet.md` 用于高影响事件的管理层决策材料，帮助把停线、质量、安全、交付、物料和成本影响收敛成统一口径。
 
+`examples/08_sku_quality_coordination_run.md` 与 `examples/data/sku_quality_coordination_sample.csv` 是本地 SKU 质量交付协同演练，用于说明从生产异常到质量反馈、PMC 交付重排、仓库出货控制和工程现场验证的完整链路；它不替代 AstronClaw/SkillHub 真实证据。
+
 覆盖范围：
 
 - 设备维修：5 个
