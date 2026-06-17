@@ -1,7 +1,7 @@
 {
   "suite": "industrial-workorder-collaboration stability stress cases",
   "version": "2026-06-16",
-  "purpose": "Validate abnormal-input robustness, safe degradation, compliance boundaries and non-crashing behavior for runtime stability evidence.",
+  "purpose": "Validate abnormal-input robustness, safe degradation, compliance boundaries and non-crashing behavior for AstronClaw stability evidence.",
   "cases": [
     {
       "id": "ST01",

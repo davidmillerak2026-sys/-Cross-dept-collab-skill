@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OutputQualityScorecard",
+  "type": "object",
+  "required": [
+    "scenario_classified",
+    "facts_separated",
+    "actions_have_owners",
+    "actions_have_evidence",
+    "actions_have_acceptance_criteria",
+    "open_questions_listed",
+    "safety_quality_privacy_checked",
+    "no_unsupported_claims"
+  ],
+  "properties": {
+    "scenario_classified": {
+      "type": "boolean"
+    },
+    "facts_separated": {
+      "type": "boolean"
+    },
+    "actions_have_owners": {
+      "type": "boolean"
+    },
+    "actions_have_evidence": {
+      "type": "boolean"
+    },
+    "actions_have_acceptance_criteria": {
+      "type": "boolean"
+    },
+    "open_questions_listed": {
+      "type": "boolean"
+    },
+    "safety_quality_privacy_checked": {
+      "type": "boolean"
+    },
+    "no_unsupported_claims": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # ST01-ST12 稳定性压力输出保存说明
 
-运行 `tests/stability_stress_prompt_pack.md` 中 ST01-ST12 后，把实际输出保存到本目录：
+审核通过并可在 AstronClaw 调用 Skill 后，把 `tests/astronclaw_stability_stress_prompt_pack.md` 中 ST01-ST12 的实际输出保存到本目录：
 
 - `ST01.md`
 - `ST02.md`
@@ -21,4 +21,4 @@
 python scripts/score_stability_stress.py --outputs tests/stability_stress_outputs --report tests/stability_stress_score_report.csv
 ```
 
-评分通过不代表所有运行环境稳定性已经完全证明；仍需要把真实运行输出路径填入 `tests/run_record_stability_stress_template.csv`。
+评分通过不代表平台稳定性已经完全证明；仍需要把真实运行截图或输出路径填入 `tests/run_record_stability_stress_template.csv`。

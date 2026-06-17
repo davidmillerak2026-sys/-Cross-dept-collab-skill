@@ -37,6 +37,6 @@
   "retention_principles": [
     "Keep device IDs, line names, batch IDs, SKU codes, counts, timestamps, and role names when they are necessary for work-order closure.",
     "Mask personal identifiers unless the user explicitly confirms they are business-required and safe to share.",
-    "Never expose credentials in examples, logs, screenshots, or public materials."
+    "Never expose credentials in examples, logs, screenshots, or SkillHub materials."
   ]
 }

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OCASSkillChampionSelfReview",
+  "type": "object",
+  "required": [
+    "rubric_scores",
+    "current_evidence",
+    "unproven_items",
+    "next_actions"
+  ],
+  "properties": {
+    "rubric_scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rubric_item",
+          "max_score",
+          "conservative_score",
+          "evidence",
+          "gap"
+        ],
+        "properties": {
+          "rubric_item": {
+            "type": "string"
+          },
+          "max_score": {
+            "type": "number"
+          },
+          "conservative_score": {
+            "type": "number"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "gap": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "current_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unproven_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "may_claim_full_score": {
+      "type": "boolean",
+      "description": "Only true after platform tests, screenshots, review evidence, and no remaining unproven items."
+    }
+  }
+}

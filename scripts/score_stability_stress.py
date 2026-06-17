@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Score ST01-ST12 stability stress outputs after runtime testing."""
+"""Score ST01-ST12 stability stress outputs after AstronClaw testing."""
 
 from __future__ import annotations
 

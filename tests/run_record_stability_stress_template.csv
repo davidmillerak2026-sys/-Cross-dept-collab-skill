@@ -1,4 +1,4 @@
-case_id,scenario,priority,run_date,runner,runtime,attempt,latency_seconds,passed,score,error_type,retry_needed,output_file,notes
+case_id,scenario,priority_for_screenshot,run_date,runner,platform,attempt,latency_seconds,passed,score,error_type,retry_needed,output_file_or_screenshot,notes
 ST01,too_short,stability_required,,,,1,,,,,,,输入过短但不能崩溃
 ST02,irrelevant_noise,stability_required,,,,1,,,,,,,闲聊噪声夹带一个有效现场事实
 ST03,duplicate_long_noise,stability_required,,,,1,,,,,,,重复长噪声去重

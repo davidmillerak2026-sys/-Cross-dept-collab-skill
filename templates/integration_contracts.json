@@ -1,7 +1,7 @@
 {
   "name": "industrial_office_collaboration_integration_contracts",
-  "version": "2026-06-15",
-  "purpose": "Define safe handoff payloads for office-collaboration systems without claiming that external actions were already executed.",
+  "version": "2026-06-17",
+  "purpose": "Define safe handoff payloads for office-collaboration systems without claiming that external actions were already executed. Keep notification channels, approval systems, planning systems and engineering change systems clearly separated so production-led collaboration preserves real enterprise boundaries.",
   "systems": [
     {
       "target_system": "CMMS",
@@ -87,19 +87,71 @@
       "do_not_claim": ["库存已锁定", "采购已批准", "客户交期已承诺", "成本已确认"]
     },
     {
-      "target_system": "OA_OR_COLLAB_CHAT",
-      "business_use": "Send a copy-ready message to OA, Enterprise WeChat, Feishu, DingTalk, or email.",
-      "action_types": ["notify", "approve_request"],
+      "target_system": "ENTERPRISE_IM_EMAIL",
+      "business_use": "Send a copy-ready message to Enterprise WeChat, Feishu, DingTalk, or email for notification,催办 and meeting invitation only.",
+      "action_types": ["notify", "remind", "escalate_notice"],
       "required_fields": [
         "audience",
         "message_summary",
         "responsible_parties",
         "due_time",
         "risks",
-        "missing_information"
+        "missing_information",
+        "next_sync_time"
       ],
       "authorization_required": false,
-      "do_not_claim": ["对方已确认", "审批已通过", "系统已同步"]
+      "do_not_claim": ["对方已确认", "审批已通过", "系统已同步", "已形成正式系统记录"]
+    },
+    {
+      "target_system": "OA_APPROVAL",
+      "business_use": "Create or update an abnormal report, approval flow, management escalation note, or cross-department meeting minutes in OA.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach", "notify"],
+      "required_fields": [
+        "event_id",
+        "request_title",
+        "business_reason",
+        "decision_required",
+        "decision_due_by",
+        "owner_department",
+        "approval_owner",
+        "supporting_evidence"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["审批已通过", "管理已批准", "会议结论已生效", "客户承诺已更新"]
+    },
+    {
+      "target_system": "PMC_APS",
+      "business_use": "Update or propose production planning, capacity, delivery, overtime, insert-order and recovery-window decisions.",
+      "action_types": ["query", "update", "scenario_compare", "notify"],
+      "required_fields": [
+        "event_id",
+        "line_or_capacity_reference",
+        "affected_orders",
+        "delivery_risk_level",
+        "recovery_window",
+        "alternative_schedule_options",
+        "planning_owner",
+        "decision_due_by"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["交期已承诺", "客户已接受", "排产已切换成功", "加班已批准"]
+    },
+    {
+      "target_system": "PLM_ENGINEERING_CHANGE",
+      "business_use": "Track temporary process change, parameter version, fixture/program change or engineering validation boundary.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach"],
+      "required_fields": [
+        "change_request_id",
+        "product_or_sku",
+        "current_version",
+        "proposed_version_or_parameter",
+        "change_reason",
+        "validation_plan",
+        "effective_scope",
+        "engineering_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["参数已生效", "版本已切换", "首件已通过", "临时变更已批准"]
     },
     {
       "target_system": "KNOWLEDGE_BASE",
@@ -126,14 +178,19 @@
     "missing_fields": [],
     "authorization_required": true,
     "readiness_status": "",
+    "service_level_target": "",
+    "business_decision_deadline": "",
     "idempotency_key": "",
+    "channel_boundary": "",
     "preconditions": [],
     "post_submit_verification": [],
+    "side_effect_boundary": [],
     "expected_receipt": {
       "external_record_id": "",
       "system_status": "",
       "submitted_at": "",
-      "submitted_by_or_actor": ""
+      "submitted_by_or_actor": "",
+      "receipt_owner": ""
     },
     "failure_fallback": "",
     "rollback_or_followup": ""
