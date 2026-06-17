@@ -1,5 +1,22 @@
 # Version History
 
+## 2026.06.17-champion-14
+
+Status: local SKU quality-delivery analytics runner added; platform and AstronClaw evidence still pending.
+
+Key changes:
+
+- Added `scripts/analyze_sku_quality_coordination.py` to calculate SKU-level production loss, current shipment gap, post-rework gap, isolation rate, sample-failure rate, delivery options and department coordination actions from CSV data.
+- Added generated artifact `tests/sku_quality_coordination_analysis.md` so the SKU quality scenario has a reproducible data-backed report instead of only a hand-written example.
+- Promoted `sample_qty` into the SKU sample CSV so the sample-failure rate is structured and auditable.
+- Wired the analytics runner into README, tests README, submission manifest, validate gate and smoke coverage.
+
+Verification:
+
+- `scripts/analyze_sku_quality_coordination.py`
+- `scripts/smoke_test_package.py`
+- `scripts/validate_package.py`
+
 ## 2026.06.17-champion-13
 
 Status: local SKU quality-delivery coordination simulation added; platform and AstronClaw evidence still pending.

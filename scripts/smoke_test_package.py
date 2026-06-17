@@ -809,8 +809,8 @@ def test_sku_quality_coordination_demo() -> None:
         rows = list(csv.DictReader(fh))
     demo_text = demo_path.read_text(encoding="utf-8")
 
-    if len(rows) != 10:
-        fail("SKU quality coordination sample should contain 10 data rows")
+    if len(rows) != 11:
+        fail("SKU quality coordination sample should contain 11 data rows")
     for field in ["event_id", "timestamp", "source_system", "department", "sku", "order_id", "batch_id", "metric", "value", "status"]:
         if field not in rows[0]:
             fail(f"SKU quality coordination sample missing column: {field}")
@@ -839,6 +839,45 @@ def test_sku_quality_coordination_demo() -> None:
     for term in required_terms:
         if term not in demo_text:
             fail(f"SKU quality coordination demo missing: {term}")
+
+
+def test_sku_quality_analysis_script() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "sku_quality_coordination_analysis.md"
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS / "analyze_sku_quality_coordination.py"), "--out", str(out)],
+            cwd=str(ROOT),
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if result.returncode != 0:
+            fail(f"analyze_sku_quality_coordination.py failed: {result.stderr}")
+        text = out.read_text(encoding="utf-8")
+
+    required_terms = [
+        "# SKU Quality Coordination Analysis",
+        "management_required: `yes`",
+        "downtime_loss_units",
+        "`105 pcs`",
+        "current_shipment_gap",
+        "`160 pcs`",
+        "post_rework_gap",
+        "`68 pcs`",
+        "isolation_rate",
+        "`10.7%`",
+        "sample_fail_rate",
+        "`60.0%`",
+        "Quality",
+        "PMC",
+        "Warehouse",
+        "Engineering",
+        "QMS release + engineering validation + warehouse unlock",
+        "Do not write 已放行, 已发货, 已恢复生产 or 已关闭",
+    ]
+    for term in required_terms:
+        if term not in text:
+            fail(f"SKU quality analysis report missing: {term}")
 
 
 def test_integration_contract_semantics() -> None:
@@ -1156,6 +1195,7 @@ def main() -> int:
         ("department_flow_contract", test_department_flow_contract),
         ("impact_escalation_contract", test_impact_escalation_contract),
         ("sku_quality_coordination_demo", test_sku_quality_coordination_demo),
+        ("sku_quality_analysis_script", test_sku_quality_analysis_script),
         ("integration_contract_semantics", test_integration_contract_semantics),
         ("stability_stress_contract", test_stability_stress_contract),
         ("business_value_contract", test_business_value_contract),

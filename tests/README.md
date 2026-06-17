@@ -52,6 +52,8 @@
 
 `examples/08_sku_quality_coordination_run.md` 与 `examples/data/sku_quality_coordination_sample.csv` 是本地 SKU 质量交付协同演练，用于说明从生产异常到质量反馈、PMC 交付重排、仓库出货控制和工程现场验证的完整链路；它不替代 AstronClaw/SkillHub 真实证据。
 
+`sku_quality_coordination_analysis.md` 是 `scripts/analyze_sku_quality_coordination.py` 根据同一份 SKU 模拟数据自动计算出来的报告，用来证明关键影响数字不是手写猜测。
+
 覆盖范围：
 
 - 设备维修：5 个
@@ -134,6 +136,12 @@ python scripts/export_pilot_feedback_pack.py
 
 ```bash
 python scripts/evidence_readiness_report.py
+```
+
+如果要刷新 SKU 质量交付协同分析报告，使用：
+
+```bash
+python scripts/analyze_sku_quality_coordination.py
 ```
 
 如果要刷新冠军验收报告，使用：

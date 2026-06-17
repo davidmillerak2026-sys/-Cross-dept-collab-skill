@@ -3,6 +3,7 @@ event_id,timestamp,source_system,department,sku,order_id,batch_id,metric,value,u
 20260617-SKU-A17-QA,2026-06-17 13:40,MES,Production,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,planned_rate,150,pcs_per_hour,confirmed,line standard output
 20260617-SKU-A17-QA,2026-06-17 14:12,MES,Production,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,line_stop_minutes,42,minutes,confirmed,production paused after repeated label-position defect
 20260617-SKU-A17-QA,2026-06-17 14:18,QMS,Quality,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,isolated_qty,128,pcs,confirmed,quality hold for label-position and barcode readability check
+20260617-SKU-A17-QA,2026-06-17 14:28,QMS,Quality,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,sample_qty,30,pcs,confirmed,quality sample size for first containment check
 20260617-SKU-A17-QA,2026-06-17 14:28,QMS,Quality,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,sample_fail_qty,18,pcs,confirmed,30 pcs sample; failures require containment
 20260617-SKU-A17-QA,2026-06-17 14:35,SAP_ERP,Warehouse,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,ready_stock_unaffected,360,pcs,confirmed,available stock from previous released batch
 20260617-SKU-A17-QA,2026-06-17 14:38,SAP_ERP,Warehouse,SKU-A17-EDGE-PACK,SO-20260617-018,B20260617-A17-03,shipment_requirement_today,520,pcs,confirmed,customer shipment window closes at 18:00
