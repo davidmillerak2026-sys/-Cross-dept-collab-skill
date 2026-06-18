@@ -27,7 +27,7 @@ def render_case(case: dict) -> str:
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的现场记录。请按 Skill 规则输出可执行结果，并保留待确认信息、风险提示和安全边界。
+使用 industrial-cross-department-collaboration 处理下面的现场记录。请按 Skill 规则输出可执行结果，并保留待确认信息、风险提示和安全边界。
 
 {case["input"]}
 ```

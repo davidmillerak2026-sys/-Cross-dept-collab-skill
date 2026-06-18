@@ -23,5 +23,5 @@ This scorer checks whether each output covers:
 - department feedback requirements
 - closure gates
 - post-closure knowledge base/SOP boundary
-- forbidden unsupported claims such as automatic system sync, quality release, production recovery or work order closure
+- forbidden unsupported claims such as automatic system sync, quality release, production recovery or event closure
 

@@ -5,10 +5,10 @@
   "systems": [
     {
       "target_system": "CMMS",
-      "business_use": "Create or update a maintenance work order.",
+      "business_use": "Create or update a maintenance maintenance action record.",
       "action_types": ["create", "update", "evidence_attach", "notify"],
       "required_fields": [
-        "work_order_title",
+        "action_record_title",
         "asset_or_line",
         "location",
         "event_time",

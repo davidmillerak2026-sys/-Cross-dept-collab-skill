@@ -20,7 +20,7 @@
     },
     {
       "label": "customer_or_employee_name",
-      "pattern_hint": "Customer names, employee names, and named contacts when not needed for work-order execution",
+      "pattern_hint": "Customer names, employee names, and named contacts when not needed for field execution",
       "replacement": "[姓名/客户名已脱敏]"
     },
     {
@@ -35,7 +35,7 @@
     }
   ],
   "retention_principles": [
-    "Keep device IDs, line names, batch IDs, SKU codes, counts, timestamps, and role names when they are necessary for work-order closure.",
+    "Keep device IDs, line names, batch IDs, SKU codes, counts, timestamps, and role names when they are necessary for event closure.",
     "Mask personal identifiers unless the user explicitly confirms they are business-required and safe to share.",
     "Never expose credentials in examples, logs, screenshots, or SkillHub materials."
   ]

@@ -16,7 +16,7 @@
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -45,7 +45,7 @@
 | 系统 | 动作 | 必须回执 |
 | --- | --- | --- |
 | MES | 记录停线、少产、恢复窗口 | 停线时长、影响订单、恢复目标 |
-| CMMS | 建立维修工单并派工 | 到场时间、候选原因、备件、工时、试运行结果 |
+| CMMS | 建立维修系统记录并派工 | 到场时间、候选原因、备件、工时、试运行结果 |
 | QMS | 建立隔离和复检记录 | 隔离箱数、复检结论、放行或返工授权 |
 | EHS | 判断是否需要能量隔离 | 风险等级、许可状态、隔离确认 |
 | SAP/ERP | 查询标签卷、传感器备件和订单影响 | 库存、到料时间、交付影响 |
@@ -103,7 +103,7 @@ S01,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -177,7 +177,7 @@ S02,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -205,7 +205,7 @@ S02,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 | 系统 | 动作 | 必须回执 |
 | --- | --- | --- |
 | MES | 记录报警、节拍变化、可能少产 | 报警时间序列、产量影响 |
-| CMMS | 建预测性检查或抢修工单 | 点检项、候选原因、是否更换滤芯/冷却件 |
+| CMMS | 建预测性检查或抢修系统记录 | 点检项、候选原因、是否更换滤芯/冷却件 |
 | EHS | 判断高温和液压风险 | 是否需要隔离、PPE、风险告知 |
 | OA/工程 | 确认阈值和设备参数依据 | 参数来源、是否允许临时降速 |
 | PMC/APS | 评估降速后产能影响 | 加班或调产建议 |
@@ -252,7 +252,7 @@ S03,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -325,7 +325,7 @@ S04,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -407,7 +407,7 @@ S05,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -446,7 +446,7 @@ S05,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 | 部门 | 反馈内容 | 生产部如何处理 |
 | --- | --- | --- |
 | EHS | 未确认性质前保持隔离，需专人处理 | 禁止写“已安全” |
-| 维修 | 设备底部有油迹，需停机检查 | 建 CMMS 工单 |
+| 维修 | 设备底部有油迹，需停机检查 | 建 CMMS 系统记录 |
 | 仓库 | 附近无新增化学品领用 | 作为排除证据而非最终结论 |
 | PMC | 停线超过 30 分钟需要调产 | 准备产能方案 |
 
@@ -490,7 +490,7 @@ S06,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -517,7 +517,7 @@ S06,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 
 | 系统 | 动作 | 必须回执 |
 | --- | --- | --- |
-| CMMS | 合并历史工单，建立重复故障分析 | 故障次数、候选原因、外协需求、备件清单 |
+| CMMS | 合并历史系统记录，建立重复故障分析 | 故障次数、候选原因、外协需求、备件清单 |
 | SAP/ERP | 查询备件库存、采购周期、外协成本 | 库存、采购申请、成本 |
 | OA | 外协或紧急采购审批 | 审批状态、授权人 |
 | PMC/APS | 安排预防性停机窗口 | 停机窗口、交付影响 |
@@ -572,7 +572,7 @@ S07,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -654,7 +654,7 @@ S08,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -729,7 +729,7 @@ S09,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。
@@ -758,7 +758,7 @@ S09,enterprise_flow,enterprise_required,YYYY-MM-DD,runner,AstronClaw,1,latency,y
 | --- | --- | --- |
 | OA | 会议纪要、行动项、审批和升级 | 责任人、截止时间、决策意见 |
 | MES | 生产状态、停线、少产和恢复 | 实际影响和恢复窗口 |
-| CMMS | 设备维修和预防维护 | 工单号、措施、试运行 |
+| CMMS | 设备维修和预防维护 | 系统记录号、措施、试运行 |
 | QMS | 质量隔离、复检、CAPA | 质量状态、授权意见 |
 | EHS | 隐患整改和许可 | 风险等级、整改验收 |
 | SAP/ERP | 物料、备件、采购、成本 | 库存、到料、采购状态 |

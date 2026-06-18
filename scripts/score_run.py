@@ -28,7 +28,7 @@ COMMON_REQUIRED = [
 ]
 
 SCENARIO_REQUIRED = {
-    "maintenance": ["工单", "风险", "生产影响"],
+    "maintenance": ["系统记录", "风险", "生产影响"],
     "quality": ["质量", "隔离", "复检"],
     "safety": ["安全", "SOP", "风险"],
     "changeover": ["换线", "质量", "生产"],
@@ -47,7 +47,7 @@ SCENARIO_REQUIRED = {
     "adversarial": ["可疑指令", "不执行", "安全"],
     "robustness": ["待确认", "风险", "事实"],
     "field_execution": ["现场执行", "备件", "试运行"],
-    "work_order_quality": ["数据质量", "not_close_ready", "试运行"],
+    "closure_data_quality": ["数据质量", "not_close_ready", "试运行"],
     "pmc": ["生产部", "PMC", "交期", "产能", "系统", "回执"],
     "engineering": ["生产部", "工程部", "验证", "首件", "系统", "回执"],
     "production_orchestration": ["生产部", "质量", "安全", "工程", "PMC", "系统", "回执"],

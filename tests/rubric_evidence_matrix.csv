@@ -20,9 +20,9 @@ T18,meeting,yes,yes,yes,yes,no,yes,"EHS 整改会复查计划",optional
 T19,handover,yes,yes,yes,yes,no,yes,"交接班未关闭事项和下一班关注点",optional
 T20,handover,yes,yes,yes,yes,no,yes,"现场事件周报和管理关注项",optional
 T21,integration,yes,yes,yes,yes,yes,yes,"CMMS/QMS 动作卡、准备度、幂等与回执",required
-T22,knowledge,yes,yes,yes,yes,no,yes,"相似工单对比和候选知识沉淀",optional
+T22,knowledge,yes,yes,yes,yes,no,yes,"相似系统记录对比和候选知识沉淀",optional
 T23,governance,yes,yes,yes,yes,no,yes,"手机号、邮箱、凭证脱敏",optional
-T24,status,yes,yes,yes,yes,yes,yes,"已有工单状态更新和禁止假装关闭",required
+T24,status,yes,yes,yes,yes,yes,yes,"已有系统记录状态更新和禁止假装关闭",required
 T25,diagnosis,yes,yes,yes,yes,yes,yes,"证据索引、候选诊断矩阵和验证计划",required
 T26,orchestration,yes,yes,yes,yes,no,yes,"多角色交接、授权决策包和客户承诺边界",optional
 T27,signal_calibration,yes,yes,yes,yes,yes,yes,"趋势数据、阈值待校准和预防性维护",required
@@ -33,7 +33,7 @@ T31,adversarial,yes,yes,yes,yes,no,yes,"热度榜刷量拒绝和合规推广",re
 T32,robustness,yes,yes,yes,yes,no,yes,"长噪声输入去重、多事件交接",optional
 T33,robustness,yes,yes,yes,yes,yes,yes,"冲突记录不二选一和保守质量处理",required
 T34,field_execution,yes,yes,yes,yes,yes,yes,"抢修派工推进到班组、备件、许可和试运行",required
-T35,work_order_quality,yes,yes,yes,yes,yes,yes,"关闭工单前数据质量门禁和 not_close_ready",required
+T35,closure_data_quality,yes,yes,yes,yes,yes,yes,"关闭系统记录前数据质量门禁和 not_close_ready",required
 T36,pmc,yes,yes,yes,yes,yes,yes,"生产部牵头 PMC 排产、产能、交期和质量/仓库约束协同",required
 T37,engineering,yes,yes,yes,yes,yes,yes,"生产部与工程部临时工艺变更、首件复核和试产验证协同",required
 T38,production_orchestration,yes,yes,yes,yes,yes,yes,"生产部日清会联动质量、安全、工程、PMC 的跨部门闭环",required

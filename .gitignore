@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.env
-.env.*
-*.zip
-*.sqlite
-*.db
-tests/evidence/
-

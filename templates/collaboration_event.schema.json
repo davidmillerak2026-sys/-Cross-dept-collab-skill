@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "IndustrialWorkOrder",
+  "title": "IndustrialCollaborationEvent",
   "type": "object",
   "required": [
     "title",
@@ -13,7 +13,7 @@
   "properties": {
     "title": {
       "type": "string",
-      "description": "工单标题"
+      "description": "协同事件标题"
     },
     "category": {
       "type": "string",

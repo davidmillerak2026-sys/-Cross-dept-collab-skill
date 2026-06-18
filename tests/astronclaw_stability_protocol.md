@@ -5,7 +5,7 @@
 ## 运行前提
 
 - SkillHub 审核通过，作品页可访问。
-- AstronClaw 能选择并调用 `industrial-workorder-collaboration`。
+- AstronClaw 能选择并调用 `industrial-cross-department-collaboration`。
 - 使用 `tests/skillhub_prompt_pack.md` 中的 39 个提示词；截图优先级来自 `tests/rubric_evidence_matrix.csv`。
 - 使用 `tests/astronclaw_stability_stress_prompt_pack.md` 中 ST01-ST12 进行异常输入压力测试。
 - 每次运行记录到 `tests/run_record_template.csv`。

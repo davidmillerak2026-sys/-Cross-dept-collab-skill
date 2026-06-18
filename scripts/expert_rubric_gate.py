@@ -89,7 +89,7 @@ DIMENSIONS = [
             "templates/evidence_trace.schema.json",
             "templates/diagnosis_matrix.schema.json",
             "templates/field_execution_plan.md",
-            "templates/work_order_data_quality.md",
+            "templates/closure_data_quality.md",
             "tests/enterprise_flow_golden_outputs.md",
         ),
         platform_required=("AstronClaw high-priority output screenshots",),

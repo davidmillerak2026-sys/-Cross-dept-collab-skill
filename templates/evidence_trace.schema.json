@@ -27,7 +27,7 @@
             "enum": [
               "user_input",
               "sop_or_attachment",
-              "historical_work_order",
+              "historical_record",
               "measurement_record",
               "tool_result",
               "manual_confirmation"

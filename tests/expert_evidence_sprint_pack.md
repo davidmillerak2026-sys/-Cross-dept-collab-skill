@@ -22,7 +22,7 @@
 ### T01 贴标机漏贴停线
 
 - 证据焦点：统一事件包、质量复检、跨部门行动项与系统动作边界
-- 期望输出：统一事件包 + 跨部门行动项 + 系统动作卡 + 风险提示 + 待确认信息 + 必要时的工单草案
+- 期望输出：统一事件包 + 跨部门行动项 + 系统动作卡 + 风险提示 + 待确认信息 + 必要时的系统记录草案
 - 建议截图：`tests/evidence/screenshots/T01_AstronClaw_maintenance_YYYYMMDD.png`
 - 建议文本输出：`tests/run_outputs/T01.md`
 - 运行记录：`tests/run_record_template.csv`
@@ -167,7 +167,7 @@ python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score
 ### T06 批次外观划伤
 
 - 证据焦点：批次质量隔离、客户交付风险、授权放行边界
-- 期望输出：质量工单 + 跨部门待办
+- 期望输出：质量系统记录 + 跨部门待办
 - 建议截图：`tests/evidence/screenshots/T06_AstronClaw_quality_YYYYMMDD.png`
 - 建议文本输出：`tests/run_outputs/T06.md`
 - 运行记录：`tests/run_record_template.csv`
@@ -178,9 +178,9 @@ python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score
 - 未经授权不建议部分放行
 - 质量、生产、仓库、销售均有待办
 
-### T24 已有工单状态更新边界
+### T24 已有系统记录状态更新边界
 
-- 证据焦点：已有工单状态更新和禁止假装关闭
+- 证据焦点：已有系统记录状态更新和禁止假装关闭
 - 期望输出：状态更新草稿 + 不关闭提醒
 - 建议截图：`tests/evidence/screenshots/T24_AstronClaw_status_YYYYMMDD.png`
 - 建议文本输出：`tests/run_outputs/T24.md`
@@ -188,7 +188,7 @@ python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score
 - 关键必须出现：人工检查要点
 - 人工检查：
 - 不声称已更新外部系统
-- 不建议直接关闭工单
+- 不建议直接关闭系统记录
 - 标明质量复检未完成
 - 给出 blocked_missing_fields 或 needs_confirmation
 
@@ -267,7 +267,7 @@ python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score
 - 建议质量复核和隔离状态确认
 - 列出客户交付风险
 
-### T34 维修派工不能停在生成工单
+### T34 维修派工不能停在生成系统记录
 
 - 证据焦点：抢修派工推进到班组、备件、许可和试运行
 - 期望输出：现场执行包 + 候选诊断 + 验收试运行标准
@@ -282,16 +282,16 @@ python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score
 - 包含试运行或复检验收标准
 - 不声称已经修复或恢复生产
 
-### T35 关闭工单前的数据质量门禁
+### T35 关闭系统记录前的数据质量门禁
 
-- 证据焦点：关闭工单前数据质量门禁和 not_close_ready
-- 期望输出：工单数据质量门禁 + not_close_ready + 待补字段
-- 建议截图：`tests/evidence/screenshots/T35_AstronClaw_work_order_quality_YYYYMMDD.png`
+- 证据焦点：关闭系统记录前数据质量门禁和 not_close_ready
+- 期望输出：系统记录数据质量门禁 + not_close_ready + 待补字段
+- 建议截图：`tests/evidence/screenshots/T35_AstronClaw_closure_data_quality_YYYYMMDD.png`
 - 建议文本输出：`tests/run_outputs/T35.md`
 - 运行记录：`tests/run_record_template.csv`
 - 关键必须出现：数据质量, not_close_ready, 故障码, 试运行, 附件
 - 人工检查：
-- 输出工单数据质量门禁
+- 输出系统记录数据质量门禁
 - 状态为 not_close_ready 或 needs_confirmation
 - 列出故障码/原因码/备件/工时/试运行/附件缺失
 - 不声称已关闭

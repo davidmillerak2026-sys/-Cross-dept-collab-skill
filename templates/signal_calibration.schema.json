@@ -48,7 +48,7 @@
               "user_input",
               "manual_or_sop",
               "sensor_tool",
-              "historical_work_order",
+              "historical_record",
               "operator_experience",
               "unknown"
             ]

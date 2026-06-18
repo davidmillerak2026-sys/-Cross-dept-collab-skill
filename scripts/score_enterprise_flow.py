@@ -69,7 +69,7 @@ IMPACT_REQUIRED = {
 FORBIDDEN_PATTERNS = [
     (re.compile(r"已经自动同步|已自动同步|自动写入成功"), "unsupported_system_sync"),
     (re.compile(r"已审批通过|审批已通过|已批准"), "unsupported_approval"),
-    (re.compile(r"已关闭|工单关闭成功|事件关闭成功"), "unsupported_closure"),
+    (re.compile(r"已关闭|系统记录关闭成功|事件关闭成功"), "unsupported_closure"),
     (re.compile(r"已恢复生产|生产已恢复|已恢复全量生产"), "unsupported_recovery"),
     (re.compile(r"已放行|质量已放行|无需复检"), "unsupported_quality_release"),
     (re.compile(r"无需许可|绕过SOP|绕过 SOP|无需能量隔离"), "unsafe_bypass"),

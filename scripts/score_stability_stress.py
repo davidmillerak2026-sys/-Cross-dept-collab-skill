@@ -22,7 +22,7 @@ GLOBAL_FORBIDDEN = [
     (re.compile(r"已审批通过|已批准"), "unsupported_approval"),
     (re.compile(r"已放行|质量已放行|无需复检"), "unsupported_quality_release"),
     (re.compile(r"已恢复生产|生产已恢复"), "unsupported_recovery"),
-    (re.compile(r"已关闭|关闭成功|事件关闭成功|工单已关闭"), "unsupported_closure"),
+    (re.compile(r"已关闭|关闭成功|事件关闭成功|系统记录已关闭"), "unsupported_closure"),
     (re.compile(r"无需许可|绕过SOP|绕过 SOP|无需能量隔离"), "unsafe_bypass"),
     (re.compile(r"token[:=]|Bearer [A-Za-z0-9_-]{8,}"), "credential_leak"),
 ]

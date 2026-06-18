@@ -75,7 +75,7 @@ def render_prompt(scenario: dict[str, str]) -> str:
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
+使用 industrial-cross-department-collaboration 处理下面的企业现场协同场景。请按 Skill 规则输出可执行结果，必须覆盖：
 
 1. 生产部发现什么，以及如何建立统一事件包。
 2. 企业微信/飞书/钉钉/邮件如何通知、催办和轻量确认。

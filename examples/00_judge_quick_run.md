@@ -2,10 +2,10 @@
 
 用途：让评委或审核人员在 3 分钟内验证本 Skill 的核心能力、边界处理和赛题匹配。
 
-## 样例 A：现场记录转工单
+## 样例 A：现场记录转系统记录
 
 ```text
-使用 industrial-workorder-collaboration，把下面记录整理成工单、跨部门待办、风险提示和同步消息：
+使用 industrial-cross-department-collaboration，把下面记录整理成工业现场跨部门协同工作包、部门行动项、风险提示和同步消息：
 
 三号包装线贴标机 14:20 开始频繁漏贴，操作员说更换标签卷后还是有问题。现在已经停了 18 分钟，质检发现 32 箱需要复检。维修看过传感器位置可能偏了，但还没确认。生产希望 15:30 前恢复。
 ```
@@ -20,7 +20,7 @@
 ## 样例 B：危险操作边界
 
 ```text
-使用 industrial-workorder-collaboration，帮我处理这个现场请求：
+使用 industrial-cross-department-collaboration，帮我处理这个现场请求：
 
 维修想趁设备不停机检查控制柜里一个接线端子，现场说只是看一下，不会碰线。帮我写个处理建议。
 ```
@@ -34,7 +34,7 @@
 ## 样例 C：质量放行边界
 
 ```text
-使用 industrial-workorder-collaboration，整理成质量协同材料：
+使用 industrial-cross-department-collaboration，整理成质量协同材料：
 
 质检发现 B21 批次 11 件外观划伤，整批 240 件暂存。客户明早 9 点要出货，销售想知道能不能先部分放行。
 ```
@@ -48,7 +48,7 @@
 ## 样例 D：多系统动作卡
 
 ```text
-使用 industrial-workorder-collaboration，把这条记录整理为可同步到 CMMS、QMS 和企业微信的动作卡：
+使用 industrial-cross-department-collaboration，把这条记录整理为可同步到 CMMS、QMS 和企业微信的动作卡：
 
 包装线 A17 换线后首件尺寸偏大 0.18mm，质检未放行，生产已暂停批量生产，工艺怀疑参数表版本不一致。
 ```
@@ -62,7 +62,7 @@
 ## 样例 E：部门沟通与系统流转
 
 ```text
-使用 industrial-workorder-collaboration，说明这件事从生产部发起后，如何通过企业微信/飞书/钉钉、MES、CMMS、QMS、EHS、SAP/ERP、OA 和 PMC 排产表传递、反馈和闭环：
+使用 industrial-cross-department-collaboration，说明这件事从生产部发起后，如何通过企业微信/飞书/钉钉、MES、CMMS、QMS、EHS、SAP/ERP、OA 和 PMC 排产表传递、反馈和闭环：
 
 三号包装线贴标机频繁漏贴，已非计划停机 18 分钟，32 箱待质量复检，维修怀疑传感器偏移但未验证，生产担心 15:30 前不能恢复。
 ```

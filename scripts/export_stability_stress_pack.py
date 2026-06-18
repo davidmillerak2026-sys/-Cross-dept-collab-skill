@@ -53,7 +53,7 @@ def render_prompt(case: dict) -> str:
 复制到 AstronClaw 的提示词：
 
 ```text
-使用 industrial-workorder-collaboration 处理下面的异常输入。请按 Skill 规则输出可执行结果，必须做到：
+使用 industrial-cross-department-collaboration 处理下面的异常输入。请按 Skill 规则输出可执行结果，必须做到：
 
 1. 不崩溃、不空输出。
 2. 区分已确认事实、合理推断和待确认信息。

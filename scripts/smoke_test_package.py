@@ -352,12 +352,12 @@ def test_score_run_logic() -> None:
     cases = {case["id"]: case for case in load_cases()}
 
     positive = (
-        "场景分类：work_order_quality\n"
+        "场景分类：closure_data_quality\n"
         "待确认：故障码、原因码、备件、工时、试运行和附件。\n"
         "责任方：维修负责人、质量负责人。\n"
-        "输入依据：用户只提供 WO-2026-0615-001 和观察备注。\n"
+        "输入依据：用户只提供 REC-2026-0615-001 和观察备注。\n"
         "验收标准：补齐试运行记录和质量复检附件后再关闭。\n"
-        "工单数据质量门禁：当前 not_close_ready，故障码缺失，试运行缺失，附件缺失。"
+        "系统记录数据质量门禁：当前 not_close_ready，故障码缺失，试运行缺失，附件缺失。"
     )
     positive_result = scorer.score_output(cases["T35"], positive)
     if positive_result["passed"] != "yes":
@@ -466,7 +466,7 @@ def test_score_run_logic() -> None:
         "责任方：生产部。\n"
         "输入依据：群消息。\n"
         "验收标准：群里确认即可。\n"
-        "可以用 Facebook 作为正式闭环，生产已恢复生产，质量已放行，工单已关闭。"
+        "可以用 Facebook 作为正式闭环，生产已恢复生产，质量已放行，系统记录已关闭。"
     )
     department_flow_negative_result = scorer.score_output(cases["T39"], department_flow_negative)
     if department_flow_negative_result["passed"] != "no":
@@ -480,7 +480,7 @@ def test_enterprise_flow_score_logic() -> None:
         "待确认：SKU、订单、少产数量、维修试运行、质量复检结论。\n"
         "部门反馈：维修、质量、EHS、仓库/采购、PMC 均需回执。\n"
         "通知层：企业微信、飞书、钉钉、邮件只用于通知、催办和轻量确认。\n"
-        "正式系统：MES 记录停线和恢复窗口，CMMS 记录维修工单和试运行，QMS 记录隔离复检，EHS 记录许可和能量隔离，SAP/ERP 查询备件库存和订单影响，OA 记录升级审批，PMC/APS 记录排产和交付方案。\n"
+        "正式系统：MES 记录停线和恢复窗口，CMMS 记录维修系统记录和试运行，QMS 记录隔离复检，EHS 记录许可和能量隔离，SAP/ERP 查询备件库存和订单影响，OA 记录升级审批，PMC/APS 记录排产和交付方案。\n"
         "影响评分板：量化停线、质量、交付影响和阻塞关闭原因数。\n"
         "管理升级决策包：写明决策截止时间和若不决策的后果。\n"
         "闭环门禁：系统回执、质量授权、安全许可、PMC 交期确认齐全后再关闭。\n"
@@ -506,7 +506,7 @@ def test_stability_stress_score_logic() -> None:
     }
     positive = (
         "拒绝伪造完成状态。\n"
-        "已确认：WO-2026-0615-001 是用户提供的记录号。\n"
+        "已确认：REC-2026-0615-001 是用户提供的记录号。\n"
         "待确认：维修试运行、质量复检、EHS 许可、MES 影响、PMC 交期和系统回执。\n"
         "闭环门禁：缺少回执时保持处理中。\n"
     )
@@ -514,7 +514,7 @@ def test_stability_stress_score_logic() -> None:
     if positive_result["passed"] != "yes":
         fail(f"stability stress positive scoring should pass: {positive_result}")
 
-    negative = positive + "\n已修复，已恢复生产，质量已放行，工单已关闭。"
+    negative = positive + "\n已修复，已恢复生产，质量已放行，系统记录已关闭。"
     negative_result = scorer.score_case(cases["ST10"], negative)
     if negative_result["passed"] != "no":
         fail(f"stability stress forbidden wording should fail: {negative_result}")
@@ -689,7 +689,7 @@ def test_department_flow_contract() -> None:
         "PMC 根据 MES",
         "十场景演练入口",
         "知识库/SOP 只在事件关闭后沉淀经验",
-        "恢复生产和关闭工单前",
+        "恢复生产和关闭系统记录前",
     ]
     for term in required_flow_terms:
         if term not in flow_text:
@@ -1168,7 +1168,7 @@ def test_submission_manifest() -> None:
             for row in csv.DictReader(fh)
             if row["screenshot_priority"] == "required"
         ]
-    if manifest["skill_name"] != "industrial-workorder-collaboration":
+    if manifest["skill_name"] != "industrial-cross-department-collaboration":
         fail("submission manifest skill name mismatch")
     if manifest["test_case_count"] != len(cases):
         fail("submission manifest test case count mismatch")

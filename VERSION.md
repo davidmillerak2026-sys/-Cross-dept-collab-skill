@@ -1,5 +1,21 @@
 # Version History
 
+## 2026.06.18-champion-19
+
+Status: public Skill slug renamed away from single-record wording; platform resubmission and AstronClaw evidence are still pending.
+
+Key changes:
+
+- Renamed the Skill from the earlier closure-oriented slug to `industrial-cross-department-collaboration` across `SKILL.md`, README, submission manifest, generated prompt packs and validation scripts.
+- Removed failed-review submission screenshots from the new package so the current submission does not carry old slug evidence.
+- Reset the platform evidence template to require fresh OCAS and SkillHub screenshots after the renamed package is submitted.
+
+Verification:
+
+- `scripts/validate_package.py`
+- `scripts/smoke_test_package.py`
+- `scripts/expert_rubric_gate.py`
+
 ## 2026.06.18-champion-18
 
 Status: CSV formula-injection audit fix added after SkillHub pre-review feedback; platform resubmission and AstronClaw evidence are still pending.
@@ -19,13 +35,13 @@ Verification:
 
 ## 2026.06.18-champion-17
 
-Status: positioning updated from work-order-centric wording to industrial-site cross-department collaboration; platform submission is pending review and AstronClaw evidence is still pending.
+Status: positioning updated from single-record-centric wording to industrial-site cross-department collaboration; platform submission is pending review and AstronClaw evidence is still pending.
 
 Key changes:
 
-- Reframed the Skill as an industrial-site cross-department collaboration workflow led by production, with work orders treated as one optional carrier rather than the product scope.
+- Reframed the Skill as an industrial-site cross-department collaboration workflow led by production, with maintenance action records treated as one optional carrier rather than the product scope.
 - Updated SkillHub-facing README and SKILL frontmatter to emphasize unified event packages, department action matrices, system action cards, delivery impact, authorization gates and closed-loop review.
-- Preserved existing CMMS/QMS work-order capabilities as downstream artifacts for maintenance and quality scenarios.
+- Preserved existing CMMS/QMS system-record capabilities as downstream artifacts for maintenance and quality scenarios.
 
 Verification:
 
@@ -286,7 +302,7 @@ Key changes:
 
 - Added expert rubric matrix, smoke tests, redaction script and expert gate.
 - Added action-readiness gates, degraded completion, signal calibration and champion self-review.
-- Added field execution and work-order data quality gates.
+- Added field execution and closure data quality gates.
 - Added production-led PMC, engineering and daily-close orchestration cases.
 
 ## 2026.06.15-initial
@@ -295,6 +311,6 @@ Status: first contest-ready package.
 
 Key changes:
 
-- Created `industrial-workorder-collaboration` Skill for manufacturing现场-to-office collaboration.
+- Created `industrial-cross-department-collaboration` Skill for manufacturing现场-to-office collaboration.
 - Added core scenarios: maintenance, quality, safety, changeover, meetings, handover and procurement.
 - Added README, examples, templates and test pack.

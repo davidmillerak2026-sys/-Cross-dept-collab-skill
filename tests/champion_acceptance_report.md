@@ -21,9 +21,9 @@ This report checks whether the package has crossed from local readiness into rea
 ## Platform Submission Evidence
 
 - source: `tests/platform_submission_evidence_template.json`
-- skillhub_public_url: ``
-- missing_required: `contest_submit_success_screenshot;skillhub_approval_screenshot;skillhub_public_page_screenshot;skillhub_public_url`
-- optional_present: `-`
+- skillhub_public_url: `https://skill.xfyun.cn/space/global/industrial-cross-department-collaboration`
+- missing_required: `skillhub_approval_screenshot;skillhub_public_page_screenshot`
+- optional_present: `skillhub_dashboard_status_screenshot`
 
 ## Platform Run Evidence
 

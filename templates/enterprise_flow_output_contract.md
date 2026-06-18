@@ -60,7 +60,7 @@
 | 目标系统 | 动作 | 准备度 | 必填字段 | 当前缺口 | 授权/回执检查 |
 | --- | --- | --- | --- | --- | --- |
 | MES | update/create | needs_confirmation | 产线、时间、状态、少产、恢复窗口 |  | 系统记录号/状态 |
-| CMMS | create/update | needs_confirmation | 设备、故障、派工、备件、工时、试运行 |  | 工单号/试运行结果 |
+| CMMS | create/update | needs_confirmation | 设备、故障、派工、备件、工时、试运行 |  | 系统记录号/试运行结果 |
 | QMS | create/update | requires_authorization | 批次、隔离、复检、处置、放行授权 |  | 复检结论/授权人 |
 | EHS | create/update | requires_authorization | 风险、许可、隔离、整改验证 |  | 许可/验收记录 |
 | SAP/ERP | query/update | needs_confirmation | 订单、物料、库存、采购、成本 |  | 查询或审批回执 |

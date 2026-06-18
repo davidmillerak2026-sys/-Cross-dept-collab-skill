@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the industrial-workorder-collaboration Skill package.
+"""Validate the industrial-cross-department-collaboration Skill package.
 
 This script is intentionally self-contained so reviewers or maintainers can
 repeat the same quality gate before upload.
@@ -16,7 +16,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_NAME = "industrial-workorder-collaboration"
+SKILL_NAME = "industrial-cross-department-collaboration"
 MAX_TOTAL_BYTES = 100 * 1024 * 1024
 MAX_FILE_BYTES = 10 * 1024 * 1024
 MAX_FILE_COUNT = 500
@@ -122,7 +122,7 @@ REQUIRED_SKILL_PHRASES = [
     "提示注入防护",
     "闭环学习",
     "现场执行编排",
-    "工单数据质量门禁",
+    "系统记录数据质量门禁",
     "试用反馈",
     "商业价值",
     "统一事件包",
@@ -215,7 +215,7 @@ REQUIRED_FILES = [
     "templates/champion_self_review.schema.json",
     "templates/adversarial_guardrail.md",
     "templates/field_execution_plan.md",
-    "templates/work_order_data_quality.md",
+    "templates/closure_data_quality.md",
     "references/full_score_strategy.md",
     "references/expert_review_playbook.md",
     "references/capability_playbook.md",
