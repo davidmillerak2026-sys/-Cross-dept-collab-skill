@@ -80,7 +80,8 @@ industrial-workorder-collaboration/
 │   ├── 07_enterprise_department_flow_10_scenarios.md
 │   ├── 08_sku_quality_coordination_run.md
 │   └── data/
-│       └── sku_quality_coordination_sample.csv
+│       ├── sku_quality_coordination_sample.csv
+│       └── sku_quality_coordination_timeline.csv
 ├── references/
 │   ├── contest_fit.md
 │   ├── evaluation_evidence.md
@@ -96,6 +97,7 @@ industrial-workorder-collaboration/
 │   ├── score_stability_stress.py
 │   ├── score_pilot_feedback.py
 │   ├── analyze_sku_quality_coordination.py
+│   ├── analyze_department_timeline.py
 │   ├── export_prompt_pack.py
 │   ├── export_required_evidence_pack.py
 │   ├── export_required_run_record.py
@@ -122,6 +124,7 @@ industrial-workorder-collaboration/
 │   ├── champion_acceptance_report.md
 │   ├── evidence_readiness_report.md
 │   ├── sku_quality_coordination_analysis.md
+│   ├── sku_department_timeline_analysis.md
 │   ├── README.md
 │   ├── rubric_evidence_matrix.csv
 │   ├── run_record_template.csv
@@ -220,6 +223,7 @@ industrial-workorder-collaboration/
 - 十场景演练：`examples/07_enterprise_department_flow_10_scenarios.md` 覆盖非计划停机、首件异常、油温报警、安全隐患、待料、泄漏、重复故障、客诉返工、临时工艺变更和日清会闭环。
 - SKU 质量交付演练：`examples/08_sku_quality_coordination_run.md` 和 `examples/data/sku_quality_coordination_sample.csv` 展示从生产异常到 QMS 质量反馈、PMC 交付重排、仓库发货锁定、工程现场验证和管理升级决策的完整链路。
 - SKU 数据分析脚本：`scripts/analyze_sku_quality_coordination.py` 可从 `examples/data/sku_quality_coordination_sample.csv` 计算停线少产、出货缺口、返工后缺口、隔离比例、抽样失败率和部门协同动作，生成 `tests/sku_quality_coordination_analysis.md`。
+- 部门时间线分析：`scripts/analyze_department_timeline.py` 可从 `examples/data/sku_quality_coordination_timeline.csv` 生成 `tests/sku_department_timeline_analysis.md`，展示生产、质量、仓库、PMC、工程和管理层反馈后的状态转移、SLA 和当前开放阻塞。
 - 十场景实测包：`tests/astronclaw_enterprise_flow_prompt_pack.md` 和 `tests/run_record_enterprise_flow_template.csv` 可逐条记录 S01-S10 真实企业部门协同输出。
 - 十场景黄金检查点：`tests/enterprise_flow_golden_outputs.md` 用于人工复核 S01-S10 实测输出是否命中关键业务语义且没有越权完成措辞。
 - 专家门禁：`scripts/expert_rubric_gate.py` 按官方 100 分评分项检查本地证据和 AstronClaw 待证明项；`--require-astronclaw` 会校验记录里的截图/输出文件真实存在。

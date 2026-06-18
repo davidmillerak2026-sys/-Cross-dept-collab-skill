@@ -880,6 +880,44 @@ def test_sku_quality_analysis_script() -> None:
             fail(f"SKU quality analysis report missing: {term}")
 
 
+def test_department_timeline_analysis_script() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "sku_department_timeline_analysis.md"
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS / "analyze_department_timeline.py"), "--out", str(out)],
+            cwd=str(ROOT),
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if result.returncode != 0:
+            fail(f"analyze_department_timeline.py failed: {result.stderr}")
+        text = out.read_text(encoding="utf-8")
+
+    required_terms = [
+        "# SKU Department Timeline Analysis",
+        "elapsed_minutes: `88`",
+        "transition_count: `10`",
+        "open_blocker_count: `5`",
+        "late_feedback_count: `0`",
+        "Production",
+        "Quality",
+        "PMC",
+        "Warehouse",
+        "Engineering",
+        "Management",
+        "qms_disposition_pending",
+        "warehouse_hold_pending",
+        "pmc_delivery_gap_open",
+        "engineering_validation_in_progress",
+        "management_decision_required",
+        "Do not write 已放行、已发货、已恢复生产 or 已关闭",
+    ]
+    for term in required_terms:
+        if term not in text:
+            fail(f"department timeline analysis report missing: {term}")
+
+
 def test_integration_contract_semantics() -> None:
     skill_text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
     contracts = json.loads((ROOT / "templates" / "integration_contracts.json").read_text(encoding="utf-8"))
@@ -1196,6 +1234,7 @@ def main() -> int:
         ("impact_escalation_contract", test_impact_escalation_contract),
         ("sku_quality_coordination_demo", test_sku_quality_coordination_demo),
         ("sku_quality_analysis_script", test_sku_quality_analysis_script),
+        ("department_timeline_analysis_script", test_department_timeline_analysis_script),
         ("integration_contract_semantics", test_integration_contract_semantics),
         ("stability_stress_contract", test_stability_stress_contract),
         ("business_value_contract", test_business_value_contract),

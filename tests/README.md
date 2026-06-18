@@ -54,6 +54,8 @@
 
 `sku_quality_coordination_analysis.md` 是 `scripts/analyze_sku_quality_coordination.py` 根据同一份 SKU 模拟数据自动计算出来的报告，用来证明关键影响数字不是手写猜测。
 
+`sku_department_timeline_analysis.md` 是 `scripts/analyze_department_timeline.py` 根据 `examples/data/sku_quality_coordination_timeline.csv` 生成的部门反馈时间线，用来证明每次反馈后状态如何转移、哪些 SLA 未超时、哪些阻塞仍然开放。
+
 覆盖范围：
 
 - 设备维修：5 个
@@ -142,6 +144,12 @@ python scripts/evidence_readiness_report.py
 
 ```bash
 python scripts/analyze_sku_quality_coordination.py
+```
+
+如果要刷新 SKU 部门反馈时间线分析报告，使用：
+
+```bash
+python scripts/analyze_department_timeline.py
 ```
 
 如果要刷新冠军验收报告，使用：

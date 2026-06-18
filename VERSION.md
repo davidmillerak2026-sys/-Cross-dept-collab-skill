@@ -1,5 +1,22 @@
 # Version History
 
+## 2026.06.17-champion-15
+
+Status: local department feedback timeline runner added; platform and AstronClaw evidence still pending.
+
+Key changes:
+
+- Added `examples/data/sku_quality_coordination_timeline.csv` to model the time-ordered department feedback path from production discovery through QMS containment, warehouse hold, PMC delivery gap, engineering onsite validation and management escalation.
+- Added `scripts/analyze_department_timeline.py` to calculate elapsed minutes, transition count, SLA status, active blockers and state transitions from the timeline CSV.
+- Added generated artifact `tests/sku_department_timeline_analysis.md` to prove how each department feedback changes event state and why closure remains blocked without formal receipts.
+- Wired the timeline runner into README, tests README, submission manifest, validate gate and smoke coverage.
+
+Verification:
+
+- `scripts/analyze_department_timeline.py`
+- `scripts/smoke_test_package.py`
+- `scripts/validate_package.py`
+
 ## 2026.06.17-champion-14
 
 Status: local SKU quality-delivery analytics runner added; platform and AstronClaw evidence still pending.
