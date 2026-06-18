@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TESTS = ROOT / "tests"
 DEFAULT_INPUT = TESTS / "pilot_feedback_records_template.csv"
 DEFAULT_REPORT = TESTS / "pilot_feedback_score_report.csv"
+CSV_FORMULA_PREFIXES = ("=", "+", "-", "@")
 
 REQUIRED_FIELDS = [
     "feedback_id",
@@ -33,6 +34,19 @@ def parse_float(value: str) -> float | None:
         return float(value)
     except ValueError:
         return None
+
+
+def escape_csv_formula(value: str | int | float) -> str | int | float:
+    if not isinstance(value, str):
+        return value
+    stripped = value.lstrip()
+    if stripped and stripped[0] in CSV_FORMULA_PREFIXES:
+        return "'" + value
+    return value
+
+
+def sanitize_csv_row(row: dict[str, str | int | float]) -> dict[str, str | int | float]:
+    return {field: escape_csv_formula(value) for field, value in row.items()}
 
 
 def score_row(row: dict) -> dict[str, str | int | float]:
@@ -83,7 +97,7 @@ def main() -> None:
     if not rows:
         raise SystemExit("pilot feedback input is empty")
 
-    scored = [score_row(row) for row in rows]
+    scored = [sanitize_csv_row(score_row(row)) for row in rows]
     report = Path(args.report)
     report.parent.mkdir(parents=True, exist_ok=True)
     with report.open("w", newline="", encoding="utf-8") as fh:

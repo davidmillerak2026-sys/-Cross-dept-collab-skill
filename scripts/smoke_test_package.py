@@ -593,6 +593,28 @@ def test_pilot_feedback_score_logic() -> None:
                 "public_quote_redacted": "",
                 "notes": "negative sample",
             },
+            {
+                "feedback_id": '=HYPERLINK("http://example.com")',
+                "role_id": "R03",
+                "role": "+质量工程师",
+                "case_id": "@T06",
+                "scenario": "csv_formula_injection_guard",
+                "input_type": "脱敏现场记录",
+                "before_minutes": "30",
+                "after_minutes": "8",
+                "time_saved_minutes": "",
+                "missing_fields_before": "3",
+                "missing_fields_after": "0",
+                "missing_field_reduction": "",
+                "handoff_clarity_score": "5",
+                "system_traceability_score": "5",
+                "unsafe_claim_count": "0",
+                "manual_confirmation_boundary": "质量放行、安全许可和系统写入仍需人工确认",
+                "evidence_file_or_screenshot": "tests/evidence/outputs/T06.md",
+                "consent_to_public": "no",
+                "public_quote_redacted": "",
+                "notes": "-should not become spreadsheet formula",
+            },
         ]
         with input_path.open("w", newline="", encoding="utf-8") as fh:
             writer = csv.DictWriter(fh, fieldnames=fieldnames)
@@ -616,6 +638,13 @@ def test_pilot_feedback_score_logic() -> None:
         fail(f"pilot feedback incomplete sample should fail: {scored[1]}")
     if "unsafe_claims_present" not in scored[1]["issues"]:
         fail(f"pilot feedback unsafe issue missing: {scored[1]}")
+    dangerous_prefixes = ("=", "+", "-", "@")
+    for field, value in scored[2].items():
+        if isinstance(value, str) and value and value[0] in dangerous_prefixes:
+            fail(f"pilot feedback CSV formula field was not escaped: {field}={value!r}")
+    for field in ["feedback_id", "role", "case_id"]:
+        if not scored[2][field].startswith("'"):
+            fail(f"pilot feedback CSV formula guard missing apostrophe for {field}: {scored[2]}")
 
 
 def test_department_flow_contract() -> None:

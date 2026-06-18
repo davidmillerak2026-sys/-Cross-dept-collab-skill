@@ -1,5 +1,22 @@
 # Version History
 
+## 2026.06.18-champion-18
+
+Status: CSV formula-injection audit fix added after SkillHub pre-review feedback; platform resubmission and AstronClaw evidence are still pending.
+
+Key changes:
+
+- Added a unified CSV output sanitizer in `scripts/score_pilot_feedback.py` so every text field written to the pilot feedback score report is escaped when it could be interpreted as a spreadsheet formula.
+- Covered `=`, `+`, `-` and `@` prefixes, including values with leading spaces before the formula character.
+- Added a smoke-test regression case with malicious-looking `feedback_id`, `role` and `case_id` values to prove exported CSV cells no longer start with formula-trigger characters.
+
+Verification:
+
+- `scripts/validate_package.py`
+- `scripts/smoke_test_package.py`
+- `scripts/expert_rubric_gate.py`
+- `scripts/champion_acceptance_gate.py`
+
 ## 2026.06.18-champion-17
 
 Status: positioning updated from work-order-centric wording to industrial-site cross-department collaboration; platform submission is pending review and AstronClaw evidence is still pending.
