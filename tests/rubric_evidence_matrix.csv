@@ -1,5 +1,5 @@
 case_id,scenario,stability_robustness,innovation_value,result_quality,technical_orchestration,engineering_docs,safety_compliance,evidence_focus,screenshot_priority
-T01,maintenance,yes,yes,yes,yes,yes,yes,"现场故障转工单、质量复检、跨部门同步",required
+T01,maintenance,yes,yes,yes,yes,yes,yes,"统一事件包、质量复检、跨部门行动项与系统动作边界",required
 T02,maintenance,yes,yes,yes,yes,no,yes,"报警数值、生产影响、能量隔离边界",optional
 T03,maintenance,yes,yes,yes,yes,no,yes,"阈值/基线缺失时不乱判根因",optional
 T04,maintenance,yes,yes,yes,yes,no,yes,"预测性维护趋势但未故障的边界",optional

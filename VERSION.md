@@ -1,5 +1,20 @@
 # Version History
 
+## 2026.06.18-champion-17
+
+Status: positioning updated from work-order-centric wording to industrial-site cross-department collaboration; platform submission is pending review and AstronClaw evidence is still pending.
+
+Key changes:
+
+- Reframed the Skill as an industrial-site cross-department collaboration workflow led by production, with work orders treated as one optional carrier rather than the product scope.
+- Updated SkillHub-facing README and SKILL frontmatter to emphasize unified event packages, department action matrices, system action cards, delivery impact, authorization gates and closed-loop review.
+- Preserved existing CMMS/QMS work-order capabilities as downstream artifacts for maintenance and quality scenarios.
+
+Verification:
+
+- `scripts/smoke_test_package.py`
+- `scripts/validate_package.py`
+
 ## 2026.06.17-champion-16
 
 Status: local operational advantage, availability and robustness analysis added; platform and AstronClaw evidence still pending.

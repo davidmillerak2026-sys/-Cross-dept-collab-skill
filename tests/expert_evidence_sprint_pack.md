@@ -21,8 +21,8 @@
 
 ### T01 贴标机漏贴停线
 
-- 证据焦点：现场故障转工单、质量复检、跨部门同步
-- 期望输出：工单草案 + 跨部门待办 + 风险提示 + 待确认信息 + 同步消息
+- 证据焦点：统一事件包、质量复检、跨部门行动项与系统动作边界
+- 期望输出：统一事件包 + 跨部门行动项 + 系统动作卡 + 风险提示 + 待确认信息 + 必要时的工单草案
 - 建议截图：`tests/evidence/screenshots/T01_AstronClaw_maintenance_YYYYMMDD.png`
 - 建议文本输出：`tests/run_outputs/T01.md`
 - 运行记录：`tests/run_record_template.csv`
@@ -30,7 +30,8 @@
 - 人工检查：
 - 分类为 maintenance / quality
 - 优先级为 P1
-- 维修、质量、生产均有待办
+- 维修、质量、生产均有行动项
+- 显示 CMMS/MES/QMS/PMC 的系统动作边界
 - 传感器偏移标记为合理推断
 - 未复检前不建议放行
 
