@@ -220,6 +220,7 @@ REQUIRED_FILES = [
     "references/expert_review_playbook.md",
     "references/capability_playbook.md",
     "references/commercial_value_model.md",
+    "references/operational_advantage_availability_robustness.md",
     "references/rubric_evidence_matrix.md",
     "references/expert_rubric_gate.md",
 ]

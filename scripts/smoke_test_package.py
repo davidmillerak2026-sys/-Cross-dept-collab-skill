@@ -918,6 +918,41 @@ def test_department_timeline_analysis_script() -> None:
             fail(f"department timeline analysis report missing: {term}")
 
 
+def test_operational_advantage_availability_robustness_reference() -> None:
+    ref_text = (ROOT / "references" / "operational_advantage_availability_robustness.md").read_text(encoding="utf-8")
+    readme_text = (ROOT / "README.md").read_text(encoding="utf-8")
+    manifest = json.loads((ROOT / "submission_manifest.json").read_text(encoding="utf-8"))
+
+    required_terms = [
+        "信息分散",
+        "人工处理耗时",
+        "待办追踪难",
+        "流程协同低效",
+        "统一事件包",
+        "系统分层动作卡",
+        "部门反馈合同",
+        "闭环门禁",
+        "逻辑层高可用设计",
+        "生产级高可用",
+        "AstronClaw",
+        "SkillHub",
+        "ST01-ST12",
+        "T01-T39",
+        "S01-S10",
+        "open_blocker_count: 5",
+        "late_feedback_count: 0",
+        "Do not write",
+    ]
+    for term in required_terms:
+        if term not in ref_text:
+            fail(f"operational advantage reference missing: {term}")
+
+    if "references/operational_advantage_availability_robustness.md" not in readme_text:
+        fail("README.md does not reference operational advantage analysis")
+    if "references/operational_advantage_availability_robustness.md" not in manifest["local_evidence_assets"]:
+        fail("submission_manifest.json does not include operational advantage analysis")
+
+
 def test_integration_contract_semantics() -> None:
     skill_text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
     contracts = json.loads((ROOT / "templates" / "integration_contracts.json").read_text(encoding="utf-8"))
@@ -1235,6 +1270,7 @@ def main() -> int:
         ("sku_quality_coordination_demo", test_sku_quality_coordination_demo),
         ("sku_quality_analysis_script", test_sku_quality_analysis_script),
         ("department_timeline_analysis_script", test_department_timeline_analysis_script),
+        ("operational_advantage_availability_robustness_reference", test_operational_advantage_availability_robustness_reference),
         ("integration_contract_semantics", test_integration_contract_semantics),
         ("stability_stress_contract", test_stability_stress_contract),
         ("business_value_contract", test_business_value_contract),

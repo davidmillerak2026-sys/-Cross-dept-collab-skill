@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill_name": "industrial-workorder-collaboration",
-  "version": "2026.06.17-champion-15",
+  "version": "2026.06.17-champion-16",
   "contest": "OCAS-skill",
   "entrypoint": "SKILL.md",
   "readme": "README.md",
@@ -80,7 +80,8 @@
     "templates/impact_scoreboard.schema.json",
     "templates/management_escalation_packet.md",
     "templates/pilot_feedback_card.md",
-    "references/commercial_value_model.md"
+    "references/commercial_value_model.md",
+    "references/operational_advantage_availability_robustness.md"
   ],
   "claims_boundary": "Local gates prove package readiness only. Do not claim expert-score 100/100 is proven until SkillHub approval and AstronClaw evidence are collected."
 }

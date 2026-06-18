@@ -1,5 +1,20 @@
 # Version History
 
+## 2026.06.17-champion-16
+
+Status: local operational advantage, availability and robustness analysis added; platform and AstronClaw evidence still pending.
+
+Key changes:
+
+- Added `references/operational_advantage_availability_robustness.md` to answer the office-collaboration pain points, current advantages, improvement roadmap, logic-layer availability design and robustness boundaries.
+- Wired the new analysis into README, tests README, submission manifest, validate gate and smoke coverage.
+- Preserved the evidence boundary: local gates prove package readiness only, while production-grade high availability and champion claims still require SkillHub/AstronClaw runs and pilot feedback.
+
+Verification:
+
+- `scripts/smoke_test_package.py`
+- `scripts/validate_package.py`
+
 ## 2026.06.17-champion-15
 
 Status: local department feedback timeline runner added; platform and AstronClaw evidence still pending.

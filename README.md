@@ -89,6 +89,7 @@ industrial-workorder-collaboration/
 │   ├── capability_playbook.md
 │   ├── rubric_evidence_matrix.md
 │   ├── commercial_value_model.md
+│   ├── operational_advantage_availability_robustness.md
 │   └── full_score_strategy.md
 ├── scripts/
 │   ├── redact_input.py
@@ -199,6 +200,8 @@ industrial-workorder-collaboration/
 - 闭环学习：把已关闭工单、复盘结论和整改记录转成候选知识条目。
 - 应用价值证据：用试用反馈卡和商业价值量化模型记录真实试用、节省时间、字段完整度和人工授权边界。
 - 影响量化：把生产损失、交付风险、阻止闭环的关键缺口和决策截止时间显式化，减少管理层反复追问。
+- 办公协同优势：`references/operational_advantage_availability_robustness.md` 把信息分散、人工处理耗时、待办追踪难、流程协同低效映射到统一事件包、系统分层动作卡、部门反馈合同和闭环门禁。
+- 高可用与鲁棒性边界：明确当前已具备逻辑层高可用设计和本地门禁，但生产级高可用、专家榜满分和真实商业价值必须等 AstronClaw/SkillHub 运行证据和试用反馈证明。
 - 工程规范与文档完整性：包含主 Skill、README、示例和 JSON Schema。
 - 版本与提交可复核性：`VERSION.md` 和 `submission_manifest.json` 记录版本、用例数量、必截图清单和本地门禁。
 - 安全合规：内置隐私脱敏、安全风险保守处理和不编造事实原则。
@@ -224,6 +227,7 @@ industrial-workorder-collaboration/
 - SKU 质量交付演练：`examples/08_sku_quality_coordination_run.md` 和 `examples/data/sku_quality_coordination_sample.csv` 展示从生产异常到 QMS 质量反馈、PMC 交付重排、仓库发货锁定、工程现场验证和管理升级决策的完整链路。
 - SKU 数据分析脚本：`scripts/analyze_sku_quality_coordination.py` 可从 `examples/data/sku_quality_coordination_sample.csv` 计算停线少产、出货缺口、返工后缺口、隔离比例、抽样失败率和部门协同动作，生成 `tests/sku_quality_coordination_analysis.md`。
 - 部门时间线分析：`scripts/analyze_department_timeline.py` 可从 `examples/data/sku_quality_coordination_timeline.csv` 生成 `tests/sku_department_timeline_analysis.md`，展示生产、质量、仓库、PMC、工程和管理层反馈后的状态转移、SLA 和当前开放阻塞。
+- 优势/高可用/鲁棒性分析：`references/operational_advantage_availability_robustness.md` 形成可直接复用的项目分析材料，说明真实企业办公协同痛点、当前优势、改善方向、逻辑层高可用设计、异常输入鲁棒性和仍需 AstronClaw/SkillHub 证明的证据缺口。
 - 十场景实测包：`tests/astronclaw_enterprise_flow_prompt_pack.md` 和 `tests/run_record_enterprise_flow_template.csv` 可逐条记录 S01-S10 真实企业部门协同输出。
 - 十场景黄金检查点：`tests/enterprise_flow_golden_outputs.md` 用于人工复核 S01-S10 实测输出是否命中关键业务语义且没有越权完成措辞。
 - 专家门禁：`scripts/expert_rubric_gate.py` 按官方 100 分评分项检查本地证据和 AstronClaw 待证明项；`--require-astronclaw` 会校验记录里的截图/输出文件真实存在。

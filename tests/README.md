@@ -56,6 +56,8 @@
 
 `sku_department_timeline_analysis.md` 是 `scripts/analyze_department_timeline.py` 根据 `examples/data/sku_quality_coordination_timeline.csv` 生成的部门反馈时间线，用来证明每次反馈后状态如何转移、哪些 SLA 未超时、哪些阻塞仍然开放。
 
+`../references/operational_advantage_availability_robustness.md` 是办公协同优势、高可用和鲁棒性分析材料，用来说明信息分散、人工处理耗时、待办追踪难、流程协同低效这些痛点如何被统一事件包、系统分层动作卡、部门反馈合同和闭环门禁处理，并明确真实高可用仍需 AstronClaw/SkillHub 证据证明。
+
 覆盖范围：
 
 - 设备维修：5 个
