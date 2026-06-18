@@ -19,7 +19,7 @@
         "acceptance_criteria"
       ],
       "authorization_required": false,
-      "do_not_claim": ["已派工", "已关闭", "已完成维修"]
+      "do_not_claim": ["dispatch_completed", "closed_completed", "repair_completed"]
     },
     {
       "target_system": "QMS",
@@ -36,7 +36,7 @@
         "authorization_required"
       ],
       "authorization_required": true,
-      "do_not_claim": ["已放行", "已判定合格", "客户已接受"]
+      "do_not_claim": ["quality_release_completed", "qualified_judgement_completed", "customer_acceptance_completed"]
     },
     {
       "target_system": "EHS",
@@ -52,7 +52,7 @@
         "followup_due_time"
       ],
       "authorization_required": true,
-      "do_not_claim": ["已许可危险作业", "可绕过联锁", "可带电检修"]
+      "do_not_claim": ["hazardous_work_permit_completed", "safety_protection_bypass_allowed", "unsafe_live_work_allowed"]
     },
     {
       "target_system": "MES",
@@ -68,7 +68,7 @@
         "next_checkpoint"
       ],
       "authorization_required": false,
-      "do_not_claim": ["已恢复生产", "参数已批准", "首件已通过"]
+      "do_not_claim": ["production_recovery_completed", "parameter_approval_completed", "first_article_pass_completed"]
     },
     {
       "target_system": "SAP_ERP",
@@ -84,11 +84,11 @@
         "planning_owner"
       ],
       "authorization_required": true,
-      "do_not_claim": ["库存已锁定", "采购已批准", "客户交期已承诺", "成本已确认"]
+      "do_not_claim": ["inventory_lock_completed", "purchase_approval_completed", "customer_delivery_commitment_completed", "cost_confirmation_completed"]
     },
     {
       "target_system": "ENTERPRISE_IM_EMAIL",
-      "business_use": "Send a copy-ready message to Enterprise WeChat, Feishu, DingTalk, or email for notification,催办 and meeting invitation only.",
+      "business_use": "Send a copy-ready message to Enterprise WeChat/WeCom, Feishu, DingTalk, or email for notification, reminder and meeting invitation only.",
       "action_types": ["notify", "remind", "escalate_notice"],
       "required_fields": [
         "audience",
@@ -100,7 +100,24 @@
         "next_sync_time"
       ],
       "authorization_required": false,
-      "do_not_claim": ["对方已确认", "审批已通过", "系统已同步", "已形成正式系统记录"]
+      "do_not_claim": ["recipient_confirmation_completed", "approval_completed", "system_sync_completed", "formal_business_record_completed"]
+    },
+    {
+      "target_system": "SOCIAL_EXTERNAL_COLLAB",
+      "business_use": "Prepare one-click connector payloads for authorized WeChat, QQ, Weibo, customer-service or public-account channels used for external notification, customer/supplier feedback, and public-response coordination. These channels do not replace formal enterprise systems.",
+      "action_types": ["notify", "feedback_collect", "escalate_notice", "public_response_draft"],
+      "required_fields": [
+        "platform",
+        "authorized_account_scope",
+        "recipient_scope",
+        "message_summary",
+        "redaction_scope",
+        "feedback_contract",
+        "business_record_backlink",
+        "fallback_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["external_send_completed", "external_party_confirmation_completed", "formal_approval_completed", "business_closure_completed"]
     },
     {
       "target_system": "OA_APPROVAL",
@@ -117,7 +134,7 @@
         "supporting_evidence"
       ],
       "authorization_required": true,
-      "do_not_claim": ["审批已通过", "管理已批准", "会议结论已生效", "客户承诺已更新"]
+      "do_not_claim": ["approval_completed", "management_approval_completed", "meeting_decision_effective_completed", "customer_commitment_updated"]
     },
     {
       "target_system": "PMC_APS",
@@ -134,7 +151,7 @@
         "decision_due_by"
       ],
       "authorization_required": false,
-      "do_not_claim": ["交期已承诺", "客户已接受", "排产已切换成功", "加班已批准"]
+      "do_not_claim": ["delivery_commitment_completed", "customer_acceptance_completed", "schedule_switch_completed", "overtime_approval_completed"]
     },
     {
       "target_system": "PLM_ENGINEERING_CHANGE",
@@ -151,7 +168,7 @@
         "engineering_owner"
       ],
       "authorization_required": true,
-      "do_not_claim": ["参数已生效", "版本已切换", "首件已通过", "临时变更已批准"]
+      "do_not_claim": ["parameter_effective_completed", "version_switch_completed", "first_article_pass_completed", "temporary_change_approval_completed"]
     },
     {
       "target_system": "KNOWLEDGE_BASE",
@@ -166,7 +183,7 @@
         "review_owner"
       ],
       "authorization_required": true,
-      "do_not_claim": ["根因已验证", "SOP已发布", "全员已培训"]
+      "do_not_claim": ["root_cause_verified_completed", "sop_published_completed", "training_completed"]
     }
   ],
   "action_card_template": {
@@ -191,6 +208,15 @@
       "submitted_at": "",
       "submitted_by_or_actor": "",
       "receipt_owner": ""
+    },
+    "cross_platform_connector": {
+      "platform": "",
+      "account_scope": "",
+      "recipient_scope": "",
+      "message_template": "",
+      "feedback_contract": [],
+      "audit_and_compliance": [],
+      "business_record_backlink": ""
     },
     "failure_fallback": "",
     "rollback_or_followup": ""

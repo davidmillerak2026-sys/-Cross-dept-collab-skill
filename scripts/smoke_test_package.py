@@ -703,11 +703,11 @@ def test_department_flow_contract() -> None:
         "部门反馈合同",
         "正式系统动作卡",
         "可复制同步消息",
-        "闭环门禁",
+        "关闭门禁",
         "升级时钟",
         "关闭后知识候选",
         "不得写“系统已经自动同步",
-        "不得写“已审批通过、已放行、已关闭、已恢复生产”",
+        "不得写审批完成、质量放行完成、关闭完成或生产恢复完成",
         "截图验收点",
     ]
     for term in required_contract_terms:
@@ -814,7 +814,7 @@ def test_impact_escalation_contract() -> None:
         if term not in scoreboard_text:
             fail(f"impact scoreboard template missing: {term}")
 
-    for term in ["管理升级决策包模板", "影响评分板摘要", "选项对比", "决策截止时间", "已恢复生产"]:
+    for term in ["管理升级决策包模板", "影响评分板摘要", "选项对比", "决策截止时间", "生产恢复"]:
         if term not in packet_text:
             fail(f"management escalation packet missing: {term}")
 
@@ -997,6 +997,7 @@ def test_integration_contract_semantics() -> None:
         "PMC_APS",
         "PLM_ENGINEERING_CHANGE",
         "KNOWLEDGE_BASE",
+        "SOCIAL_EXTERNAL_COLLAB",
     }
     if set(systems) != required_systems:
         fail(f"integration contracts target systems mismatch: {sorted(systems)}")
@@ -1008,6 +1009,12 @@ def test_integration_contract_semantics() -> None:
         fail("ENTERPRISE_IM_EMAIL must require next_sync_time")
     if systems["ENTERPRISE_IM_EMAIL"]["authorization_required"]:
         fail("ENTERPRISE_IM_EMAIL should stay notification-only and not require authorization by default")
+
+    for field in ["platform", "authorized_account_scope", "feedback_contract", "business_record_backlink"]:
+        if field not in systems["SOCIAL_EXTERNAL_COLLAB"]["required_fields"]:
+            fail(f"SOCIAL_EXTERNAL_COLLAB missing required field: {field}")
+    if not systems["SOCIAL_EXTERNAL_COLLAB"]["authorization_required"]:
+        fail("SOCIAL_EXTERNAL_COLLAB must require authorization")
 
     for field in ["decision_required", "decision_due_by", "approval_owner"]:
         if field not in systems["OA_APPROVAL"]["required_fields"]:
@@ -1031,6 +1038,7 @@ def test_integration_contract_semantics() -> None:
         "business_decision_deadline",
         "channel_boundary",
         "side_effect_boundary",
+        "cross_platform_connector",
     ]:
         if field not in action_template:
             fail(f"action_card_template missing field: {field}")
@@ -1046,6 +1054,8 @@ def test_integration_contract_semantics() -> None:
         "business_decision_deadline",
         "channel_boundary",
         "side_effect_boundary",
+        "一键接入",
+        "feedback_contract",
     ]
     for term in required_skill_terms:
         if term not in skill_text:
@@ -1267,7 +1277,7 @@ def test_champion_acceptance_gate() -> None:
     for term in [
         "# Champion Acceptance Report",
         "local_gate_status: skipped",
-        "platform_submission_ready: no",
+        "platform_submission_ready: yes",
         "full_run_ready: no",
         "enterprise_flow_ready: no",
         "stability_stress_ready: no",

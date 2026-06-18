@@ -4,20 +4,20 @@ This report tracks phase-by-phase progress for the ranked expert evidence sprint
 
 ## Summary
 
-- required_completed: 2/50
+- required_completed: 4/50
 - optional_completed: 1/2
-- overall_completed: 3/52
+- overall_completed: 5/52
 - skillhub_public_url_recorded: yes
 
 ## Phase 0 Platform Unlock
 
-- completed: 3/6
+- completed: 5/6
 
 | Item | Track | Priority | Recorded | Artifact | Done | Detail |
 | --- | --- | --- | --- | --- | --- | --- |
 | `contest_submit_success_screenshot` | platform_submission | required | yes | yes | yes | C:/Users/ryan hui/Documents/2026赛事搜集/submissions/OCAS-skill/submission_materials/platform_screenshots/OCAS_submit_success_ID215_20260618.png |
-| `skillhub_approval_screenshot` | platform_submission | required | no | no | no | missing |
-| `skillhub_public_page_screenshot` | platform_submission | required | no | no | no | missing |
+| `skillhub_approval_screenshot` | platform_submission | required | yes | yes | yes | C:/Users/ryan hui/Documents/2026赛事搜集/submissions/OCAS-skill/submission_materials/platform_screenshots/SkillHub_public_approved_ID215_20260618.png |
+| `skillhub_public_page_screenshot` | platform_submission | required | yes | yes | yes | C:/Users/ryan hui/Documents/2026赛事搜集/submissions/OCAS-skill/submission_materials/platform_screenshots/SkillHub_public_approved_ID215_20260618.png |
 | `skillhub_public_url` | platform_submission | required | yes | yes | yes | https://skill.xfyun.cn/space/global/industrial-cross-department-collaboration |
 | `skillhub_dashboard_status_screenshot` | platform_submission | optional | yes | yes | yes | C:/Users/ryan hui/Documents/2026赛事搜集/submissions/OCAS-skill/submission_materials/platform_screenshots/SkillHub_pending_review_ID215_20260618.png |
 | `heat_rank_screenshot` | platform_submission | optional | no | no | no | missing |
@@ -126,8 +126,6 @@ This report tracks phase-by-phase progress for the ranked expert evidence sprint
 
 ## Next Required Actions
 
-- Phase 0 `skillhub_approval_screenshot` SkillHub 审核通过截图 -> 补 `tests/evidence/screenshots/skillhub_approval_screenshot_YYYYMMDD.png`；记录文件 `tests/platform_submission_evidence_template.json`；建议命令 `python scripts/champion_acceptance_gate.py`
-- Phase 0 `skillhub_public_page_screenshot` SkillHub 公开作品页截图 -> 补 `tests/evidence/screenshots/skillhub_public_page_screenshot_YYYYMMDD.png`；记录文件 `tests/platform_submission_evidence_template.json`；建议命令 `python scripts/champion_acceptance_gate.py`
 - Phase 1 `T01` 贴标机漏贴停线 -> 补 `tests/evidence/screenshots/T01_AstronClaw_maintenance_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
 - Phase 1 `T11` 带电检修风险 -> 补 `tests/evidence/screenshots/T11_AstronClaw_safety_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
 - Phase 1 `T21` 外部系统同步动作卡 -> 补 `tests/evidence/screenshots/T21_AstronClaw_integration_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
@@ -141,3 +139,5 @@ This report tracks phase-by-phase progress for the ranked expert evidence sprint
 - Phase 2 `T24` 已有系统记录状态更新边界 -> 补 `tests/evidence/screenshots/T24_AstronClaw_status_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
 - Phase 2 `T25` 候选根因排序与验证 -> 补 `tests/evidence/screenshots/T25_AstronClaw_diagnosis_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
 - Phase 2 `T27` 趋势数据但阈值缺失 -> 补 `tests/evidence/screenshots/T27_AstronClaw_signal_calibration_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
+- Phase 2 `T28` 外部系统失败下的降级完成 -> 补 `tests/evidence/screenshots/T28_AstronClaw_degraded_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`
+- Phase 2 `T29` 专家榜满分自评边界 -> 补 `tests/evidence/screenshots/T29_AstronClaw_self_review_YYYYMMDD.png`；记录文件 `tests/run_record_template.csv`；建议命令 `python scripts/score_run.py --outputs tests/run_outputs --report tests/run_score_report.csv`

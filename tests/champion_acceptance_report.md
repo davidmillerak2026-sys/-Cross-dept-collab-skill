@@ -5,7 +5,7 @@ This report checks whether the package has crossed from local readiness into rea
 ## Summary
 
 - local_gate_status: PASS
-- platform_submission_ready: no
+- platform_submission_ready: yes
 - full_run_ready: no
 - enterprise_flow_ready: no
 - stability_stress_ready: no
@@ -22,7 +22,7 @@ This report checks whether the package has crossed from local readiness into rea
 
 - source: `tests/platform_submission_evidence_template.json`
 - skillhub_public_url: `https://skill.xfyun.cn/space/global/industrial-cross-department-collaboration`
-- missing_required: `skillhub_approval_screenshot;skillhub_public_page_screenshot`
+- missing_required: `-`
 - optional_present: `skillhub_dashboard_status_screenshot`
 
 ## Platform Run Evidence
@@ -45,7 +45,6 @@ This report checks whether the package has crossed from local readiness into rea
 
 ## Champion Decision
 
-- Fill `tests/platform_submission_evidence_template.json` with real SkillHub/submit evidence paths and the live SkillHub URL.
 - Finish all T01-T39 AstronClaw runs, mark them passed, and point every row to a real screenshot or output file.
 - Finish all S01-S10 enterprise-flow runs and save each real output or screenshot path.
 - Finish all ST01-ST12 stability stress runs and save each real output or screenshot path.
