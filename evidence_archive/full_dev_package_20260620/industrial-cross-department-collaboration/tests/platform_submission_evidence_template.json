@@ -1,0 +1,12 @@
+{
+  "contest_submit_success_screenshot": "C:/Users/ryan hui/Documents/2026赛事搜集/submissions/OCAS-skill/submission_materials/platform_screenshots/OCAS_submit_success_ID215_20260618.png",
+  "skillhub_approval_screenshot": "",
+  "skillhub_public_page_screenshot": "",
+  "skillhub_dashboard_status_screenshot": "",
+  "heat_rank_screenshot": "",
+  "skillhub_public_url": "https://skill.xfyun.cn/space/global/industrial-cross-department-collaboration",
+  "latest_skillhub_review_status": "local_package_ready_pending_manual_upload",
+  "latest_skillhub_review_version": "2026.06.20-champion-23",
+  "updated_at": "2026-06-20 23:20:00 Asia/Shanghai",
+  "notes": "Champion-23 hardens combo GUI outputs after Spark-X2-Flash C01-C06 showed process-tail, unsupported release/close wording and over-specific invented details. After manual upload, replace submission/approval/dashboard screenshots with evidence for this exact version; do not reuse older review screenshots as latest-version proof."
+}

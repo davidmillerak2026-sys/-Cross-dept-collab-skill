@@ -1,0 +1,73 @@
+{
+  "suite": "industrial-cross-department-collaboration pilot feedback roles",
+  "version": "2026-06-16",
+  "purpose": "Prepare auditable pilot-feedback collection for innovation and business-value evidence without fabricating feedback.",
+  "roles": [
+    {
+      "role_id": "R01",
+      "role": "生产主管",
+      "recommended_cases": ["T01", "T36", "T38", "T39", "S01", "S10"],
+      "value_focus": ["跨部门待办", "同步节奏", "生产影响", "关闭门禁"],
+      "interview_questions": [
+        "这类现场异常平时由谁整理，平均一次需要多久？",
+        "Skill 输出的统一事件包是否能直接作为生产部同步依据？",
+        "哪些待办、截止时间或验收标准最有价值？"
+      ]
+    },
+    {
+      "role_id": "R02",
+      "role": "设备维修",
+      "recommended_cases": ["T01", "T25", "T34", "T35", "S07"],
+      "value_focus": ["候选原因", "备件工具", "工时", "试运行", "关闭前数据质量"],
+      "interview_questions": [
+        "Skill 是否补齐了派工前常漏的设备、现象、备件或工时字段？",
+        "候选诊断矩阵是否有助于安排下一步验证？",
+        "关闭门禁是否能减少低质量维修记录？"
+      ]
+    },
+    {
+      "role_id": "R03",
+      "role": "质量工程师",
+      "recommended_cases": ["T06", "T21", "T30", "T33", "S02", "S08"],
+      "value_focus": ["隔离范围", "复检结论", "放行授权", "冲突事实", "CAPA"],
+      "interview_questions": [
+        "Skill 是否清楚区分事实、推断和待确认质量结论？",
+        "是否避免替质量负责人做放行判断？",
+        "QMS 动作卡是否覆盖复检、隔离、处置和授权字段？"
+      ]
+    },
+    {
+      "role_id": "R04",
+      "role": "EHS/安全",
+      "recommended_cases": ["T11", "T12", "T38", "ST05", "ST12", "S04", "S06"],
+      "value_focus": ["危险作业拒绝", "许可", "能量隔离", "整改验收"],
+      "interview_questions": [
+        "Skill 是否拒绝了危险操作步骤并保留安全边界？",
+        "EHS 许可、隔离和整改验收字段是否完整？",
+        "输出是否适合形成安全整改或宣导记录？"
+      ]
+    },
+    {
+      "role_id": "R05",
+      "role": "PMC/计划",
+      "recommended_cases": ["T36", "T38", "T39", "S05", "S10"],
+      "value_focus": ["产能", "交期", "加班", "插单", "客户承诺边界"],
+      "interview_questions": [
+        "生产影响和交期风险是否足够清晰？",
+        "是否能看到质量、物料和维修状态对排产的约束？",
+        "下一次同步时间和升级路径是否可执行？"
+      ]
+    },
+    {
+      "role_id": "R06",
+      "role": "数字化负责人",
+      "recommended_cases": ["T21", "T28", "T39", "ST08", "ST09"],
+      "value_focus": ["系统动作卡", "幂等键", "回执检查", "降级恢复"],
+      "interview_questions": [
+        "动作卡字段是否足够映射到 MES/CMMS/QMS/EHS/SAP/ERP/OA/PMC？",
+        "准备度门禁是否能避免误写外部系统完成状态？",
+        "工具失败时的降级完成和恢复路径是否清楚？"
+      ]
+    }
+  ]
+}

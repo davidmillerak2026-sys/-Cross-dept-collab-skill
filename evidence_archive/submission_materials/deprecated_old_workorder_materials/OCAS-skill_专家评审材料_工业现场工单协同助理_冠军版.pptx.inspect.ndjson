@@ -1,0 +1,541 @@
+{"kind":"slide","id":"sl/ncsr7u","slide":1,"title":"2026 iFLYTEK AI开发者大赛 / OCAS-skill","textShapes":13}
+{"kind":"shape","id":"sh/47y1kre1","slide":1,"bbox":[64,60,330,32]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":1,"text":"2026 iFLYTEK AI开发者大赛 / OCAS-skill","textPreview":"2026 iFLYTEK AI开发者大赛 / OCAS-skill","textChars":33,"textLines":1,"bbox":[78,66,302,20]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":1,"text":"工业现场系统记录协同助理 Skill","textPreview":"工业现场系统记录协同助理 Skill","textChars":16,"textLines":1,"bbox":[64,138,740,70]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":1,"text":"把制造业现场记录转化为系统记录、待办、审批、复盘和周报","textPreview":"把制造业现场记录转化为系统记录、待办、审批、复盘和周报","textChars":25,"textLines":1,"bbox":[64,220,700,64]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":1,"text":"Skill 名称：industrial-cross-department-collaboration","textPreview":"Skill 名称：industrial-cross-department-collaboration","textChars":43,"textLines":1,"bbox":[64,310,640,28]}
+{"kind":"shape","id":"sh/bat47y1k","slide":1,"bbox":[810,92,340,420]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":1,"text":"现场信息","textPreview":"现场信息","textChars":4,"textLines":1,"bbox":[850,140,260,28]}
+{"kind":"shape","id":"sh/t83itgfm","slide":1,"bbox":[850,190,210,32]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":1,"text":"语音转写","textPreview":"语音转写","textChars":4,"textLines":1,"bbox":[864,196,182,20]}
+{"kind":"shape","id":"sh/u9knih4b","slide":1,"bbox":[850,235,210,32]}
+{"kind":"textbox","id":"sh/judg7ads","slide":1,"text":"巡检记录","textPreview":"巡检记录","textChars":4,"textLines":1,"bbox":[864,241,182,20]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":1,"bbox":[850,280,210,32]}
+{"kind":"textbox","id":"sh/1032lszq","slide":1,"text":"设备故障","textPreview":"设备故障","textChars":4,"textLines":1,"bbox":[864,286,182,20]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":1,"bbox":[850,325,210,32]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":1,"text":"质量异常","textPreview":"质量异常","textChars":4,"textLines":1,"bbox":[864,331,182,20]}
+{"kind":"shape","id":"sh/c7u54zid","slide":1,"bbox":[850,370,210,32]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":1,"text":"EHS隐患","textPreview":"EHS隐患","textChars":5,"textLines":1,"bbox":[864,376,182,20]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":1,"bbox":[850,415,210,32]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":1,"text":"班组交接","textPreview":"班组交接","textChars":4,"textLines":1,"bbox":[864,421,182,20]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":1,"bbox":[760,282,96,70]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":1,"text":"办公协同闭环","textPreview":"办公协同闭环","textChars":6,"textLines":1,"bbox":[860,470,260,30]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":1,"text":"专家榜满分证据版","textPreview":"专家榜满分证据版","textChars":8,"textLines":1,"bbox":[64,610,360,28]}
+{"kind":"slide","id":"sl/2iu940","slide":2,"title":"OCAS-SKILL / 01","textShapes":13}
+{"kind":"textbox","id":"sh/3m94fu18","slide":2,"text":"OCAS-SKILL / 01","textPreview":"OCAS-SKILL / 01","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":2,"text":"赛题理解：办公协同的真实断点","textPreview":"赛题理解：办公协同的真实断点","textChars":14,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":2,"text":"制造业的办公协同从现场事实进入后台流程开始","textPreview":"制造业的办公协同从现场事实进入后台流程开始","textChars":21,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/adsji5sn","slide":2,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":2,"bbox":[64,180,340,290]}
+{"kind":"textbox","id":"sh/sji5snel","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[86,205,60,38]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":2,"text":"现场记录碎片化","textPreview":"现场记录碎片化","textChars":7,"textLines":1,"bbox":[86,260,280,36]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":2,"text":"语音、微信群、纸质点检、交接班记录分散，后续整理靠人工。","textPreview":"语音、微信群、纸质点检、交接班记录分散，后续整理靠人工。","textChars":28,"textLines":1,"bbox":[86,320,284,110]}
+{"kind":"shape","id":"sh/za1gvy90","slide":2,"bbox":[446,180,340,290]}
+{"kind":"textbox","id":"sh/z61032ls","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[468,205,60,38]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":2,"text":"跨部门责任不清","textPreview":"跨部门责任不清","textChars":7,"textLines":1,"bbox":[468,260,280,36]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":2,"text":"生产部、质量、工程、安全、PMC 分别补材料，责任方和验收标准容易丢失。","textPreview":"生产部、质量、工程、安全、PMC 分别补材料，责任方和验收标准容易丢失。","textChars":36,"textLines":1,"bbox":[468,320,284,110]}
+{"kind":"shape","id":"sh/orytsvu9","slide":2,"bbox":[828,180,340,290]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[850,205,60,38]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":2,"text":"风险被误写成结论","textPreview":"风险被误写成结论","textChars":8,"textLines":1,"bbox":[850,260,280,36]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":2,"text":"初步怀疑常被写成根因，质量放行和安全许可存在越权风险。","textPreview":"初步怀疑常被写成根因，质量放行和安全许可存在越权风险。","textChars":27,"textLines":1,"bbox":[850,320,284,110]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":2,"text":"本作品选择的不是通用会议纪要，而是“现场信息 -> 系统记录/待办/审批/复盘/周报”的高频办公协同链路。","textPreview":"本作品选择的不是通用会议纪要，而是“现场信息 -> 系统记录/待办/审批/复盘/周报”的高频办公协同链路。","textChars":51,"textLines":1,"bbox":[64,535,980,44]}
+{"kind":"slide","id":"sl/39bhpz","slide":3,"title":"OCAS-SKILL / 02","textShapes":17}
+{"kind":"textbox","id":"sh/65wjudg7","slide":3,"text":"OCAS-SKILL / 02","textPreview":"OCAS-SKILL / 02","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":3,"text":"作品概览：现场记录到办公协同资产","textPreview":"作品概览：现场记录到办公协同资产","textChars":16,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/obm58z25","slide":3,"text":"输入多源现场事实，输出可执行的结构化协同材料","textPreview":"输入多源现场事实，输出可执行的结构化协同材料","textChars":22,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":3,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":3,"bbox":[64,185,330,350]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":3,"text":"输入","textPreview":"输入","textChars":2,"textLines":1,"bbox":[88,210,240,32]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":3,"bbox":[90,273,8,8]}
+{"kind":"textbox","id":"sh/z61032ls","slide":3,"text":"现场语音转写","textPreview":"现场语音转写","textChars":6,"textLines":1,"bbox":[110,265,260,35]}
+{"kind":"shape","id":"sh/al87ed8b","slide":3,"bbox":[90,308,8,8]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":3,"text":"巡检/点检记录","textPreview":"巡检/点检记录","textChars":7,"textLines":1,"bbox":[110,300,260,35]}
+{"kind":"shape","id":"sh/donyd0z6","slide":3,"bbox":[90,343,8,8]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":3,"text":"设备故障描述","textPreview":"设备故障描述","textChars":6,"textLines":1,"bbox":[110,335,260,35]}
+{"kind":"shape","id":"sh/vixczed8","slide":3,"bbox":[90,378,8,8]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":3,"text":"质量异常说明","textPreview":"质量异常说明","textChars":6,"textLines":1,"bbox":[110,370,260,35]}
+{"kind":"shape","id":"sh/dcbulwva","slide":3,"bbox":[90,413,8,8]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":3,"text":"EHS 隐患","textPreview":"EHS 隐患","textChars":6,"textLines":1,"bbox":[110,405,260,35]}
+{"kind":"shape","id":"sh/val87ed8","slide":3,"bbox":[90,448,8,8]}
+{"kind":"textbox","id":"sh/knih4byh","slide":3,"text":"SKU 换线记录","textPreview":"SKU 换线记录","textChars":8,"textLines":1,"bbox":[110,440,260,35]}
+{"kind":"shape","id":"sh/d8bat47y","slide":3,"bbox":[436,315,110,70]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":3,"bbox":[584,185,560,350]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":3,"text":"输出","textPreview":"输出","textChars":2,"textLines":1,"bbox":[612,210,240,32]}
+{"kind":"shape","id":"sh/vy90je9c","slide":3,"bbox":[612,270,220,46]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":3,"text":"系统记录草案","textPreview":"系统记录草案","textChars":4,"textLines":1,"bbox":[628,281,188,24]}
+{"kind":"shape","id":"sh/dsji5sne","slide":3,"bbox":[867,270,220,46]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":3,"text":"跨部门待办","textPreview":"跨部门待办","textChars":5,"textLines":1,"bbox":[883,281,188,24]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":3,"bbox":[612,340,220,46]}
+{"kind":"textbox","id":"sh/61032lsz","slide":3,"text":"复盘纪要","textPreview":"复盘纪要","textChars":4,"textLines":1,"bbox":[628,351,188,24]}
+{"kind":"shape","id":"sh/dg7adsji","slide":3,"bbox":[867,340,220,46]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":3,"text":"审批/整改说明","textPreview":"审批/整改说明","textChars":7,"textLines":1,"bbox":[883,351,188,24]}
+{"kind":"shape","id":"sh/yxobm58z","slide":3,"bbox":[612,410,220,46]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":3,"text":"管理周报","textPreview":"管理周报","textChars":4,"textLines":1,"bbox":[628,421,188,24]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":3,"bbox":[867,410,220,46]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":3,"text":"可复制同步消息","textPreview":"可复制同步消息","textChars":7,"textLines":1,"bbox":[883,421,188,24]}
+{"kind":"slide","id":"sl/dj7nkk","slide":4,"title":"OCAS-SKILL / 03","textShapes":31}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":4,"text":"OCAS-SKILL / 03","textPreview":"OCAS-SKILL / 03","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":4,"text":"场景路由：生产部牵头跨部门协同","textPreview":"场景路由：生产部牵头跨部门协同","textChars":15,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":4,"text":"生产部作为事件 Owner，拉通质量、工程、EHS、PMC 和维修","textPreview":"生产部作为事件 Owner，拉通质量、工程、EHS、PMC 和维修","textChars":33,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":4,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":4,"bbox":[64,178,207.36,50]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":4,"text":"场景","textPreview":"场景","textChars":2,"textLines":1,"bbox":[74,186,187.36,38]}
+{"kind":"shape","id":"sh/72x4nap4","slide":4,"bbox":[271.36,178,311.04,50]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":4,"text":"默认输出","textPreview":"默认输出","textChars":4,"textLines":1,"bbox":[281.36,186,291.04,38]}
+{"kind":"shape","id":"sh/p4r65wju","slide":4,"bbox":[582.4,178,276.48,50]}
+{"kind":"textbox","id":"sh/lwval87e","slide":4,"text":"关键部门","textPreview":"关键部门","textChars":4,"textLines":1,"bbox":[592.4,186,256.48,38]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":4,"bbox":[858.88,178,357.12,50]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":4,"text":"必须关注","textPreview":"必须关注","textChars":4,"textLines":1,"bbox":[868.88,186,337.12,38]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":4,"bbox":[64,228,207.36,50]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":4,"text":"设备维修","textPreview":"设备维修","textChars":4,"textLines":1,"bbox":[74,236,187.36,38]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":4,"bbox":[271.36,228,311.04,50]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":4,"text":"生产部系统记录 + 维修待办","textPreview":"生产部系统记录 + 维修待办","textChars":12,"textLines":1,"bbox":[281.36,236,291.04,38]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":4,"bbox":[582.4,228,276.48,50]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":4,"text":"生产 / 维修 / 工程","textPreview":"生产 / 维修 / 工程","textChars":12,"textLines":1,"bbox":[592.4,236,256.48,38]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":4,"bbox":[858.88,228,357.12,50]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":4,"text":"停机影响、试运行标准","textPreview":"停机影响、试运行标准","textChars":10,"textLines":1,"bbox":[868.88,236,337.12,38]}
+{"kind":"shape","id":"sh/xczed8v6","slide":4,"bbox":[64,278,207.36,50]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":4,"text":"质量异常","textPreview":"质量异常","textChars":4,"textLines":1,"bbox":[74,286,187.36,38]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":4,"bbox":[271.36,278,311.04,50]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":4,"text":"隔离 / 复检待办","textPreview":"隔离 / 复检待办","textChars":9,"textLines":1,"bbox":[281.36,286,291.04,38]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":4,"bbox":[582.4,278,276.48,50]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":4,"text":"生产 / 质量 / 仓库","textPreview":"生产 / 质量 / 仓库","textChars":12,"textLines":1,"bbox":[592.4,286,256.48,38]}
+{"kind":"shape","id":"sh/fyxobm58","slide":4,"bbox":[858.88,278,357.12,50]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":4,"text":"批次、放行权限","textPreview":"批次、放行权限","textChars":7,"textLines":1,"bbox":[868.88,286,337.12,38]}
+{"kind":"shape","id":"sh/xs72x4na","slide":4,"bbox":[64,328,207.36,50]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":4,"text":"EHS安全","textPreview":"EHS安全","textChars":5,"textLines":1,"bbox":[74,336,187.36,38]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":4,"bbox":[271.36,328,311.04,50]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":4,"text":"整改说明 + 风险提示","textPreview":"整改说明 + 风险提示","textChars":11,"textLines":1,"bbox":[281.36,336,291.04,38]}
+{"kind":"shape","id":"sh/g7adsji5","slide":4,"bbox":[582.4,328,276.48,50]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":4,"text":"生产 / EHS / 班组","textPreview":"生产 / EHS / 班组","textChars":13,"textLines":1,"bbox":[592.4,336,256.48,38]}
+{"kind":"shape","id":"sh/yd0z6103","slide":4,"bbox":[858.88,328,357.12,50]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":4,"text":"先隔离风险","textPreview":"先隔离风险","textChars":5,"textLines":1,"bbox":[868.88,336,337.12,38]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":4,"bbox":[64,378,207.36,50]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":4,"text":"PMC排产","textPreview":"PMC排产","textChars":5,"textLines":1,"bbox":[74,386,187.36,38]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":4,"bbox":[271.36,378,311.04,50]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":4,"text":"交期影响 + 排产协同包","textPreview":"交期影响 + 排产协同包","textChars":12,"textLines":1,"bbox":[281.36,386,291.04,38]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":4,"bbox":[582.4,378,276.48,50]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":4,"text":"生产 / PMC / 仓库","textPreview":"生产 / PMC / 仓库","textChars":13,"textLines":1,"bbox":[592.4,386,256.48,38]}
+{"kind":"shape","id":"sh/1orytsvu","slide":4,"bbox":[858.88,378,357.12,50]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":4,"text":"产能、物料、客户承诺边界","textPreview":"产能、物料、客户承诺边界","textChars":12,"textLines":1,"bbox":[868.88,386,337.12,38]}
+{"kind":"shape","id":"sh/judg7ads","slide":4,"bbox":[64,428,207.36,50]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":4,"text":"工艺变更","textPreview":"工艺变更","textChars":4,"textLines":1,"bbox":[74,436,187.36,38]}
+{"kind":"shape","id":"sh/1032lszq","slide":4,"bbox":[271.36,428,311.04,50]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":4,"text":"临时变更事实包","textPreview":"临时变更事实包","textChars":7,"textLines":1,"bbox":[281.36,436,291.04,38]}
+{"kind":"shape","id":"sh/nyd0z610","slide":4,"bbox":[582.4,428,276.48,50]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":4,"text":"生产 / 工程 / 质量","textPreview":"生产 / 工程 / 质量","textChars":12,"textLines":1,"bbox":[592.4,436,256.48,38]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":4,"bbox":[858.88,428,357.12,50]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":4,"text":"版本、首件确认、试产验证","textPreview":"版本、首件确认、试产验证","textChars":12,"textLines":1,"bbox":[868.88,436,337.12,38]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":4,"bbox":[64,478,207.36,50]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":4,"text":"会议交接","textPreview":"会议交接","textChars":4,"textLines":1,"bbox":[74,486,187.36,38]}
+{"kind":"shape","id":"sh/gvy90je9","slide":4,"bbox":[271.36,478,311.04,50]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":4,"text":"纪要 / 周报","textPreview":"纪要 / 周报","textChars":7,"textLines":1,"bbox":[281.36,486,291.04,38]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":4,"bbox":[582.4,478,276.48,50]}
+{"kind":"textbox","id":"sh/9knih4by","slide":4,"text":"生产牵头多部门","textPreview":"生产牵头多部门","textChars":7,"textLines":1,"bbox":[592.4,486,256.48,38]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":4,"bbox":[858.88,478,357.12,50]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":4,"text":"未关闭事项","textPreview":"未关闭事项","textChars":5,"textLines":1,"bbox":[868.88,486,337.12,38]}
+{"kind":"slide","id":"sl/5jy8uk","slide":5,"title":"OCAS-SKILL / 04","textShapes":13}
+{"kind":"textbox","id":"sh/0je9cvix","slide":5,"text":"OCAS-SKILL / 04","textPreview":"OCAS-SKILL / 04","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":5,"text":"核心机制：事实分层 + 质量门禁","textPreview":"核心机制：事实分层 + 质量门禁","textChars":16,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":5,"text":"降低误判、编造和越权风险","textPreview":"降低误判、编造和越权风险","textChars":12,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/tcj6tova","slide":5,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":5,"bbox":[64,190,330,155]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":5,"text":"已确认事实","textPreview":"已确认事实","textChars":5,"textLines":1,"bbox":[86,220,260,30]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":5,"text":"用户明确给出的时间、设备、地点、现象、数值、批次、动作。","textPreview":"用户明确给出的时间、设备、地点、现象、数值、批次、动作。","textChars":28,"textLines":1,"bbox":[86,268,275,60]}
+{"kind":"shape","id":"sh/tovahoza","slide":5,"bbox":[454,190,330,155]}
+{"kind":"textbox","id":"sh/032lszqt","slide":5,"text":"合理推断","textPreview":"合理推断","textChars":4,"textLines":1,"bbox":[476,220,260,30]}
+{"kind":"textbox","id":"sh/61032lsz","slide":5,"text":"可从上下文推断但必须标注为可能、初步、需确认。","textPreview":"可从上下文推断但必须标注为可能、初步、需确认。","textChars":23,"textLines":1,"bbox":[476,268,275,60]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":5,"bbox":[844,190,330,155]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":5,"text":"待确认信息","textPreview":"待确认信息","textChars":5,"textLines":1,"bbox":[866,220,260,30]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":5,"text":"影响派工、审批、质量放行、安全判断、交付承诺的信息。","textPreview":"影响派工、审批、质量放行、安全判断、交付承诺的信息。","textChars":26,"textLines":1,"bbox":[866,268,275,60]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":5,"bbox":[64,405,1152,145]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"text":"输出质量门禁","textPreview":"输出质量门禁","textChars":6,"textLines":1,"bbox":[88,428,260,30]}
+{"kind":"shape","id":"sh/oj2t83it","slide":5,"bbox":[364,433,8,8]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":5,"text":"每个行动项必须有责任方、动作、输入依据、截止时间和验收标准","textPreview":"每个行动项必须有责任方、动作、输入依据、截止时间和验收标准","textChars":29,"textLines":1,"bbox":[384,425,780,34]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":5,"bbox":[364,467,8,8]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":5,"text":"安全、质量、生产影响和数据合规必须显式提示","textPreview":"安全、质量、生产影响和数据合规必须显式提示","textChars":21,"textLines":1,"bbox":[384,459,780,34]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":5,"bbox":[364,501,8,8]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":5,"text":"不编造根因、责任人、审批结论或已完成状态","textPreview":"不编造根因、责任人、审批结论或已完成状态","textChars":20,"textLines":1,"bbox":[384,493,780,34]}
+{"kind":"slide","id":"sl/t35y0w","slide":6,"title":"OCAS-SKILL / 05","textShapes":20}
+{"kind":"textbox","id":"sh/0fepkzup","slide":6,"text":"OCAS-SKILL / 05","textPreview":"OCAS-SKILL / 05","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/bulwval8","slide":6,"text":"Demo 案例：一段现场记录变成协同闭环","textPreview":"Demo 案例：一段现场记录变成协同闭环","textChars":20,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":6,"text":"贴标机漏贴停线 + 质量复检 + 生产恢复窗口","textPreview":"贴标机漏贴停线 + 质量复检 + 生产恢复窗口","textChars":23,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/tovahoza","slide":6,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/032lszqt","slide":6,"bbox":[64,170,520,385]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":6,"text":"输入","textPreview":"输入","textChars":2,"textLines":1,"bbox":[86,195,120,28]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":6,"text":"三号包装线贴标机 14:20 开始频繁漏贴，更换标签卷后仍异常；停线 18 分钟，质检发现 32 箱需要复检。维修怀疑传感器位置偏移但未确认，生产希望 15:30 前恢复。","textPreview":"三号包装线贴标机 14:20 开始频繁漏贴，更换标签卷后仍异常；停线 18 分钟，质检发现 32 箱需要复检。维修怀疑传感器位置偏移但未确认，生产希望 15:30 前恢复。","textChars":86,"textLines":1,"bbox":[86,245,460,130]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":6,"text":"关键：传感器偏移只能作为合理推断，32 箱未复检前不能建议放行。","textPreview":"关键：传感器偏移只能作为合理推断，32 箱未复检前不能建议放行。","textChars":32,"textLines":1,"bbox":[86,420,460,64]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":6,"bbox":[650,170,560,385]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":6,"text":"输出","textPreview":"输出","textChars":2,"textLines":1,"bbox":[672,195,120,28]}
+{"kind":"shape","id":"sh/bulwval8","slide":6,"bbox":[672,250,110,54]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":6,"text":"责任方","textPreview":"责任方","textChars":3,"textLines":1,"bbox":[682,258,90,42]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":6,"bbox":[782,250,200,54]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":6,"text":"待办","textPreview":"待办","textChars":2,"textLines":1,"bbox":[792,258,180,42]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":6,"bbox":[982,250,190,54]}
+{"kind":"textbox","id":"sh/032lszqt","slide":6,"text":"验收标准","textPreview":"验收标准","textChars":4,"textLines":1,"bbox":[992,258,170,42]}
+{"kind":"shape","id":"sh/tovahoza","slide":6,"bbox":[672,304,110,54]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":6,"text":"维修","textPreview":"维修","textChars":2,"textLines":1,"bbox":[682,312,90,42]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":6,"bbox":[782,304,200,54]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":6,"text":"校准贴标传感器","textPreview":"校准贴标传感器","textChars":7,"textLines":1,"bbox":[792,312,180,42]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":6,"bbox":[982,304,190,54]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":6,"text":"试运行无漏贴","textPreview":"试运行无漏贴","textChars":6,"textLines":1,"bbox":[992,312,170,42]}
+{"kind":"shape","id":"sh/sneloj2t","slide":6,"bbox":[672,358,110,54]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":6,"text":"质量","textPreview":"质量","textChars":2,"textLines":1,"bbox":[682,366,90,42]}
+{"kind":"shape","id":"sh/at47y1kr","slide":6,"bbox":[782,358,200,54]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":6,"text":"隔离并复检32箱","textPreview":"隔离并复检32箱","textChars":8,"textLines":1,"bbox":[792,366,180,42]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":6,"bbox":[982,358,190,54]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":6,"text":"形成放行/返工记录","textPreview":"形成放行/返工记录","textChars":9,"textLines":1,"bbox":[992,366,170,42]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":6,"bbox":[672,412,110,54]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":6,"text":"生产","textPreview":"生产","textChars":2,"textLines":1,"bbox":[682,420,90,42]}
+{"kind":"shape","id":"sh/dg7adsji","slide":6,"bbox":[782,412,200,54]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":6,"text":"确认恢复窗口","textPreview":"确认恢复窗口","textChars":6,"textLines":1,"bbox":[792,420,180,42]}
+{"kind":"shape","id":"sh/vahoza1g","slide":6,"bbox":[982,412,190,54]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":6,"text":"明确产量影响","textPreview":"明确产量影响","textChars":6,"textLines":1,"bbox":[992,420,170,42]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":6,"text":"另输出：系统记录草案、已确认事实、合理推断、风险提示、待确认信息、可复制同步消息。","textPreview":"另输出：系统记录草案、已确认事实、合理推断、风险提示、待确认信息、可复制同步消息。","textChars":39,"textLines":1,"bbox":[672,487,500,38]}
+{"kind":"slide","id":"sl/ss9a7k","slide":7,"title":"OCAS-SKILL / 06","textShapes":38}
+{"kind":"textbox","id":"sh/032lszqt","slide":7,"text":"OCAS-SKILL / 06","textPreview":"OCAS-SKILL / 06","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":7,"text":"鲁棒性：39 个测试用例覆盖关键边界","textPreview":"鲁棒性：39 个测试用例覆盖关键边界","textChars":18,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":7,"text":"以测试矩阵证明稳定性，而不是只展示一个理想样例","textPreview":"以测试矩阵证明稳定性，而不是只展示一个理想样例","textChars":23,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":7,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/0fepkzup","slide":7,"bbox":[64,185,210,120]}
+{"kind":"textbox","id":"sh/bulwval8","slide":7,"text":"39","textPreview":"39","textChars":2,"textLines":1,"bbox":[84,207,170,48]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":7,"text":"测试用例","textPreview":"测试用例","textChars":4,"textLines":1,"bbox":[84,260,170,28]}
+{"kind":"shape","id":"sh/t47y1kre","slide":7,"bbox":[299,185,210,120]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":7,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[319,207,170,48]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":7,"text":"场景类型","textPreview":"场景类型","textChars":4,"textLines":1,"bbox":[319,260,170,28]}
+{"kind":"shape","id":"sh/3m94fu18","slide":7,"bbox":[534,185,250,120]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":7,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[554,207,210,48]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":7,"text":"允许的危险操作输出","textPreview":"允许的危险操作输出","textChars":9,"textLines":1,"bbox":[554,260,210,28]}
+{"kind":"shape","id":"sh/adsji5sn","slide":7,"bbox":[809,185,290,120]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":7,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[829,207,250,48]}
+{"kind":"textbox","id":"sh/sji5snel","slide":7,"text":"必拍实测截图","textPreview":"必拍实测截图","textChars":6,"textLines":1,"bbox":[829,260,250,28]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":7,"bbox":[64,330,254.4,36]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":7,"text":"覆盖类型","textPreview":"覆盖类型","textChars":4,"textLines":1,"bbox":[74,338,234.4,24]}
+{"kind":"shape","id":"sh/za1gvy90","slide":7,"bbox":[318.4,330,169.6,36]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":7,"text":"用例数","textPreview":"用例数","textChars":3,"textLines":1,"bbox":[328.4,338,149.6,24]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":7,"bbox":[488,330,636,36]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":7,"text":"代表场景","textPreview":"代表场景","textChars":4,"textLines":1,"bbox":[498,338,616,24]}
+{"kind":"shape","id":"sh/gvy90je9","slide":7,"bbox":[64,366,254.4,36]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":7,"text":"设备维修/备件","textPreview":"设备维修/备件","textChars":7,"textLines":1,"bbox":[74,374,234.4,24]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":7,"bbox":[318.4,366,169.6,36]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":7,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[328.4,374,149.6,24]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":7,"bbox":[488,366,636,36]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":7,"text":"贴标机、注塑机、空压机、预测维护、备件","textPreview":"贴标机、注塑机、空压机、预测维护、备件","textChars":19,"textLines":1,"bbox":[498,374,616,24]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":7,"bbox":[64,402,254.4,36]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":7,"text":"质量异常","textPreview":"质量异常","textChars":4,"textLines":1,"bbox":[74,410,234.4,24]}
+{"kind":"shape","id":"sh/1orytsvu","slide":7,"bbox":[318.4,402,169.6,36]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[328.4,410,149.6,24]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":7,"bbox":[488,402,636,36]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":7,"text":"批次划伤、首件尺寸、客诉、混料风险","textPreview":"批次划伤、首件尺寸、客诉、混料风险","textChars":17,"textLines":1,"bbox":[498,410,616,24]}
+{"kind":"shape","id":"sh/1032lszq","slide":7,"bbox":[64,438,254.4,36]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":7,"text":"EHS安全","textPreview":"EHS安全","textChars":5,"textLines":1,"bbox":[74,446,234.4,24]}
+{"kind":"shape","id":"sh/judg7ads","slide":7,"bbox":[318.4,438,169.6,36]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[328.4,446,149.6,24]}
+{"kind":"shape","id":"sh/54zidony","slide":7,"bbox":[488,438,636,36]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":7,"text":"消防通道、带电检修、化学品泄漏","textPreview":"消防通道、带电检修、化学品泄漏","textChars":15,"textLines":1,"bbox":[498,446,616,24]}
+{"kind":"shape","id":"sh/obm58z25","slide":7,"bbox":[64,474,254.4,36]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":7,"text":"换线会议交接","textPreview":"换线会议交接","textChars":6,"textLines":1,"bbox":[74,482,234.4,24]}
+{"kind":"shape","id":"sh/65wjudg7","slide":7,"bbox":[318.4,474,169.6,36]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":7,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[328.4,482,149.6,24]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":7,"bbox":[488,474,636,36]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":7,"text":"参数版本、复盘、周会、交接、周报","textPreview":"参数版本、复盘、周会、交接、周报","textChars":16,"textLines":1,"bbox":[498,482,616,24]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":7,"bbox":[64,510,254.4,36]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":7,"text":"企业动作边界","textPreview":"企业动作边界","textChars":6,"textLines":1,"bbox":[74,518,234.4,24]}
+{"kind":"shape","id":"sh/orytsvu9","slide":7,"bbox":[318.4,510,169.6,36]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[328.4,518,149.6,24]}
+{"kind":"shape","id":"sh/bulwval8","slide":7,"bbox":[488,510,636,36]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":7,"text":"外部同步、知识沉淀、隐私治理、状态更新","textPreview":"外部同步、知识沉淀、隐私治理、状态更新","textChars":19,"textLines":1,"bbox":[498,518,616,24]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":7,"bbox":[64,546,254.4,36]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":7,"text":"高级鲁棒性","textPreview":"高级鲁棒性","textChars":5,"textLines":1,"bbox":[74,554,234.4,24]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":7,"bbox":[318.4,546,169.6,36]}
+{"kind":"textbox","id":"sh/032lszqt","slide":7,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[328.4,554,149.6,24]}
+{"kind":"shape","id":"sh/tovahoza","slide":7,"bbox":[488,546,636,36]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":7,"text":"诊断、编排、信号、降级、自评、对抗、噪声、冲突","textPreview":"诊断、编排、信号、降级、自评、对抗、噪声、冲突","textChars":23,"textLines":1,"bbox":[498,554,616,24]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":7,"bbox":[64,582,254.4,36]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":7,"text":"现场执行/系统记录质量","textPreview":"现场执行/系统记录质量","textChars":9,"textLines":1,"bbox":[74,590,234.4,24]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":7,"bbox":[318.4,582,169.6,36]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[328.4,590,149.6,24]}
+{"kind":"shape","id":"sh/sneloj2t","slide":7,"bbox":[488,582,636,36]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":7,"text":"维修派工执行包、关闭系统记录数据质量门禁","textPreview":"维修派工执行包、关闭系统记录数据质量门禁","textChars":18,"textLines":1,"bbox":[498,590,616,24]}
+{"kind":"shape","id":"sh/at47y1kr","slide":7,"bbox":[64,618,254.4,36]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":7,"text":"生产部跨部门协同","textPreview":"生产部跨部门协同","textChars":8,"textLines":1,"bbox":[74,626,234.4,24]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":7,"bbox":[318.4,618,169.6,36]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[328.4,626,149.6,24]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":7,"bbox":[488,618,636,36]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":7,"text":"PMC交期、工程变更、质量/安全/PMC日清闭环","textPreview":"PMC交期、工程变更、质量/安全/PMC日清闭环","textChars":24,"textLines":1,"bbox":[498,626,616,24]}
+{"kind":"slide","id":"sl/qvyi0h","slide":8,"title":"OCAS-SKILL / 07","textShapes":32}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":8,"text":"OCAS-SKILL / 07","textPreview":"OCAS-SKILL / 07","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":8,"text":"评分证据矩阵：用例直接对应官方分项","textPreview":"评分证据矩阵：用例直接对应官方分项","textChars":17,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":8,"text":"39 个用例映射到 6 个专家评分项，避免只靠主观描述","textPreview":"39 个用例映射到 6 个专家评分项，避免只靠主观描述","textChars":27,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":8,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/94fu18jq","slide":8,"bbox":[64,172,253.44,55]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":8,"text":"官方分项","textPreview":"官方分项","textChars":4,"textLines":1,"bbox":[74,180,233.44,43]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":8,"bbox":[317.44,172,115.2,55]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":8,"text":"满分","textPreview":"满分","textChars":2,"textLines":1,"bbox":[327.44,180,95.2,43]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":8,"bbox":[432.64,172,437.76,55]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":8,"text":"包内证据","textPreview":"包内证据","textChars":4,"textLines":1,"bbox":[442.64,180,417.76,43]}
+{"kind":"shape","id":"sh/8v6psfil","slide":8,"bbox":[870.4,172,345.6,55]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":8,"text":"提交后证据","textPreview":"提交后证据","textChars":5,"textLines":1,"bbox":[880.4,180,325.6,43]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":8,"bbox":[64,227,253.44,55]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":8,"text":"稳定性/鲁棒性","textPreview":"稳定性/鲁棒性","textChars":7,"textLines":1,"bbox":[74,235,233.44,43]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":8,"bbox":[317.44,227,115.2,55]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":8,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[327.44,235,95.2,43]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":8,"bbox":[432.64,227,437.76,55]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":8,"text":"39用例、自检脚本、评分脚本、异常边界","textPreview":"39用例、自检脚本、评分脚本、异常边界","textChars":19,"textLines":1,"bbox":[442.64,235,417.76,43]}
+{"kind":"shape","id":"sh/87ed8bat","slide":8,"bbox":[870.4,227,345.6,55]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":8,"text":"T01/T06/T11/T28/T33/T36/T39截图","textPreview":"T01/T06/T11/T28/T33/T36/T39截图","textChars":29,"textLines":1,"bbox":[880.4,235,325.6,43]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":8,"bbox":[64,282,253.44,55]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":8,"text":"创新/应用价值","textPreview":"创新/应用价值","textChars":7,"textLines":1,"bbox":[74,290,233.44,43]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":8,"bbox":[317.44,282,115.2,55]}
+{"kind":"textbox","id":"sh/83itgfml","slide":8,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[327.44,290,95.2,43]}
+{"kind":"shape","id":"sh/xobm58z2","slide":8,"bbox":[432.64,282,437.76,55]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":8,"text":"现场到系统记录/审批/周报的垂直闭环","textPreview":"现场到系统记录/审批/周报的垂直闭环","textChars":16,"textLines":1,"bbox":[442.64,290,417.76,43]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":8,"bbox":[870.4,282,345.6,55]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":8,"text":"脱敏试用反馈","textPreview":"脱敏试用反馈","textChars":6,"textLines":1,"bbox":[880.4,290,325.6,43]}
+{"kind":"shape","id":"sh/xkf6dcbu","slide":8,"bbox":[64,337,253.44,55]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":8,"text":"结果质量","textPreview":"结果质量","textChars":4,"textLines":1,"bbox":[74,345,233.44,43]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":8,"bbox":[317.44,337,115.2,55]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":8,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[327.44,345,95.2,43]}
+{"kind":"shape","id":"sh/c7u54zid","slide":8,"bbox":[432.64,337,437.76,55]}
+{"kind":"textbox","id":"sh/judg7ads","slide":8,"text":"事实分层、证据索引、候选诊断、验收标准","textPreview":"事实分层、证据索引、候选诊断、验收标准","textChars":19,"textLines":1,"bbox":[442.64,345,417.76,43]}
+{"kind":"shape","id":"sh/u9knih4b","slide":8,"bbox":[870.4,337,345.6,55]}
+{"kind":"textbox","id":"sh/1032lszq","slide":8,"text":"T21/T25/T34/T35/T37截图","textPreview":"T21/T25/T34/T35/T37截图","textChars":21,"textLines":1,"bbox":[880.4,345,325.6,43]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":8,"bbox":[64,392,253.44,55]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":8,"text":"技术设计/编排","textPreview":"技术设计/编排","textChars":7,"textLines":1,"bbox":[74,400,233.44,43]}
+{"kind":"shape","id":"sh/udg7adsj","slide":8,"bbox":[317.44,392,115.2,55]}
+{"kind":"textbox","id":"sh/ulwval87","slide":8,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[327.44,400,95.2,43]}
+{"kind":"shape","id":"sh/j6tovaho","slide":8,"bbox":[432.64,392,437.76,55]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":8,"text":"生产部牵头路由、Schema、动作卡、幂等和回执","textPreview":"生产部牵头路由、Schema、动作卡、幂等和回执","textChars":24,"textLines":1,"bbox":[442.64,400,417.76,43]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":8,"bbox":[870.4,392,345.6,55]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":8,"text":"多系统动作卡实测","textPreview":"多系统动作卡实测","textChars":8,"textLines":1,"bbox":[880.4,400,325.6,43]}
+{"kind":"shape","id":"sh/ji5snelo","slide":8,"bbox":[64,447,253.44,55]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":8,"text":"工程文档","textPreview":"工程文档","textChars":4,"textLines":1,"bbox":[74,455,233.44,43]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":8,"bbox":[317.44,447,115.2,55]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":8,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[327.44,455,95.2,43]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":8,"bbox":[432.64,447,437.76,55]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":8,"text":"README、templates、tests、rubric矩阵、日志","textPreview":"README、templates、tests、rubric矩阵、日志","textChars":34,"textLines":1,"bbox":[442.64,455,417.76,43]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":8,"bbox":[870.4,447,345.6,55]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":8,"text":"上传前校验截图","textPreview":"上传前校验截图","textChars":7,"textLines":1,"bbox":[880.4,455,325.6,43]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":8,"bbox":[64,502,253.44,55]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":8,"text":"安全合规","textPreview":"安全合规","textChars":4,"textLines":1,"bbox":[74,510,233.44,43]}
+{"kind":"shape","id":"sh/0z61032l","slide":8,"bbox":[317.44,502,115.2,55]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":8,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[327.44,510,95.2,43]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":8,"bbox":[432.64,502,437.76,55]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":8,"text":"脱敏、拒绝越权、提示注入防护、刷量拒绝","textPreview":"脱敏、拒绝越权、提示注入防护、刷量拒绝","textChars":19,"textLines":1,"bbox":[442.64,510,417.76,43]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":8,"bbox":[870.4,502,345.6,55]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":8,"text":"T11/T30/T31截图","textPreview":"T11/T30/T31截图","textChars":13,"textLines":1,"bbox":[880.4,510,325.6,43]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":8,"bbox":[64,565,1152,54]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":8,"text":"新增文件：tests/rubric_evidence_matrix.csv；自检脚本已强制检查 39 个用例与评分矩阵完全覆盖。","textPreview":"新增文件：tests/rubric_evidence_matrix.csv；自检脚本已强制检查 39 个用例与评分矩阵完全覆盖。","textChars":64,"textLines":1,"bbox":[86,580,1040,24]}
+{"kind":"slide","id":"sl/my4jmc","slide":9,"title":"OCAS-SKILL / 08","textShapes":12}
+{"kind":"textbox","id":"sh/yd0z6103","slide":9,"text":"OCAS-SKILL / 08","textPreview":"OCAS-SKILL / 08","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":9,"text":"能力升级：从文本整理到执行闭环","textPreview":"能力升级：从文本整理到执行闭环","textChars":15,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":9,"text":"核心是边界、证据、动作、人审和可回放测试","textPreview":"核心是边界、证据、动作、人审和可回放测试","textChars":20,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":9,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":9,"bbox":[64,178,520,120]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":9,"text":"能力包结构","textPreview":"能力包结构","textChars":5,"textLines":1,"bbox":[88,200,330,30]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":9,"text":"主指令保持精炼，长模板、测试、脚本和证据材料按需加载。","textPreview":"主指令保持精炼，长模板、测试、脚本和证据材料按需加载。","textChars":27,"textLines":1,"bbox":[88,240,450,44]}
+{"kind":"shape","id":"sh/nih4byhg","slide":9,"bbox":[639,178,520,120]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":9,"text":"边界与权限","textPreview":"边界与权限","textChars":5,"textLines":1,"bbox":[663,200,330,30]}
+{"kind":"textbox","id":"sh/obm58z25","slide":9,"text":"只引用输入和授权数据，质量、安全、客户承诺必须进入人审。","textPreview":"只引用输入和授权数据，质量、安全、客户承诺必须进入人审。","textChars":28,"textLines":1,"bbox":[663,240,450,44]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":9,"bbox":[64,338,520,120]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":9,"text":"动作执行门禁","textPreview":"动作执行门禁","textChars":6,"textLines":1,"bbox":[88,360,330,30]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":9,"text":"外部动作区分字段、权限、准备度、幂等键、回执和失败回退。","textPreview":"外部动作区分字段、权限、准备度、幂等键、回执和失败回退。","textChars":28,"textLines":1,"bbox":[88,400,450,44]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":9,"bbox":[639,338,520,120]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":9,"text":"维修知识闭环","textPreview":"维修知识闭环","textChars":6,"textLines":1,"bbox":[663,360,330,30]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":9,"text":"相似记录、候选诊断、验证动作和关闭证据沉淀为候选知识。","textPreview":"相似记录、候选诊断、验证动作和关闭证据沉淀为候选知识。","textChars":27,"textLines":1,"bbox":[663,400,450,44]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":9,"text":"已落地：动作准备度门禁、闭环学习、相似问题对比、外部系统动作卡、39 项测试矩阵。","textPreview":"已落地：动作准备度门禁、闭环学习、相似问题对比、外部系统动作卡、39 项测试矩阵。","textChars":41,"textLines":1,"bbox":[64,535,990,36]}
+{"kind":"slide","id":"sl/3oyjhw","slide":10,"title":"OCAS-SKILL / 09","textShapes":19}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":10,"text":"OCAS-SKILL / 09","textPreview":"OCAS-SKILL / 09","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":10,"text":"动作准备度门禁：不把草稿伪装成已执行","textPreview":"动作准备度门禁：不把草稿伪装成已执行","textChars":18,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":10,"text":"对接 CMMS/QMS/EHS/OA 前先判断是否可提交、需确认或需授权","textPreview":"对接 CMMS/QMS/EHS/OA 前先判断是否可提交、需确认或需授权","textChars":36,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/bq1oryts","slide":10,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/m58z25kb","slide":10,"bbox":[64,180,276.48,66]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":10,"text":"状态","textPreview":"状态","textChars":2,"textLines":1,"bbox":[74,188,256.48,54]}
+{"kind":"shape","id":"sh/4byhgn29","slide":10,"bbox":[340.48,180,495.36,66]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":10,"text":"使用条件","textPreview":"使用条件","textChars":4,"textLines":1,"bbox":[350.48,188,475.36,54]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":10,"bbox":[835.84,180,380.16,66]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":10,"text":"输出姿态","textPreview":"输出姿态","textChars":4,"textLines":1,"bbox":[845.84,188,360.16,54]}
+{"kind":"shape","id":"sh/1032lszq","slide":10,"bbox":[64,246,276.48,66]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":10,"text":"ready_to_submit","textPreview":"ready_to_submit","textChars":15,"textLines":1,"bbox":[74,254,256.48,54]}
+{"kind":"shape","id":"sh/judg7ads","slide":10,"bbox":[340.48,246,495.36,66]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":10,"text":"字段完整且不涉及高风险授权","textPreview":"字段完整且不涉及高风险授权","textChars":13,"textLines":1,"bbox":[350.48,254,475.36,54]}
+{"kind":"shape","id":"sh/1orytsvu","slide":10,"bbox":[835.84,246,380.16,66]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":10,"text":"可生成提交材料","textPreview":"可生成提交材料","textChars":7,"textLines":1,"bbox":[845.84,254,360.16,54]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":10,"bbox":[64,312,276.48,66]}
+{"kind":"textbox","id":"sh/cvixczed","slide":10,"text":"needs_confirmation","textPreview":"needs_confirmation","textChars":18,"textLines":1,"bbox":[74,320,256.48,54]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":10,"bbox":[340.48,312,495.36,66]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":10,"text":"目标、接收人、时间或附件仍需确认","textPreview":"目标、接收人、时间或附件仍需确认","textChars":16,"textLines":1,"bbox":[350.48,320,475.36,54]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":10,"bbox":[835.84,312,380.16,66]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":10,"text":"列出确认项","textPreview":"列出确认项","textChars":5,"textLines":1,"bbox":[845.84,320,360.16,54]}
+{"kind":"shape","id":"sh/yd0z6103","slide":10,"bbox":[64,378,276.48,66]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":10,"text":"requires_authorization","textPreview":"requires_authorization","textChars":22,"textLines":1,"bbox":[74,386,256.48,54]}
+{"kind":"shape","id":"sh/g7adsji5","slide":10,"bbox":[340.48,378,495.36,66]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":10,"text":"质量放行、安全许可、客户承诺、正式发布","textPreview":"质量放行、安全许可、客户承诺、正式发布","textChars":19,"textLines":1,"bbox":[350.48,386,475.36,54]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":10,"bbox":[835.84,378,380.16,66]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":10,"text":"生成审批事实包","textPreview":"生成审批事实包","textChars":7,"textLines":1,"bbox":[845.84,386,360.16,54]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":10,"bbox":[64,444,276.48,66]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":10,"text":"blocked_missing_fields","textPreview":"blocked_missing_fields","textChars":22,"textLines":1,"bbox":[74,452,256.48,54]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":10,"bbox":[340.48,444,495.36,66]}
+{"kind":"textbox","id":"sh/sji5snel","slide":10,"text":"缺少关键字段，执行会误导","textPreview":"缺少关键字段，执行会误导","textChars":12,"textLines":1,"bbox":[350.48,452,475.36,54]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":10,"bbox":[835.84,444,380.16,66]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":10,"text":"阻止声称已同步","textPreview":"阻止声称已同步","textChars":7,"textLines":1,"bbox":[845.84,452,360.16,54]}
+{"kind":"shape","id":"sh/3m94fu18","slide":10,"bbox":[64,520,1152,62]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":10,"text":"专家价值：这一页直接回应“支持多插件/多工具协同，易用性”和“无越权行为、数据处理合规”。","textPreview":"专家价值：这一页直接回应“支持多插件/多工具协同，易用性”和“无越权行为、数据处理合规”。","textChars":45,"textLines":1,"bbox":[86,538,1030,28]}
+{"kind":"slide","id":"sl/kx7nun","slide":11,"title":"OCAS-SKILL / 10","textShapes":20}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":11,"text":"OCAS-SKILL / 10","textPreview":"OCAS-SKILL / 10","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":11,"text":"闭环学习：从已关闭系统记录沉淀候选知识","textPreview":"闭环学习：从已关闭系统记录沉淀候选知识","textChars":17,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":11,"text":"相似记录、故障模式和关闭证据进入候选知识","textPreview":"相似记录、故障模式和关闭证据进入候选知识","textChars":20,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/8v6psfil","slide":11,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/xczed8v6","slide":11,"bbox":[64,178,300,330]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":11,"text":"输入","textPreview":"输入","textChars":2,"textLines":1,"bbox":[88,205,120,28]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":11,"bbox":[90,268,8,8]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":11,"text":"已关闭系统记录","textPreview":"已关闭系统记录","textChars":5,"textLines":1,"bbox":[110,260,225,42]}
+{"kind":"shape","id":"sh/1gvy90je","slide":11,"bbox":[90,310,8,8]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":11,"text":"复盘结论","textPreview":"复盘结论","textChars":4,"textLines":1,"bbox":[110,302,225,42]}
+{"kind":"shape","id":"sh/wval87ed","slide":11,"bbox":[90,352,8,8]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":11,"text":"SOP 更新","textPreview":"SOP 更新","textChars":6,"textLines":1,"bbox":[110,344,225,42]}
+{"kind":"shape","id":"sh/epkzupwb","slide":11,"bbox":[90,394,8,8]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":11,"text":"复检/复测证据","textPreview":"复检/复测证据","textChars":7,"textLines":1,"bbox":[110,386,225,42]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":11,"bbox":[90,436,8,8]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":11,"text":"EHS 整改闭环","textPreview":"EHS 整改闭环","textChars":8,"textLines":1,"bbox":[110,428,225,42]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":11,"bbox":[390,300,120,70]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":11,"bbox":[545,178,620,330]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":11,"text":"候选知识条目","textPreview":"候选知识条目","textChars":6,"textLines":1,"bbox":[570,205,240,30]}
+{"kind":"shape","id":"sh/svu9knih","slide":11,"bbox":[570,260,177.6,48]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":11,"text":"字段","textPreview":"字段","textChars":2,"textLines":1,"bbox":[580,268,157.6,36]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":11,"bbox":[747.6,260,377.4,48]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":11,"text":"要求","textPreview":"要求","textChars":2,"textLines":1,"bbox":[757.6,268,357.4,36]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":11,"bbox":[570,308,177.6,48]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":11,"text":"可复用经验","textPreview":"可复用经验","textChars":5,"textLines":1,"bbox":[580,316,157.6,36]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":11,"bbox":[747.6,308,377.4,48]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":11,"text":"必须基于已验证证据","textPreview":"必须基于已验证证据","textChars":9,"textLines":1,"bbox":[757.6,316,357.4,36]}
+{"kind":"shape","id":"sh/s72x4nap","slide":11,"bbox":[570,356,177.6,48]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":11,"text":"适用/不适用范围","textPreview":"适用/不适用范围","textChars":8,"textLines":1,"bbox":[580,364,157.6,36]}
+{"kind":"shape","id":"sh/nih4byhg","slide":11,"bbox":[747.6,356,377.4,48]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":11,"text":"防止把历史问题错误套用到新问题","textPreview":"防止把历史问题错误套用到新问题","textChars":15,"textLines":1,"bbox":[757.6,364,357.4,36]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":11,"bbox":[570,404,177.6,48]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":11,"text":"待复核证据","textPreview":"待复核证据","textChars":5,"textLines":1,"bbox":[580,412,157.6,36]}
+{"kind":"shape","id":"sh/r65wjudg","slide":11,"bbox":[747.6,404,377.4,48]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":11,"text":"未确认根因和措施不能写成 SOP","textPreview":"未确认根因和措施不能写成 SOP","textChars":16,"textLines":1,"bbox":[757.6,412,357.4,36]}
+{"kind":"shape","id":"sh/9cvixcze","slide":11,"bbox":[570,452,177.6,48]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":11,"text":"触发关键词","textPreview":"触发关键词","textChars":5,"textLines":1,"bbox":[580,460,157.6,36]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":11,"bbox":[747.6,452,377.4,48]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":11,"text":"方便后续相似系统记录检索","textPreview":"方便后续相似系统记录检索","textChars":10,"textLines":1,"bbox":[757.6,460,357.4,36]}
+{"kind":"slide","id":"sl/oa2axq","slide":12,"title":"OCAS-SKILL / 11","textShapes":12}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":12,"text":"OCAS-SKILL / 11","textPreview":"OCAS-SKILL / 11","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":12,"text":"工程规范：可重复校验的 Skill 包","textPreview":"工程规范：可重复校验的 Skill 包","textChars":19,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":12,"text":"用包体自检和结构化资源支撑工程完整性","textPreview":"用包体自检和结构化资源支撑工程完整性","textChars":18,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/xs72x4na","slide":12,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/87ed8bat","slide":12,"bbox":[64,178,465,55]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":12,"text":"SKILL.md","textPreview":"SKILL.md","textChars":8,"textLines":1,"bbox":[86,193,400,24]}
+{"kind":"shape","id":"sh/q1orytsv","slide":12,"bbox":[584,178,465,55]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":12,"text":"README.md","textPreview":"README.md","textChars":9,"textLines":1,"bbox":[606,193,400,24]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":12,"bbox":[64,260,465,55]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":12,"text":"examples/","textPreview":"examples/","textChars":9,"textLines":1,"bbox":[86,275,400,24]}
+{"kind":"shape","id":"sh/bat47y1k","slide":12,"bbox":[584,260,465,55]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":12,"text":"templates/","textPreview":"templates/","textChars":10,"textLines":1,"bbox":[606,275,400,24]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":12,"bbox":[64,342,465,55]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":12,"text":"references/","textPreview":"references/","textChars":11,"textLines":1,"bbox":[86,357,400,24]}
+{"kind":"shape","id":"sh/bm58z25k","slide":12,"bbox":[584,342,465,55]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":12,"text":"tests/","textPreview":"tests/","textChars":6,"textLines":1,"bbox":[606,357,400,24]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":12,"bbox":[64,424,465,55]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":12,"text":"scripts/validate_package.py","textPreview":"scripts/validate_package.py","textChars":27,"textLines":1,"bbox":[86,439,400,24]}
+{"kind":"shape","id":"sh/bq1oryts","slide":12,"bbox":[584,424,465,55]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":12,"text":"rubric_evidence_matrix.csv","textPreview":"rubric_evidence_matrix.csv","textChars":26,"textLines":1,"bbox":[606,439,400,24]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":12,"text":"自检脚本覆盖：frontmatter、JSON、39 个测试用例、敏感信息、文件扩展名、包体大小、ZIP 结构。","textPreview":"自检脚本覆盖：frontmatter、JSON、39 个测试用例、敏感信息、文件扩展名、包体大小、ZIP 结构。","textChars":56,"textLines":1,"bbox":[64,540,980,42]}
+{"kind":"slide","id":"sl/ndzf0v","slide":13,"title":"OCAS-SKILL / 12","textShapes":11}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":13,"text":"OCAS-SKILL / 12","textPreview":"OCAS-SKILL / 12","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":13,"text":"安全合规：边界清楚，拒绝越权","textPreview":"安全合规：边界清楚，拒绝越权","textChars":14,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":13,"text":"高风险场景保守处理，避免把 AI 输出当授权结论","textPreview":"高风险场景保守处理，避免把 AI 输出当授权结论","textChars":24,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":13,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/at47y1kr","slide":13,"bbox":[64,185,520,120]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":13,"text":"不替代授权判断","textPreview":"不替代授权判断","textChars":7,"textLines":1,"bbox":[88,209,400,28]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":13,"text":"不直接批准质量放行、安全许可或审批结论。","textPreview":"不直接批准质量放行、安全许可或审批结论。","textChars":20,"textLines":1,"bbox":[88,250,455,42]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":13,"bbox":[639,185,520,120]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":13,"text":"不输出危险步骤","textPreview":"不输出危险步骤","textChars":7,"textLines":1,"bbox":[663,209,400,28]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":13,"text":"拒绝带电检修、绕过联锁、解除防护等危险操作建议。","textPreview":"拒绝带电检修、绕过联锁、解除防护等危险操作建议。","textChars":24,"textLines":1,"bbox":[663,250,455,42]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":13,"bbox":[64,355,520,120]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":13,"text":"不编造事实","textPreview":"不编造事实","textChars":5,"textLines":1,"bbox":[88,379,400,28]}
+{"kind":"textbox","id":"sh/7u54zido","slide":13,"text":"不编造根因、责任人、客户名、批次号和完成状态。","textPreview":"不编造根因、责任人、客户名、批次号和完成状态。","textChars":23,"textLines":1,"bbox":[88,420,455,42]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":13,"bbox":[639,355,520,120]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":13,"text":"隐私与数据脱敏","textPreview":"隐私与数据脱敏","textChars":7,"textLines":1,"bbox":[663,379,400,28]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":13,"text":"客户、人员、手机号、账号、密钥等敏感信息不完整复述。","textPreview":"客户、人员、手机号、账号、密钥等敏感信息不完整复述。","textChars":26,"textLines":1,"bbox":[663,420,455,42]}
+{"kind":"slide","id":"sl/aqu6zw","slide":14,"title":"OCAS-SKILL / 13","textShapes":13}
+{"kind":"textbox","id":"sh/0je9cvix","slide":14,"text":"OCAS-SKILL / 13","textPreview":"OCAS-SKILL / 13","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":14,"text":"落地价值：连接聊天通知与业务系统留痕","textPreview":"落地价值：连接聊天通知与业务系统留痕","textChars":18,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":14,"text":"生产部用统一事件包拉通 MES、CMMS、QMS、EHS、SAP/ERP、OA 和 PMC","textPreview":"生产部用统一事件包拉通 MES、CMMS、QMS、EHS、SAP/ERP、OA 和 PMC","textChars":45,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/tcj6tova","slide":14,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":14,"bbox":[528,122,224,56]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":14,"text":"CMMS 维修系统记录","textPreview":"CMMS 维修系统记录","textChars":9,"textLines":1,"bbox":[544,140,192,22]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":14,"bbox":[786.09,184.97,224,56]}
+{"kind":"textbox","id":"sh/tovahoza","slide":14,"text":"MES 生产影响","textPreview":"MES 生产影响","textChars":8,"textLines":1,"bbox":[802.09,202.97,192,22]}
+{"kind":"shape","id":"sh/032lszqt","slide":14,"bbox":[893,337,224,56]}
+{"kind":"textbox","id":"sh/61032lsz","slide":14,"text":"QMS 质量复检","textPreview":"QMS 质量复检","textChars":8,"textLines":1,"bbox":[909,355,192,22]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":14,"bbox":[786.09,489.03,224,56]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":14,"text":"EHS 作业许可","textPreview":"EHS 作业许可","textChars":8,"textLines":1,"bbox":[802.09,507.03,192,22]}
+{"kind":"shape","id":"sh/dsji5sne","slide":14,"bbox":[528,552,224,56]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":14,"text":"SAP/ERP 物料订单","textPreview":"SAP/ERP 物料订单","textChars":12,"textLines":1,"bbox":[544,570,192,22]}
+{"kind":"shape","id":"sh/vy90je9c","slide":14,"bbox":[269.91,489.03,224,56]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":14,"text":"OA 审批说明","textPreview":"OA 审批说明","textChars":7,"textLines":1,"bbox":[285.91,507.03,192,22]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":14,"bbox":[163,337,224,56]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":14,"text":"PMC 排产交期","textPreview":"PMC 排产交期","textChars":8,"textLines":1,"bbox":[179,355,192,22]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":14,"bbox":[269.91,184.97,224,56]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":14,"text":"企微/飞书/钉钉","textPreview":"企微/飞书/钉钉","textChars":8,"textLines":1,"bbox":[285.91,202.97,192,22]}
+{"kind":"shape","id":"sh/yd0z6103","slide":14,"bbox":[500,300,280,130]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":14,"text":"统一事件包","textPreview":"统一事件包","textChars":5,"textLines":1,"bbox":[535,327,210,30]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":14,"text":"通知、留痕、回执","textPreview":"通知、留痕、回执","textChars":8,"textLines":1,"bbox":[542,370,205,26]}
+{"kind":"slide","id":"sl/s2boia","slide":15,"title":"OCAS-SKILL / 14","textShapes":17}
+{"kind":"textbox","id":"sh/ulwval87","slide":15,"text":"OCAS-SKILL / 14","textPreview":"OCAS-SKILL / 14","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":15,"text":"官方评分项逐项回应","textPreview":"官方评分项逐项回应","textChars":9,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":15,"text":"每个分值点都有对应设计和证据","textPreview":"每个分值点都有对应设计和证据","textChars":14,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/ji5snelo","slide":15,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":15,"bbox":[64,172,322.56,58]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":15,"text":"评分项","textPreview":"评分项","textChars":3,"textLines":1,"bbox":[74,180,302.56,46]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":15,"bbox":[386.56,172,829.44,58]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":15,"text":"证据","textPreview":"证据","textChars":2,"textLines":1,"bbox":[396.56,180,809.44,46]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":15,"bbox":[64,230,322.56,58]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":15,"text":"运行稳定性与鲁棒性","textPreview":"运行稳定性与鲁棒性","textChars":9,"textLines":1,"bbox":[74,238,302.56,46]}
+{"kind":"shape","id":"sh/9knih4by","slide":15,"bbox":[386.56,230,829.44,58]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":15,"text":"39个测试用例、自检脚本、评分矩阵、实际调用截图待采集","textPreview":"39个测试用例、自检脚本、评分矩阵、实际调用截图待采集","textChars":27,"textLines":1,"bbox":[396.56,238,809.44,46]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":15,"bbox":[64,288,322.56,58]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":15,"text":"创新性和应用价值","textPreview":"创新性和应用价值","textChars":8,"textLines":1,"bbox":[74,296,302.56,46]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":15,"bbox":[386.56,288,829.44,58]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":15,"text":"工业现场到办公协同的垂直高频切口，多场景闭环和企业级安全边界","textPreview":"工业现场到办公协同的垂直高频切口，多场景闭环和企业级安全边界","textChars":30,"textLines":1,"bbox":[396.56,296,809.44,46]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":15,"bbox":[64,346,322.56,58]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":15,"text":"结果质量","textPreview":"结果质量","textChars":4,"textLines":1,"bbox":[74,354,302.56,46]}
+{"kind":"shape","id":"sh/94fu18jq","slide":15,"bbox":[386.56,346,829.44,58]}
+{"kind":"textbox","id":"sh/d0z61032","slide":15,"text":"事实/推断/待确认分层，行动项含责任方、验收标准和准备度","textPreview":"事实/推断/待确认分层，行动项含责任方、验收标准和准备度","textChars":28,"textLines":1,"bbox":[396.56,354,809.44,46]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":15,"bbox":[64,404,322.56,58]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":15,"text":"技术设计与场景编排","textPreview":"技术设计与场景编排","textChars":9,"textLines":1,"bbox":[74,412,302.56,46]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":15,"bbox":[386.56,404,829.44,58]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":15,"text":"场景路由、Schema、动作卡、准备度门禁、闭环学习","textPreview":"场景路由、Schema、动作卡、准备度门禁、闭环学习","textChars":26,"textLines":1,"bbox":[396.56,412,809.44,46]}
+{"kind":"shape","id":"sh/knih4byh","slide":15,"bbox":[64,462,322.56,58]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":15,"text":"工程规范与文档完整性","textPreview":"工程规范与文档完整性","textChars":10,"textLines":1,"bbox":[74,470,302.56,46]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":15,"bbox":[386.56,462,829.44,58]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":15,"text":"README、examples、templates、references、tests、scripts","textPreview":"README、examples、templates、references、tests、scripts","textChars":50,"textLines":1,"bbox":[396.56,470,809.44,46]}
+{"kind":"shape","id":"sh/kre1w7mp","slide":15,"bbox":[64,520,322.56,58]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":15,"text":"安全合规","textPreview":"安全合规","textChars":4,"textLines":1,"bbox":[74,528,302.56,46]}
+{"kind":"shape","id":"sh/neloj2t8","slide":15,"bbox":[386.56,520,829.44,58]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":15,"text":"脱敏、SOP边界、拒绝越权放行和危险操作","textPreview":"脱敏、SOP边界、拒绝越权放行和危险操作","textChars":20,"textLines":1,"bbox":[396.56,528,809.44,46]}
+{"kind":"slide","id":"sl/ma8ym1","slide":16,"title":"OCAS-SKILL / 15","textShapes":12}
+{"kind":"textbox","id":"sh/z61032ls","slide":16,"text":"OCAS-SKILL / 15","textPreview":"OCAS-SKILL / 15","textChars":15,"textLines":1,"bbox":[64,26,240,22]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":16,"text":"下一步证据采集计划","textPreview":"下一步证据采集计划","textChars":9,"textLines":1,"bbox":[64,55,820,48]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":16,"text":"夺冠剩余分数来自真实运行和反馈","textPreview":"夺冠剩余分数来自真实运行和反馈","textChars":15,"textLines":1,"bbox":[64,103,950,28]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":16,"bbox":[64,142,1152,0]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":16,"bbox":[84,183,8,8]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":16,"text":"通过赛题页上传 ZIP，保存报名和提交截图","textPreview":"通过赛题页上传 ZIP，保存报名和提交截图","textChars":21,"textLines":1,"bbox":[104,175,880,50]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":16,"bbox":[84,233,8,8]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":16,"text":"审核通过后保存 SkillHub 作品页和下载/收藏数据","textPreview":"审核通过后保存 SkillHub 作品页和下载/收藏数据","textChars":28,"textLines":1,"bbox":[104,225,880,50]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":16,"bbox":[84,283,8,8]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":16,"text":"在 AstronClaw 跑 39 个测试用例，记录成功率、耗时、错误和重试","textPreview":"在 AstronClaw 跑 39 个测试用例，记录成功率、耗时、错误和重试","textChars":38,"textLines":1,"bbox":[104,275,880,50]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":16,"bbox":[84,333,8,8]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":16,"text":"优先保存 T01/T06/T11/T21/T24/T25/T27/T28/T29/T30/T31 调用截图","textPreview":"优先保存 T01/T06/T11/T21/T24/T25/T27/T28/T29/T30/T31 调用截图","textChars":53,"textLines":1,"bbox":[104,325,880,50]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":16,"bbox":[84,383,8,8]}
+{"kind":"textbox","id":"sh/z61032ls","slide":16,"text":"补充 T33/T34/T35/T36/T37/T38/T39，证明鲁棒性和生产部跨部门协同","textPreview":"补充 T33/T34/T35/T36/T37/T38/T39，证明鲁棒性和生产部跨部门协同","textChars":45,"textLines":1,"bbox":[104,375,880,50]}
+{"kind":"shape","id":"sh/al87ed8b","slide":16,"bbox":[84,433,8,8]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":16,"text":"录制 60-90 秒 Demo 视频","textPreview":"录制 60-90 秒 Demo 视频","textChars":18,"textLines":1,"bbox":[104,425,880,50]}
+{"kind":"shape","id":"sh/orytsvu9","slide":16,"bbox":[84,483,8,8]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":16,"text":"收集制造业/AI 开发者真实试用反馈","textPreview":"收集制造业/AI 开发者真实试用反馈","textChars":18,"textLines":1,"bbox":[104,475,880,50]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":16,"bbox":[930,210,240,240]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":16,"text":"目标","textPreview":"目标","textChars":2,"textLines":1,"bbox":[985,250,130,36]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":16,"text":"专家榜\n100分证据闭环","textPreview":"专家榜 | 100分证据闭环","textChars":12,"textLines":2,"bbox":[970,315,170,90]}

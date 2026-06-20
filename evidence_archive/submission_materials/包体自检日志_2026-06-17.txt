@@ -1,0 +1,36 @@
+OCAS-skill package self-check log
+timestamp=2026-06-18 10:46:56
+package=submissions/OCAS-skill/industrial-cross-department-collaboration.zip
+version=2026.06.17-champion-15
+files=102
+zip_size_bytes=256446
+sha256=37EB6C9A1B546192AC319C0905A0DC142A066857DD06EDA08E1BDB26DC162A78
+
+Key additions in this round:
+- impact_scoreboard.md
+- impact_scoreboard.schema.json
+- management_escalation_packet.md
+- enterprise-flow prompt/scoring now require impact scoreboard + escalation packet for high-impact scenarios
+- integration_contracts.json now separates ENTERPRISE_IM_EMAIL, OA_APPROVAL, PMC_APS and PLM_ENGINEERING_CHANGE
+- score_run.py now tightens T21/T36/T37/T38 runtime semantics for action cards, system layering and escalation-quality outputs
+- export_expert_evidence_sprint_pack.py now generates one ranked sprint plan across platform submission, required cases, enterprise flow, stability stress and pilot feedback
+- evidence_sprint_status.py now generates a phase-by-phase status report, including SkillHub public URL tracking and next required evidence actions
+- validate_package.py now ignores root .git metadata when the package is mirrored into the GitHub publication worktree
+- examples/08_sku_quality_coordination_run.md and examples/data/sku_quality_coordination_sample.csv now demonstrate SKU-level quality, PMC, warehouse shipment and engineering onsite coordination
+- analyze_sku_quality_coordination.py now calculates SKU impact KPIs and generates tests/sku_quality_coordination_analysis.md from structured CSV data
+- analyze_department_timeline.py now generates tests/sku_department_timeline_analysis.md from structured department feedback state-transition data
+
+Validation results:
+- validate_package.py: PASS
+- smoke_test_package.py: PASS
+- expert_rubric_gate.py: PASS (local only; AstronClaw evidence still missing)
+- champion_acceptance_gate.py: champion_ready=no
+
+Local gate details:
+- validate_package files=102 total_bytes=691625
+- smoke_test_package local smoke checks passed
+- expert_rubric_gate local_gate_points=100/100
+
+Claims boundary:
+- Local package quality is proven.
+- SkillHub submission, AstronClaw full-run evidence, stability stress evidence, enterprise-flow evidence and real pilot feedback remain pending.

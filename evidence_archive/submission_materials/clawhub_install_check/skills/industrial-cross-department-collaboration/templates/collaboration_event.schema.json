@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialCollaborationEvent",
+  "type": "object",
+  "required": [
+    "title",
+    "category",
+    "priority",
+    "confirmed_facts",
+    "recommended_next_steps",
+    "open_questions"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "协同事件标题"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "maintenance",
+        "quality",
+        "safety",
+        "changeover",
+        "meeting",
+        "handover",
+        "other"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "site": {
+      "type": "string"
+    },
+    "asset_or_line": {
+      "type": "string"
+    },
+    "event_time": {
+      "type": "string"
+    },
+    "symptom": {
+      "type": "string"
+    },
+    "impact": {
+      "type": "string"
+    },
+    "confirmed_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_next_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collaboration_departments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

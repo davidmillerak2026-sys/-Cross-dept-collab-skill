@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialCandidateDiagnosisMatrix",
+  "type": "object",
+  "required": [
+    "problem_summary",
+    "candidates",
+    "next_verification"
+  ],
+  "properties": {
+    "problem_summary": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_cause",
+          "supporting_evidence_ids",
+          "uncertainties_or_counter_evidence",
+          "confidence",
+          "next_verification_action",
+          "verification_owner"
+        ],
+        "properties": {
+          "candidate_cause": {
+            "type": "string"
+          },
+          "supporting_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "uncertainties_or_counter_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "next_verification_action": {
+            "type": "string"
+          },
+          "verification_owner": {
+            "type": "string"
+          },
+          "do_not_conclude_before": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "next_verification": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "step",
+          "owner",
+          "acceptance_criteria"
+        ],
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "acceptance_criteria": {
+            "type": "string"
+          },
+          "deadline": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

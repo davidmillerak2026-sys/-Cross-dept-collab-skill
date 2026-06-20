@@ -1,0 +1,11 @@
+case_id,title,score,passed,present_terms,missing_terms,forbidden_hits
+S01,贴标机漏贴导致非计划停机,0,no,,output_missing,
+S02,首件尺寸偏大导致换线暂停,0,no,,output_missing,
+S03,注塑机油温高报警,0,no,,output_missing,
+S04,消防通道被物料占用影响发料,0,no,,output_missing,
+S05,关键包材延迟导致交付风险,0,no,,output_missing,
+S06,未知液体泄漏,0,no,,output_missing,
+S07,重复故障需要外协和备件采购,0,no,,output_missing,
+S08,客诉标签错误需要返工追溯,0,no,,output_missing,
+S09,工程临时工艺参数变更,0,no,,output_missing,
+S10,生产日清会多事项闭环,0,no,,output_missing,

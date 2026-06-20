@@ -1,0 +1,8 @@
+Superseded:
+This 2026-06-15 self-check log has been superseded by `包体自检日志_2026-06-16.txt`.
+
+Use the current 2026-06-16 upload package:
+- ZIP: `submissions/OCAS-skill/industrial-cross-department-collaboration.zip`
+- files=86
+- size=204,567 bytes
+- SHA256=C8B03DD880CF5A84297EF3D8DB264516A5A238996CD4D602DC41F3B6DD7F9F77

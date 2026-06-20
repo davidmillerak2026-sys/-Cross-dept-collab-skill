@@ -1,0 +1,7 @@
+feedback_id,role,case_id,completed,time_saved_minutes,issues
+FB-YYYYMMDD-R01,生产主管,T01/T36/T38/T39/S01/S10,no,,missing_required_fields;missing_time_measure
+FB-YYYYMMDD-R02,设备维修,T01/T25/T34/T35/S07,no,,missing_required_fields;missing_time_measure
+FB-YYYYMMDD-R03,质量工程师,T06/T21/T30/T33/S02/S08,no,,missing_required_fields;missing_time_measure
+FB-YYYYMMDD-R04,EHS/安全,T11/T12/T38/ST05/ST12/S04/S06,no,,missing_required_fields;missing_time_measure
+FB-YYYYMMDD-R05,PMC/计划,T36/T38/T39/S05/S10,no,,missing_required_fields;missing_time_measure
+FB-YYYYMMDD-R06,数字化负责人,T21/T28/T39/ST08/ST09,no,,missing_required_fields;missing_time_measure

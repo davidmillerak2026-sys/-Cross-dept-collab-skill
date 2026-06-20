@@ -1,0 +1,47 @@
+evidence_id,score_item,evidence_name,source_or_file,status,owner,notes
+E01,运行稳定性与鲁棒性,赛题页报名成功截图,,待补,,
+E02,运行稳定性与鲁棒性,作品提交成功截图,,待补,,
+E03,运行稳定性与鲁棒性,SkillHub审核通过截图,,待补,,
+E04,运行稳定性与鲁棒性,T01实际调用截图,,待补,,基础系统记录+质量复检+跨部门待办
+E05,运行稳定性与鲁棒性,T06实际调用截图,,待补,,质量隔离+授权放行边界
+E06,运行稳定性与鲁棒性,T11危险作业拒绝截图,,待补,,安全合规强证据
+E07,运行稳定性与鲁棒性,T21动作卡实际调用截图,,待补,,CMMS/QMS准备度门禁
+E08,运行稳定性与鲁棒性,T24状态更新边界截图,,待补,,已有系统记录不假装关闭
+E09,运行稳定性与鲁棒性,T25候选诊断矩阵截图,,待补,,证据索引+验证计划
+E10,运行稳定性与鲁棒性,T27信号校准截图,,待补,,阈值缺失不写已报警
+E11,运行稳定性与鲁棒性,T28降级完成截图,,待补,,系统失败不声称已同步
+E12,运行稳定性与鲁棒性,T30提示注入防护截图,,待补,,隔离越权指令
+E13,运行稳定性与鲁棒性,T33冲突记录截图,,待补,,不二选一编造
+E14,运行稳定性与鲁棒性,T34现场执行包截图,,待补,,班组/备件/许可/试运行
+E15,运行稳定性与鲁棒性,T35数据质量门禁截图,,待补,,not_close_ready
+E16,创新性和应用价值,工业现场到办公协同痛点说明,references/contest_fit.md,已完成,,
+E17,创新性和应用价值,真实脱敏试用反馈,,待补,,
+E18,结果质量,系统记录输出样例,examples/01_voice_to_collaboration_event.md,已完成,,
+E19,结果质量,质量异常输出样例,examples/02_quality_issue_to_collaboration.md,已完成,,
+E20,结果质量,周报输出样例,examples/03_shift_handover_weekly_report.md,已完成,,
+E21,结果质量,专家截图目标输出样例,examples/06_expert_screenshot_outputs.md,已完成,,
+E22,技术设计与场景编排,场景路由表与动作卡契约,"SKILL.md; templates/integration_contracts.json",已完成,,
+E23,技术设计与场景编排,JSON Schema与系统协同契约,templates/,已完成,,
+E24,技术设计与场景编排,官方评分项映射矩阵,tests/rubric_evidence_matrix.csv,已完成,,39用例映射6个官方评分项
+E25,工程规范与文档完整性,包体自检/评分/脱敏脚本,"scripts/validate_package.py; scripts/score_run.py; scripts/redact_input.py",已完成,,
+E26,工程规范与文档完整性,自检通过截图或日志,submission_materials/包体自检日志_2026-06-16.txt,已完成,,PASS files=86 total_bytes=518605; smoke/enterprise_flow_pack/stability_stress_pack/pilot_feedback_pack/evidence_readiness_report/champion_acceptance_gate/enterprise_flow_score/stability_stress_score/pilot_feedback_score/enterprise_flow_contract/stability_stress_contract/submission_manifest/expert gate passed
+E27,安全合规,脱敏与拒绝越权规则,"SKILL.md; templates/redaction_rules.json; scripts/redact_input.py",已完成,,
+E28,安全合规,开源/真实数据声明,submission_materials/开源与真实数据合规声明.md,已完成,,
+E29,综合展示,60-90秒Demo视频,submission_materials/Demo视频脚本_60-90秒.md,脚本完成待录制,,
+E30,综合展示,专家评审PPT冠军版,submission_materials/OCAS-skill_专家评审材料_工业现场跨部门协同工作_冠军版.pptx,已完成,,16页新版已含动作准备度/闭环学习/现场执行/系统记录数据质量/生产部跨部门协同/部门系统流转
+E31,综合展示,专家评审PPT QA记录,submission_materials/专家评审PPT_QA记录_2026-06-15.md,已完成,,16页PNG预览与inspect检查
+E32,运行稳定性与鲁棒性,T36生产部-PMC协同截图,,待补,,生产部牵头排产/产能/交期协同
+E33,运行稳定性与鲁棒性,T37生产部-工程协同截图,,待补,,临时工艺变更+首件复核+PMC影响
+E34,运行稳定性与鲁棒性,T38生产部跨部门日清截图,,待补,,质量/安全/工程/PMC行动项闭环
+E35,安全合规,T31热度榜刷量拒绝截图,,待补,,拒绝刷量/伪造官方推荐，只给真实试用推广
+E36,运行稳定性与鲁棒性,T39部门沟通与系统流转截图,,待补,,统一事件包+企业IM+MES/CMMS/QMS/EHS/SAP/OA/PMC系统回执
+E37,创新性和应用价值,试用反馈收集表,submission_materials/试用反馈收集表_2026-06-16.md,已完成,,审核通过后填入真实脱敏反馈
+E38,技术设计与场景编排,10个真实企业部门协同场景,examples/07_enterprise_department_flow_10_scenarios.md,已完成,,生产部发现+通知层+正式系统链路+部门反馈+闭环门禁+关闭后知识沉淀
+E39,运行稳定性与鲁棒性,S01-S10企业部门协同专项实测包,"tests/astronclaw_enterprise_flow_prompt_pack.md; tests/run_record_enterprise_flow_template.csv",已完成,,审核通过后逐条复制到AstronClaw截图留证
+E40,结果质量,S01-S10企业部门协同专项评分脚本,scripts/score_enterprise_flow.py,已完成,,实测输出保存为S01.md-S10.md后生成enterprise_flow_score_report.csv
+E41,技术设计与场景编排,企业部门协同输出合同,templates/enterprise_flow_output_contract.md,已完成,,固化统一事件包+分层流转+部门反馈合同+正式系统动作卡+闭环门禁+升级时钟
+E42,结果质量,S01-S10企业部门协同黄金检查点,tests/enterprise_flow_golden_outputs.md,已完成,,人工复核S01-S10输出是否命中关键业务语义并避免越权完成措辞
+E43,运行稳定性与鲁棒性,ST01-ST12异常输入压力包,"tests/stability_stress_cases.json; tests/astronclaw_stability_stress_prompt_pack.md; tests/run_record_stability_stress_template.csv",已完成,,覆盖短输入/噪声/冲突/危险请求/提示注入/隐私凭证/系统失败/伪造完成/渠道误用
+E44,运行稳定性与鲁棒性,异常输入压力评分脚本,scripts/score_stability_stress.py,已完成,,实测输出保存为ST01.md-ST12.md后生成stability_stress_score_report.csv
+E45,创新性和应用价值,6类角色试用反馈访谈包,"tests/pilot_feedback_roles.json; tests/pilot_feedback_interview_pack.md; tests/pilot_feedback_records_template.csv",已完成,,生产主管/设备维修/质量/EHS/PMC/数字化负责人真实试用反馈收集
+E46,创新性和应用价值,应用价值评分脚本,scripts/score_pilot_feedback.py,已完成,,真实反馈填入CSV后检查完整度/节省时间/公开授权/安全边界

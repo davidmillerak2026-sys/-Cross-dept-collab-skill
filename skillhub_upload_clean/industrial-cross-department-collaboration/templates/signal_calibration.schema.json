@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialSignalCalibrationGate",
+  "type": "object",
+  "required": [
+    "signals",
+    "calibration_gaps",
+    "safe_interpretation"
+  ],
+  "properties": {
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "signal_name",
+          "unit",
+          "time_window",
+          "current_value_or_trend",
+          "source",
+          "calibration_status"
+        ],
+        "properties": {
+          "signal_name": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "time_window": {
+            "type": "string"
+          },
+          "current_value_or_trend": {
+            "type": "string"
+          },
+          "baseline": {
+            "type": "string"
+          },
+          "warning_threshold": {
+            "type": "string"
+          },
+          "trip_threshold": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "user_input",
+              "manual_or_sop",
+              "sensor_tool",
+              "historical_record",
+              "operator_experience",
+              "unknown"
+            ]
+          },
+          "calibration_status": {
+            "type": "string",
+            "enum": [
+              "calibrated",
+              "pending_baseline",
+              "pending_threshold",
+              "pending_unit",
+              "conflicting_sources"
+            ]
+          },
+          "safe_state": {
+            "type": "string",
+            "enum": [
+              "normal",
+              "trend_watch",
+              "needs_verification",
+              "suspected_breach",
+              "confirmed_breach"
+            ]
+          }
+        }
+      }
+    },
+    "calibration_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safe_interpretation": {
+      "type": "string"
+    },
+    "next_calibration_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "evidence_needed": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

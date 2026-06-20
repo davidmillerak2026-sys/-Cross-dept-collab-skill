@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialEvidenceTrace",
+  "type": "object",
+  "required": [
+    "evidence_index",
+    "linked_outputs"
+  ],
+  "properties": {
+    "evidence_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "source_type",
+          "captured_fact",
+          "confidence"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^E[0-9]{2,}$"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "user_input",
+              "sop_or_attachment",
+              "historical_record",
+              "measurement_record",
+              "tool_result",
+              "manual_confirmation"
+            ]
+          },
+          "source_label": {
+            "type": "string"
+          },
+          "source_excerpt_redacted": {
+            "type": "string"
+          },
+          "captured_fact": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "confirmed",
+              "inferred",
+              "pending"
+            ]
+          },
+          "privacy_redaction": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "linked_outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "output_field",
+          "evidence_ids"
+        ],
+        "properties": {
+          "output_field": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "state_delta": {
+      "type": "object",
+      "properties": {
+        "record_id": {
+          "type": "string"
+        },
+        "previous_status": {
+          "type": "string"
+        },
+        "requested_status": {
+          "type": "string"
+        },
+        "recommended_next_status": {
+          "type": "string"
+        },
+        "blocking_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

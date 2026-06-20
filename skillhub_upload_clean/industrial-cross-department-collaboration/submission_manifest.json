@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "skill_name": "industrial-cross-department-collaboration",
+  "version": "2026.06.20-clean-24",
+  "entrypoint": "SKILL.md",
+  "readme": "README.md",
+  "version_file": "VERSION.md",
+  "description": "面向工业现场的跨部门协同工作 Skill，将生产现场信息、部门反馈和正式系统回执整理为可执行、可追踪、可闭环的协作材料。",
+  "business_domains": [
+    "production",
+    "maintenance",
+    "quality",
+    "ehs",
+    "pmc",
+    "warehouse",
+    "procurement",
+    "engineering",
+    "enterprise_integration"
+  ],
+  "package_boundary": {
+    "included": [
+      "SKILL.md",
+      "README.md",
+      "VERSION.md",
+      "templates",
+      "examples",
+      "references"
+    ],
+    "excluded": [
+      "debugging_logs",
+      "manual_gui_run_records",
+      "local_visual_evidence",
+      "internal_planning_documents",
+      "scoring_or_benchmark_utilities",
+      "helper_scripts"
+    ]
+  }
+}

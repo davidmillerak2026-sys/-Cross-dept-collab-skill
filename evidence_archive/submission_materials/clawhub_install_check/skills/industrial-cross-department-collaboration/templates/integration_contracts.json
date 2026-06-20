@@ -1,0 +1,198 @@
+{
+  "name": "industrial_office_collaboration_integration_contracts",
+  "version": "2026-06-17",
+  "purpose": "Define safe handoff payloads for office-collaboration systems without claiming that external actions were already executed. Keep notification channels, approval systems, planning systems and engineering change systems clearly separated so production-led collaboration preserves real enterprise boundaries.",
+  "systems": [
+    {
+      "target_system": "CMMS",
+      "business_use": "Create or update a maintenance maintenance action record.",
+      "action_types": ["create", "update", "evidence_attach", "notify"],
+      "required_fields": [
+        "action_record_title",
+        "asset_or_line",
+        "location",
+        "event_time",
+        "problem_description",
+        "priority",
+        "confirmed_facts",
+        "next_actions",
+        "acceptance_criteria"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["已派工", "已关闭", "已完成维修"]
+    },
+    {
+      "target_system": "QMS",
+      "business_use": "Create a quality isolation, recheck, or corrective-action record.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach", "notify"],
+      "required_fields": [
+        "batch_or_sku",
+        "defect_description",
+        "affected_quantity",
+        "isolation_status",
+        "quality_risk",
+        "recheck_plan",
+        "disposition_owner",
+        "authorization_required"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["已放行", "已判定合格", "客户已接受"]
+    },
+    {
+      "target_system": "EHS",
+      "business_use": "Create a safety finding, corrective action, or emergency coordination message.",
+      "action_types": ["create", "notify", "evidence_attach", "update"],
+      "required_fields": [
+        "hazard_type",
+        "location",
+        "current_control",
+        "risk_level",
+        "qualified_owner",
+        "verification_method",
+        "followup_due_time"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["已许可危险作业", "可绕过联锁", "可带电检修"]
+    },
+    {
+      "target_system": "MES",
+      "business_use": "Summarize production impact, changeover blockers, and recovery status.",
+      "action_types": ["update", "notify", "evidence_attach"],
+      "required_fields": [
+        "line_or_station",
+        "sku",
+        "planned_or_actual_time",
+        "production_impact",
+        "blocking_reason",
+        "responsible_department",
+        "next_checkpoint"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["已恢复生产", "参数已批准", "首件已通过"]
+    },
+    {
+      "target_system": "SAP_ERP",
+      "business_use": "Check or summarize material, spare-part, purchase, order, delivery, and cost impact.",
+      "action_types": ["query", "update", "notify", "approve_request", "evidence_attach"],
+      "required_fields": [
+        "order_or_mrp_reference",
+        "material_or_spare_part",
+        "inventory_status",
+        "purchase_or_transfer_status",
+        "delivery_commitment",
+        "cost_or_variance_impact",
+        "planning_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["库存已锁定", "采购已批准", "客户交期已承诺", "成本已确认"]
+    },
+    {
+      "target_system": "ENTERPRISE_IM_EMAIL",
+      "business_use": "Send a copy-ready message to Enterprise WeChat, Feishu, DingTalk, or email for notification,催办 and meeting invitation only.",
+      "action_types": ["notify", "remind", "escalate_notice"],
+      "required_fields": [
+        "audience",
+        "message_summary",
+        "responsible_parties",
+        "due_time",
+        "risks",
+        "missing_information",
+        "next_sync_time"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["对方已确认", "审批已通过", "系统已同步", "已形成正式系统记录"]
+    },
+    {
+      "target_system": "OA_APPROVAL",
+      "business_use": "Create or update an abnormal report, approval flow, management escalation note, or cross-department meeting minutes in OA.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach", "notify"],
+      "required_fields": [
+        "event_id",
+        "request_title",
+        "business_reason",
+        "decision_required",
+        "decision_due_by",
+        "owner_department",
+        "approval_owner",
+        "supporting_evidence"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["审批已通过", "管理已批准", "会议结论已生效", "客户承诺已更新"]
+    },
+    {
+      "target_system": "PMC_APS",
+      "business_use": "Update or propose production planning, capacity, delivery, overtime, insert-order and recovery-window decisions.",
+      "action_types": ["query", "update", "scenario_compare", "notify"],
+      "required_fields": [
+        "event_id",
+        "line_or_capacity_reference",
+        "affected_orders",
+        "delivery_risk_level",
+        "recovery_window",
+        "alternative_schedule_options",
+        "planning_owner",
+        "decision_due_by"
+      ],
+      "authorization_required": false,
+      "do_not_claim": ["交期已承诺", "客户已接受", "排产已切换成功", "加班已批准"]
+    },
+    {
+      "target_system": "PLM_ENGINEERING_CHANGE",
+      "business_use": "Track temporary process change, parameter version, fixture/program change or engineering validation boundary.",
+      "action_types": ["create", "update", "approve_request", "evidence_attach"],
+      "required_fields": [
+        "change_request_id",
+        "product_or_sku",
+        "current_version",
+        "proposed_version_or_parameter",
+        "change_reason",
+        "validation_plan",
+        "effective_scope",
+        "engineering_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["参数已生效", "版本已切换", "首件已通过", "临时变更已批准"]
+    },
+    {
+      "target_system": "KNOWLEDGE_BASE",
+      "business_use": "Convert closed cases into reusable SOP notes, lessons learned, or checklists.",
+      "action_types": ["knowledge_update"],
+      "required_fields": [
+        "case_summary",
+        "verified_root_cause",
+        "approved_countermeasure",
+        "applicable_scope",
+        "source_record",
+        "review_owner"
+      ],
+      "authorization_required": true,
+      "do_not_claim": ["根因已验证", "SOP已发布", "全员已培训"]
+    }
+  ],
+  "action_card_template": {
+    "target_system": "",
+    "action_type": "",
+    "payload_summary": "",
+    "evidence_ids": [],
+    "required_fields": [],
+    "missing_fields": [],
+    "authorization_required": true,
+    "readiness_status": "",
+    "service_level_target": "",
+    "business_decision_deadline": "",
+    "idempotency_key": "",
+    "channel_boundary": "",
+    "preconditions": [],
+    "post_submit_verification": [],
+    "side_effect_boundary": [],
+    "expected_receipt": {
+      "external_record_id": "",
+      "system_status": "",
+      "submitted_at": "",
+      "submitted_by_or_actor": "",
+      "receipt_owner": ""
+    },
+    "failure_fallback": "",
+    "rollback_or_followup": ""
+  }
+}

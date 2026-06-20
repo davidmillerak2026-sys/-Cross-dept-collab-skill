@@ -1,0 +1,36 @@
+OCAS-skill package self-check log
+timestamp=2026-06-18 17:09:01
+package=submissions/OCAS-skill/industrial-cross-department-collaboration.zip
+version=2026.06.18-champion-18
+files=103
+zip_size_bytes=268862
+sha256=D6EA22161851DE7B81F63AF281C1A3965D95A82BE802525F6ED3753AF294872B
+
+Key additions in this round:
+- Reframed the Skill from a single-record helper to an industrial-site cross-department collaboration workflow.
+- Updated SkillHub-facing title, README, SKILL frontmatter, prompt packs, promotion copy and PPT title to state that system records are only one optional carrier.
+- Added OCAS submission success and SkillHub pending-review screenshots to the evidence folder.
+- Added references/operational_advantage_availability_robustness.md.
+- Documented the office-collaboration pain points: information scattered across systems, manual processing time, hard-to-track follow-ups and inefficient cross-department flow.
+- Mapped those pain points to the Skill's unified event package, system-layered action cards, department feedback contract, close gates, impact scoreboard and management escalation package.
+- Clarified availability language: current status is logic-layer high-availability design plus local repeatable gates; production-grade high availability still needs SkillHub/AstronClaw evidence.
+- Added robustness analysis for short/noisy/conflicting inputs, dangerous requests, prompt injection, privacy credentials, system failure, fake completion and channel misuse.
+- Wired the new analysis into README, tests README, submission manifest, validate gate and smoke coverage.
+- Converted two evidence screenshots from JPEG content with .png extension into real PNG files to clear platform pre-release risk warnings.
+- Added CSV formula-injection protection for pilot feedback scoring outputs and a smoke-test regression case for `=`, `+`, `-` and `@` prefixes.
+
+Validation results:
+- validate_package.py: PASS
+- smoke_test_package.py: PASS
+- expert_rubric_gate.py: PASS (local only; AstronClaw evidence still missing)
+
+Local gate details:
+- validate_package files=103 total_bytes=1405068
+- smoke_test_package local smoke checks passed
+- expert_rubric_gate local_gate_points=100/100
+- latest ZIP SHA256=D6EA22161851DE7B81F63AF281C1A3965D95A82BE802525F6ED3753AF294872B
+
+Claims boundary:
+- Local package quality and logic-layer robustness are proven by repeatable local gates.
+- SkillHub submission, AstronClaw full-run evidence, stability stress evidence, enterprise-flow evidence and real pilot feedback remain pending.
+- Do not claim production-grade high availability or expert-score 100/100 is proven until those external evidence items are collected.

@@ -1,0 +1,11 @@
+case_id,scenario,priority_for_screenshot,run_date,runner,platform,attempt,latency_seconds,passed,score,error_type,retry_needed,output_file_or_screenshot,notes
+S01,enterprise_flow,enterprise_required,,,,1,,,,,,,贴标机漏贴导致非计划停机
+S02,enterprise_flow,enterprise_required,,,,1,,,,,,,首件尺寸偏大导致换线暂停
+S03,enterprise_flow,enterprise_required,,,,1,,,,,,,注塑机油温高报警
+S04,enterprise_flow,enterprise_required,,,,1,,,,,,,消防通道被物料占用影响发料
+S05,enterprise_flow,enterprise_required,,,,1,,,,,,,关键包材延迟导致交付风险
+S06,enterprise_flow,enterprise_required,,,,1,,,,,,,未知液体泄漏
+S07,enterprise_flow,enterprise_required,,,,1,,,,,,,重复故障需要外协和备件采购
+S08,enterprise_flow,enterprise_required,,,,1,,,,,,,客诉标签错误需要返工追溯
+S09,enterprise_flow,enterprise_required,,,,1,,,,,,,工程临时工艺参数变更
+S10,enterprise_flow,enterprise_required,,,,1,,,,,,,生产日清会多事项闭环

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImpactScoreboard",
+  "type": "object",
+  "required": [
+    "safety_level",
+    "quality_level",
+    "production_level",
+    "delivery_risk_level",
+    "blocked_close_reason_count",
+    "decision_due_by"
+  ],
+  "properties": {
+    "safety_level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3"]
+    },
+    "quality_level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3"]
+    },
+    "production_level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3"]
+    },
+    "delivery_risk_level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3"]
+    },
+    "downtime_minutes": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "production_loss_units": {
+      "type": "string"
+    },
+    "isolated_quantity": {
+      "type": "string"
+    },
+    "affected_orders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "material_eta": {
+      "type": "string"
+    },
+    "cost_exposure_estimate": {
+      "type": "string"
+    },
+    "blocked_close_reason_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "decision_due_by": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

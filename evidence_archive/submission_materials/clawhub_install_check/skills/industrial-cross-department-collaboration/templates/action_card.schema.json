@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndustrialActionCard",
+  "type": "object",
+  "required": [
+    "action",
+    "owner",
+    "evidence",
+    "evidence_ids",
+    "acceptance_criteria",
+    "status"
+  ],
+  "properties": {
+    "action": {
+      "type": "string",
+      "description": "需要完成的具体动作"
+    },
+    "owner": {
+      "type": "string",
+      "description": "责任方或责任角色"
+    },
+    "collaborators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "due_time": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string",
+      "description": "该行动项来自哪条输入事实"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "description": "该行动项引用的证据编号，例如 E01、E02",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_criteria": {
+      "type": "string",
+      "description": "完成标准或验收标准"
+    },
+    "readiness_status": {
+      "type": "string",
+      "enum": [
+        "ready_to_submit",
+        "needs_confirmation",
+        "requires_authorization",
+        "blocked_missing_fields"
+      ]
+    },
+    "idempotency_key": {
+      "type": "string",
+      "description": "建议的幂等键或外部关联号，避免重复创建/通知"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "post_submit_verification": {
+      "type": "array",
+      "description": "真实系统执行后需要检查的回执字段或状态",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_fallback": {
+      "type": "string"
+    },
+    "risk": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "待处理",
+        "处理中",
+        "待确认",
+        "已完成",
+        "阻塞"
+      ]
+    }
+  }
+}
