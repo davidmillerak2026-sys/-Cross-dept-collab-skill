@@ -203,4 +203,41 @@ Generated clean28 package:
 - ZIP size: `51086` bytes
 - ZIP file count: `30`
 
-Clean28 is the current structured draft for the next platform upload after v27 manual retesting.
+Clean28 was superseded by clean29 after additional GUI outputs showed over-confident technical and quality judgments.
+
+## Clean29 Quality And Hypothesis Boundary
+
+Additional manual GUI outputs exposed three recurring issues:
+
+- Technical hypotheses such as ICT drift, sensor failure, fixture drift, program version change, or fixture adjustment were sometimes written as confirmed root causes.
+- Quality actions such as freezing, release, full inspection, AQL tightening, or sampling percentages were sometimes specified without a quality-owner decision, emergency SOP, or QMS/offline authorization evidence.
+- When QMS or another formal system was unavailable, temporary Enterprise WeChat/Feishu/DingTalk/email opinions were sometimes treated as automatically becoming formal records after recovery.
+
+Correct interpretation:
+
+- Technical judgments stay as high-priority hypotheses until engineering validation, quality risk assessment, affected-scope definition, and system evidence are available.
+- Sampling ratio, full inspection, concession release, conditional release, and shipment recovery require quality authorization or SOP support. If the user did not provide the ratio, the Skill should write "按质量负责人确认的加严抽检/全检/AQL方案" rather than inventing numbers.
+- Emergency chat opinions and attachments can support temporary control, reminders, and evidence collection, but they do not automatically become formal records. After system recovery, responsible teams must manually backfill records, attach screenshots/files, preserve the original execution time, and pass authorization review.
+
+Clean29 hardening:
+
+- Added top-priority rules for technical hypothesis boundaries, quality authority boundaries, and system-unavailable backfill boundaries.
+- Added explicit prohibitions against inferring "missing spare / cannot repair tonight" from supplier ETA alone.
+- Added ICT/FAI/dimension-near-limit guidance: require engineering validation, quality assessment, and affected-scope definition before deciding release, isolation, or reinspection scope.
+- Expanded final checks to catch invented sampling ratios, over-broad freeze/release scope, and temporary-opinion-as-formal-record mistakes.
+
+Validation:
+
+- Clean upload ZIP generated with `30` files.
+- Secret-like string scan: no direct key/password/secret hits; only redaction policy text mentions credentials.
+- Platform-risk terms scan: no internal contest strategy, scoring language, or excluded examples/scripts in the clean upload package.
+
+Generated clean29 package:
+
+- Source folder: `skillhub_upload_clean/industrial-cross-department-collaboration/`
+- ZIP: `release_zips/industrial-cross-department-collaboration-clean-20260620-v29.zip`
+- SHA256: `7312539FC88C7C7B3BAD4FDCB133880F1A0800FCF5F94E600D4AFE3F97C4E35C`
+- ZIP size: `51990` bytes
+- ZIP file count: `30`
+
+Clean29 is the current recommended platform upload package.

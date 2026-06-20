@@ -221,3 +221,42 @@ Severity:
 Retest target:
 
 - IE/ICT data drift scenario to test non-maintenance industrial engineering collaboration.
+
+## G07 - ICT Test Station Data Drift / False Judgment Scenario
+
+Prompt:
+
+```text
+ICT测试站这两天误判率升高，生产说同一批板子上午测不过、下午又能过。质量担心误放或误杀，工程怀疑测试治具或程序版本有漂移，PMC担心影响今天返修和交付。请组织一次生产部牵头的跨部门协同，判断先做哪些验证、哪些产品不能放行、系统怎么留痕。
+```
+
+Captured output:
+
+- Full page copy saved locally at `submission_materials/astronclaw_real_runs/latest_page_copy.txt`.
+
+Observed result summary:
+
+- Correctly recognized ICT instability as a cross-department quality/engineering/PMC issue.
+- Produced validation actions, release restrictions, system traceability, and a copyable coordination message.
+
+Pass signals:
+
+- Correctly involved engineering, quality, warehouse, PMC, MES/ICT, QMS/WMS, and ERP/PMC.
+- Correctly recognized both false rejection and false release risk.
+- Correctly asked for standard-board validation, test record trend review, fixture/program/parameter check, and system traceability.
+
+Issues:
+
+- Overstated diagnosis: "测试系统本身在漂移，不是产品问题" is not confirmed. It should be framed as a high-priority hypothesis requiring validation.
+- Overstated release hold: "所有 ICT OK 的板子不能直接放行" may be appropriate only after quality risk assessment; output should define affected scope and require quality authorization rather than freezing everything by default.
+- "加严抽检（建议 100% 复检或加抽 50%）" is too specific and may conflict with SOP/AQL. Preferred: "按质量负责人确认的加严抽检/复检方案".
+- "今天下班前我要看到..." is a useful urgency window but should be labeled as a suggested response window pending owner confirmation.
+- Final offer to check contacts and send messages is too strong unless enterprise connectors and authorization are confirmed.
+
+Severity:
+
+- Partial pass. Broader scenario handling is good, but hypothesis/quality-hold/sampling/connector boundaries remain too strong.
+
+Retest target:
+
+- Changeover and first-article release scenario.

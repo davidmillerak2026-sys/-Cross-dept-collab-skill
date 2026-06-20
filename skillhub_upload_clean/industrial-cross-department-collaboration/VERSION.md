@@ -1,6 +1,6 @@
 # Version
 
-version: 2026.06.20-clean-28
+version: 2026.06.20-clean-29
 name: industrial-cross-department-collaboration
 package_type: SkillHub clean upload package
 
@@ -20,6 +20,8 @@ package_type: SkillHub clean upload package
 - Tightened closed-loop learning: chat-only recovery notes cannot become verified measures, confirmed recovery, or SOP knowledge before formal receipts and authorization.
 - Added explicit success criteria, required-input handling, workflow, and final-check gates inspired by the monthly-business-report Skill structure.
 - Strengthened checks against missing event packages, over-specific sampling ratios, unconfirmed supplier ETA, hard deadlines, and connector side-effect claims.
+- Added explicit hypothesis boundaries for ICT drift, sensor failure, fixture drift, program version changes, and spare-part availability.
+- Tightened quality authority boundaries for freezing, release, full inspection, sampling percentages, emergency release, and offline QMS outage workflows.
 
 ## Excluded
 
