@@ -263,6 +263,7 @@ Current authoritative retest path:
 Retest materials:
 
 - CLI probe: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/cli_probe.md`
+- Chrome automation probe: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/chrome_automation_probe.md`
 - Prompt pack: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_prompt_pack.md`
 - Retest matrix: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_retest_matrix.md`
 - Run record: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_run_record.csv`
