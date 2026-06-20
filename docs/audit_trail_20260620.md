@@ -241,3 +241,30 @@ Generated clean29 package:
 - ZIP file count: `30`
 
 Clean29 is the current recommended platform upload package.
+
+## Clean29 Retest Plan And CLI Probe
+
+After clean29 was pushed, CLI-based batch testing was probed again.
+
+Observed CLI state:
+
+- `clawhub` v0.22.0 is available for skill search, install, inspect, publish, and scan.
+- `clawhub` does not expose a deployed AstronClaw chat run command.
+- `openclaw` is available and has local `agent` commands, but the local Gateway is unreachable, no gateway service is installed, and no local agents or channels are configured.
+- Therefore `openclaw` can become an auxiliary local regression path later, but it is not current evidence for the deployed AstronClaw Skill.
+
+Current authoritative retest path:
+
+- Run the deployed AstronClaw GUI.
+- Select the model manually; do not use `Auto` for comparison runs.
+- Run short natural-language scenarios.
+- Copy the page output into the v29 run archive.
+
+Retest materials:
+
+- CLI probe: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/cli_probe.md`
+- Prompt pack: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_prompt_pack.md`
+- Retest matrix: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_retest_matrix.md`
+- Run record: `evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_run_record.csv`
+
+The v29 retest targets eight high-risk GUI scenarios: changeover first article near limit, ICT drift/false judgment, QMS outage, supplier ETA with unknown inventory, chat-only closure evidence, wrong-label shipment gate, EHS electrical cabinet permit, and incremental multi-channel status update.
