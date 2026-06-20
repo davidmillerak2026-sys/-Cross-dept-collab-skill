@@ -15,6 +15,7 @@ The script:
 2. scores that output with `score_v29_retest.py` heuristics
 3. updates `v29_run_record.csv`
 4. regenerates `v29_score_report.csv`
+5. regenerates `v29_summary.md`
 """
 
 from __future__ import annotations
@@ -154,6 +155,24 @@ def regenerate_score_report(outputs: Path, run_record: Path, report: Path) -> No
     )
 
 
+def regenerate_summary(run_record: Path, report: Path) -> None:
+    script = ROOT / "scripts" / "summarize_v29_retest.py"
+    summary = report.with_name("v29_summary.md")
+    subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--run-record",
+            str(run_record),
+            "--score-report",
+            str(report),
+            "--summary",
+            str(summary),
+        ],
+        check=True,
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True, choices=MODELS)
@@ -178,6 +197,7 @@ def main() -> None:
     score_row = score_text(args.model, args.case_id, text)
     update_run_record(run_record, args.model, args.case_id, output_file, score_row)
     regenerate_score_report(outputs, run_record, report)
+    regenerate_summary(run_record, report)
 
     print(
         "saved_v29_output "

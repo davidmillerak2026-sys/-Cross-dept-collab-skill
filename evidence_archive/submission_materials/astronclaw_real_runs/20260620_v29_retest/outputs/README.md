@@ -27,3 +27,5 @@ python scripts/save_v29_output.py --model Qwen3.6 --case V29-G01 --from-clipboar
 ```
 
 That command saves the output, updates `v29_run_record.csv`, and regenerates `v29_score_report.csv`.
+
+It also regenerates `v29_summary.md`, which shows progress by model, progress by scenario, recurring issue labels, and the next missing rows.
