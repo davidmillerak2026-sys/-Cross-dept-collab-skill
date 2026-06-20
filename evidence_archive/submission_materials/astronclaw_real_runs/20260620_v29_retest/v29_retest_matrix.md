@@ -96,3 +96,20 @@ evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v
 ```
 
 This is a fast defect screen, not a replacement for manual review. It checks the v29 hardening targets: unsupported root cause, invented quality percentages, temporary chat evidence treated as formal records, supplier ETA over-inference, unsupported closure/release/recovery/system-write claims, unsafe EHS bypass, process narration, and connector side effects.
+
+## Next Prompt Helper
+
+To copy the next missing prompt to the clipboard:
+
+```text
+python scripts/next_v29_prompt.py --copy
+```
+
+To force a specific model or scenario:
+
+```text
+python scripts/next_v29_prompt.py --model Qwen3.6 --copy
+python scripts/next_v29_prompt.py --case V29-G02 --copy
+```
+
+The copied text is only the natural-language scenario prompt, so it can be pasted directly into AstronClaw.

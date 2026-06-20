@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import ctypes
 import subprocess
 import sys
 from datetime import date
@@ -43,16 +44,34 @@ CASES = [f"V29-G{idx:02d}" for idx in range(1, 9)]
 
 def read_clipboard() -> str:
     if sys.platform.startswith("win"):
-        result = subprocess.run(
-            ["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"],
-            check=True,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-        return result.stdout
+        return get_windows_clipboard_text()
     raise RuntimeError("--from-clipboard is currently implemented for Windows PowerShell only")
+
+
+def get_windows_clipboard_text() -> str:
+    user32 = ctypes.windll.user32
+    kernel32 = ctypes.windll.kernel32
+    user32.GetClipboardData.restype = ctypes.c_void_p
+    user32.GetClipboardData.argtypes = [ctypes.c_uint]
+    kernel32.GlobalLock.restype = ctypes.c_void_p
+    kernel32.GlobalLock.argtypes = [ctypes.c_void_p]
+    kernel32.GlobalUnlock.argtypes = [ctypes.c_void_p]
+    cf_unicode_text = 13
+    if not user32.OpenClipboard(None):
+        raise OSError("OpenClipboard failed")
+    try:
+        handle = user32.GetClipboardData(cf_unicode_text)
+        if not handle:
+            return ""
+        locked = kernel32.GlobalLock(handle)
+        if not locked:
+            raise OSError("GlobalLock failed")
+        try:
+            return ctypes.wstring_at(locked)
+        finally:
+            kernel32.GlobalUnlock(handle)
+    finally:
+        user32.CloseClipboard()
 
 
 def read_input(args: argparse.Namespace) -> str:
