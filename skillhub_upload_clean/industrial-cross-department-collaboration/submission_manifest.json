@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill_name": "industrial-cross-department-collaboration",
-  "version": "2026.06.20-clean-24",
+  "version": "2026.06.20-clean-25",
   "entrypoint": "SKILL.md",
   "readme": "README.md",
   "version_file": "VERSION.md",
@@ -23,7 +23,6 @@
       "README.md",
       "VERSION.md",
       "templates",
-      "examples",
       "references"
     ],
     "excluded": [
@@ -32,7 +31,9 @@
       "local_visual_evidence",
       "internal_planning_documents",
       "scoring_or_benchmark_utilities",
-      "helper_scripts"
+      "helper_scripts",
+      "example_outputs",
+      "sample_data"
     ]
   }
 }

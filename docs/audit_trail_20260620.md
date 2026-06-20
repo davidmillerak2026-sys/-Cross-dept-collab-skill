@@ -58,3 +58,44 @@ For platform upload, use only:
 For engineering traceability, review:
 
 `evidence_archive/`
+
+## Clean25 Retest and Hardening
+
+After the clean24 version passed review, a manual AstronClaw GUI retest was run with six natural-language scenarios:
+
+- G01: new maintenance + quality event.
+- G02: multi-channel collaboration status update.
+- G03: QMS release gate under shipment pressure.
+- G04: EHS permit and energy-isolation gate.
+- G05: QMS outage emergency flow.
+- G06: closure review with chat-only evidence.
+
+Detailed log:
+
+- `evidence_archive/submission_materials/astronclaw_real_runs/20260620_clean24_manual/clean24_manual_test_log.md`
+
+Retest findings:
+
+- The Skill consistently understood the industrial collaboration logic.
+- It correctly blocked shipment without QMS release.
+- It correctly blocked unsafe electrical cabinet work without EHS permit and energy isolation.
+- It correctly blocked event closure without CMMS/QMS/PMC records.
+- Recurring defect: it fabricated times, durations, meeting locations, memory/file-save side effects, or overly strong system-action completion claims.
+
+Clean25 hardening:
+
+- Added top-priority anti-fabrication rules for dates, times, durations, meeting locations, file paths, system numbers, and side effects.
+- Added explicit ban on memory/edit/writecontent/save/update-event tool calls unless the user explicitly asks for a write action.
+- Tightened channel and closure boundaries so chat/email remain collection channels, not formal closure evidence.
+- Removed examples from the upload package so sample timestamps and sample deadlines cannot be copied into live responses.
+- Replaced numeric escalation examples with "按企业 SLA/待确认" wording.
+
+Generated clean25 package:
+
+- Source folder: `skillhub_upload_clean/industrial-cross-department-collaboration/`
+- ZIP: `release_zips/industrial-cross-department-collaboration-clean-20260620-v25.zip`
+- SHA256: `9BE1FD8211A11E6979C1844B0EEBFF19648573865E17D5F354AE45BA8BA34BD0`
+- ZIP size: `48072` bytes
+- ZIP file count: `30`
+
+For the next platform upload, prefer the clean25 ZIP.

@@ -30,7 +30,6 @@
 ├── VERSION.md
 ├── submission_manifest.json
 ├── templates/
-├── examples/
 └── references/
 ```
 
@@ -61,3 +60,7 @@
 ## 版本
 
 当前产品包版本见 `VERSION.md`。
+
+## 包体边界
+
+本上传包不包含示例输出、调试记录、评分脚本、截图证据或运行日志。示例和测试证据统一放在 GitHub 证据归档中，避免影响线上 Skill 的稳定输出边界。
