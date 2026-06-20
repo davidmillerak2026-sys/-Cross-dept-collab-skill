@@ -7,7 +7,7 @@ This repository keeps two different kinds of materials separate.
 Use this folder or the matching ZIP for platform upload:
 
 - `skillhub_upload_clean/industrial-cross-department-collaboration/`
-- `release_zips/industrial-cross-department-collaboration-clean-20260620-v25.zip`
+- `release_zips/industrial-cross-department-collaboration-clean-20260620-v26.zip`
 
 This package contains only product-facing Skill materials:
 

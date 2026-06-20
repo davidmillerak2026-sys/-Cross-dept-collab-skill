@@ -99,3 +99,35 @@ Generated clean25 package:
 - ZIP file count: `30`
 
 For the next platform upload, prefer the clean25 ZIP.
+
+## Clean26 Timing Guidance Calibration
+
+After reviewing Qwen3.6 output, the timing/frequency evaluation was recalibrated.
+
+Correct interpretation:
+
+- Suggested response windows, inspection frequency, and escalation cadence are useful in industrial coordination.
+- They should be allowed when clearly marked as "建议", "推荐", "按企业 SLA 调整", or "需负责人确认".
+- They are not defects by themselves.
+
+Still invalid:
+
+- Presenting an unprovided meeting time, meeting room, file path, system record, customer promise, or recovery ETA as already confirmed.
+- Claiming side effects such as "工具调用完成", "已更新事件包", "已保存至 memory/xxx", "系统已写入", or "消息已发送成功" without real tool/system receipt.
+
+Clean26 hardening:
+
+- Replaced the overly strict no-timing rule with a calibrated rule: suggested windows are allowed, confirmed facts require evidence.
+- Updated manual test logs to reflect this scoring boundary.
+- Added Qwen3.6 manual result log:
+  - `evidence_archive/submission_materials/astronclaw_real_runs/20260620_qwen36_manual/qwen36_manual_test_log.md`
+
+Generated clean26 package:
+
+- Source folder: `skillhub_upload_clean/industrial-cross-department-collaboration/`
+- ZIP: `release_zips/industrial-cross-department-collaboration-clean-20260620-v26.zip`
+- SHA256: `51B8AC83F9E3781A89CDAAC43C7ACD9B9B51AB4DC5B0BE4B0148741A11BF26D1`
+- ZIP size: `48354` bytes
+- ZIP file count: `30`
+
+For the next platform upload, prefer the clean26 ZIP.

@@ -1,6 +1,6 @@
 # Version
 
-version: 2026.06.20-clean-25
+version: 2026.06.20-clean-26
 name: industrial-cross-department-collaboration
 package_type: SkillHub clean upload package
 
@@ -15,6 +15,7 @@ package_type: SkillHub clean upload package
 - Added explicit ban on fake tool status such as "工具调用完成", "已更新事件包", and "memory/xxx".
 - Tightened closure and channel boundaries so chat/email remain collection channels, not formal closure evidence.
 - Removed examples from the upload package to prevent sample timestamps or sample deadlines from being copied into live outputs.
+- Recalibrated timing guidance: recommended response windows and inspection frequencies are allowed when clearly marked as suggestions that require confirmation.
 
 ## Excluded
 
