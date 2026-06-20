@@ -81,3 +81,18 @@ outputs/<model>/<case_id>.md
 
 Use screenshots only for representative final evidence. Text copy is enough for iteration scoring.
 
+## Fast Scoring
+
+After saving copied GUI outputs, run:
+
+```text
+python scripts/score_v29_retest.py
+```
+
+The script writes:
+
+```text
+evidence_archive/submission_materials/astronclaw_real_runs/20260620_v29_retest/v29_score_report.csv
+```
+
+This is a fast defect screen, not a replacement for manual review. It checks the v29 hardening targets: unsupported root cause, invented quality percentages, temporary chat evidence treated as formal records, supplier ETA over-inference, unsupported closure/release/recovery/system-write claims, unsafe EHS bypass, process narration, and connector side effects.
