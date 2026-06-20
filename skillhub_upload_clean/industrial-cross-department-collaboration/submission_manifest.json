@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill_name": "industrial-cross-department-collaboration",
-  "version": "2026.06.20-clean-26",
+  "version": "2026.06.20-clean-27",
   "entrypoint": "SKILL.md",
   "readme": "README.md",
   "version_file": "VERSION.md",

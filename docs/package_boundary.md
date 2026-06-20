@@ -7,7 +7,7 @@ This repository keeps two different kinds of materials separate.
 Use this folder or the matching ZIP for platform upload:
 
 - `skillhub_upload_clean/industrial-cross-department-collaboration/`
-- `release_zips/industrial-cross-department-collaboration-clean-20260620-v26.zip`
+- `release_zips/industrial-cross-department-collaboration-clean-20260620-v27.zip`
 
 This package contains only product-facing Skill materials:
 
@@ -44,7 +44,8 @@ These materials are useful for engineering traceability, but they should not be 
 The clean upload package was prepared against the official Skill development and submission guide:
 
 - `SKILL.md` is present within one top-level directory.
-- `name`, `description`, and `version` are declared in front matter.
+- `name` and `description` are declared in `SKILL.md` front matter.
+- Package version is declared in `VERSION.md` and `submission_manifest.json`.
 - File count is below 500.
 - Total package size is below 100 MB.
 - Single file size is below 10 MB.

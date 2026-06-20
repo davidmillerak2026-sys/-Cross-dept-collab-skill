@@ -53,7 +53,7 @@ These are GitHub-only traceability materials. They are not part of the SkillHub 
 
 For platform upload, use only:
 
-`release_zips/industrial-cross-department-collaboration-clean-20260620.zip`
+`release_zips/industrial-cross-department-collaboration-clean-20260620-v27.zip`
 
 For engineering traceability, review:
 
@@ -131,3 +131,40 @@ Generated clean26 package:
 - ZIP file count: `30`
 
 For the next platform upload, prefer the clean26 ZIP.
+
+## Clean27 Closure Gate Calibration
+
+After Qwen3.6 closure-review testing, the core closure logic was correct but two boundary issues remained:
+
+- EHS was treated as a general required closure gate even when the user did not mention safety risk or hazardous work.
+- Chat-only recovery messages were over-promoted into closed-loop learning, for example "verified measures" or "recovered today" without formal CMMS/QMS/PMC receipts.
+
+Correct interpretation:
+
+- EHS/OA closure evidence is mandatory only when the event involves safety risk, hazardous work, work permits, energy isolation, hot work, electrical cabinet work, height work, confined space, lifting, or similar EHS-controlled scenarios.
+- For ordinary maintenance + quality closure reviews, EHS should be marked "not applicable" or "confirm whether safety work was involved", not as a failed closure item.
+- Closed-loop knowledge is only a candidate until formal system receipts, trial-run/reinspection/acceptance records, and authorization evidence are available.
+- Group messages such as "试运行正常", "复检看起来没问题", and "交付压力缓解" remain evidence leads, not final closure proof.
+
+Clean27 hardening:
+
+- Added conditional EHS closure gate language to `SKILL.md`, `collaboration_status_update.md`, `enterprise_flow_output_contract.md`, and `department_communication_flow.md`.
+- Added closed-loop learning guardrails so chat-only notes cannot become verified measures, confirmed recovery, or formal SOP knowledge.
+- Removed the unsupported `version` field from `SKILL.md` front matter; package version is kept in `VERSION.md` and `submission_manifest.json`.
+- Removed a stale reference to an excluded `examples/` file so the clean package is self-contained.
+
+Validation:
+
+- `quick_validate.py`: passed with UTF-8 mode.
+- ZIP file count: `30`.
+- Secret-like string scan: no direct key/password/secret hits; only redaction policy text mentions credentials.
+
+Generated clean27 package:
+
+- Source folder: `skillhub_upload_clean/industrial-cross-department-collaboration/`
+- ZIP: `release_zips/industrial-cross-department-collaboration-clean-20260620-v27.zip`
+- SHA256: `06AE4DED4AD969729D57B09D062097FA1936F984CF3416734A30CA3E7E9A8F5E`
+- ZIP size: `49758` bytes
+- ZIP file count: `30`
+
+For the next platform upload, prefer the clean27 ZIP.
