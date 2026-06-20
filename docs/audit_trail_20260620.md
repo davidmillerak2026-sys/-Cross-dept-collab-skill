@@ -53,7 +53,7 @@ These are GitHub-only traceability materials. They are not part of the SkillHub 
 
 For platform upload, use only:
 
-`release_zips/industrial-cross-department-collaboration-clean-20260620-v27.zip`
+`release_zips/industrial-cross-department-collaboration-clean-20260620-v28.zip`
 
 For engineering traceability, review:
 
@@ -167,4 +167,40 @@ Generated clean27 package:
 - ZIP size: `49758` bytes
 - ZIP file count: `30`
 
-For the next platform upload, prefer the clean27 ZIP.
+Clean27 was superseded by clean28 after the structured Skill contract update.
+
+## Clean28 Structured Skill Contract
+
+A user-provided `monthly-business-report` Skill pattern was used as a structural reference, not as business content. The useful pattern was:
+
+- clear objective and success criteria
+- required inputs and missing-input behavior
+- step-by-step workflow
+- fixed output structure
+- hard rules
+- final validation checklist
+
+Clean28 adapts that structure to the industrial cross-department collaboration domain.
+
+Clean28 hardening:
+
+- Added top-level success criteria for evidence-backed conclusions, action ownership, suggestion boundaries, and completion claims.
+- Added required-input handling so missing line, equipment, batch, order, timing, owner, system number, sampling ratio, ETA, or customer promise is listed as missing rather than invented.
+- Added an explicit workflow: route scenario, extract evidence, check gates, generate collaboration structure, generate system action cards, mark readiness, produce copyable messages, and run final checks.
+- Added final checks for missing event-package structure, unsupported facts, over-specific sampling ratios, unconfirmed supplier ETA, hard deadlines, connector side effects, chat-as-record mistakes, and unauthorized release/closure claims.
+- Preserved the clean package boundary: no manual GUI logs, screenshots, helper scripts, scoring utilities, examples, or internal contest strategy in the upload package.
+
+Validation:
+
+- `quick_validate.py`: passed with UTF-8 mode.
+- ZIP file count: `30`.
+
+Generated clean28 package:
+
+- Source folder: `skillhub_upload_clean/industrial-cross-department-collaboration/`
+- ZIP: `release_zips/industrial-cross-department-collaboration-clean-20260620-v28.zip`
+- SHA256: `9B8601ED0E65C0D45C13FCF89ABC55CA60722AB4E344DCA1808B47F821D42FE6`
+- ZIP size: `51086` bytes
+- ZIP file count: `30`
+
+Clean28 is the current structured draft for the next platform upload after v27 manual retesting.

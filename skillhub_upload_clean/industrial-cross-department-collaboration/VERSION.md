@@ -1,6 +1,6 @@
 # Version
 
-version: 2026.06.20-clean-27
+version: 2026.06.20-clean-28
 name: industrial-cross-department-collaboration
 package_type: SkillHub clean upload package
 
@@ -18,6 +18,8 @@ package_type: SkillHub clean upload package
 - Recalibrated timing guidance: recommended response windows and inspection frequencies are allowed when clearly marked as suggestions that require confirmation.
 - Clarified closure gates: EHS is mandatory only for safety or hazardous-work scenarios, not every closure review.
 - Tightened closed-loop learning: chat-only recovery notes cannot become verified measures, confirmed recovery, or SOP knowledge before formal receipts and authorization.
+- Added explicit success criteria, required-input handling, workflow, and final-check gates inspired by the monthly-business-report Skill structure.
+- Strengthened checks against missing event packages, over-specific sampling ratios, unconfirmed supplier ETA, hard deadlines, and connector side-effect claims.
 
 ## Excluded
 
